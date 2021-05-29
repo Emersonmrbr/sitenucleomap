@@ -1,0 +1,116 @@
+// ==========================================================================
+//Fonts
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+// webfatorial
+// ==========================================================================
+
+$webfatorial-colors: ('webfatorial-primary' : #157bad,
+  'webfatorial-secondary': #06618c,
+  'webfatorial-success' : #3cc368,
+  'webfatorial-warning' : #f5a600,
+  'webfatorial-error' : #ec5840,
+  'webfatorial-gray-1' : #363636,
+  'webfatorial-gray-2' : #4f4f4f,
+  'webfatorial-gray-3' : #828282,
+  'webfatorial-gray-4' : #bdbdbd,
+  'webfatorial-gray-5' : #e0e0e0,
+  'webfatorial-white' : #fcfcfc,
+);
+
+@function webfatorial-colors($webcolor) {
+  @return map-get($webfatorial-colors, $webcolor);
+}
+
+// dpw
+// ==========================================================================
+
+$dpw-colors: ('dpw-primary' : #3da6c8,
+  'dpw-secondary' : darken(#3da6c8, 12%),
+);
+
+@function dpw-colors($dpcolor) {
+  @return map-get($dpw-colors, $dpcolor);
+}
+
+// Núcleo MAP
+// ==========================================================================
+$map-colors:(  
+  'map-foreBlack': #000000,
+  'map-white': #ffffff,
+  'map-grey': #6d6e71,
+  'map-grey2':ligthen (#6d6e71 10%),
+  'map-grey3' : #c5c5c5,
+  'map-black': #000000,
+  'map-blue': #27aae1,
+);
+
+@function map-colors($color) {
+  @return map-get($map-colors, $color);
+}
+
+// Social Media
+// ==========================================================================
+
+$social-media-colors: ('facebook' : #3b5998,
+  'twitter' : #00aced,
+  'linkedin' : #0077b5,
+  'youtube' : #cd201f,
+  'instagram' : #e4405f,
+  'github' : #333,
+);
+
+@function msocial-media-colors($socialcolor) {
+  @return map-get($social-media-colors, $socialcolor);
+}
+
+// ==========================================================================
+// Measures
+// ==========================================================================
+
+$global-max-width-raw: 1944;
+$global-max-width : rem($global-max-width-raw);
+
+$global-font-size : rem(18);
+$global-line-height: 1.5;
+$global-radius : rem(6);
+$global-module-size: rem(30);
+
+// ==========================================================================
+// Transitions
+// ==========================================================================
+
+$transition-duration : 305ms;
+$transition-duration-complex : 385ms;
+$transition-duration-entrance: 235ms;
+$transition-duration-exit : 205ms;
+$transition-duration-fast : 150ms;
+
+$transition-function-ease-in-expo : cubic-bezier(.95, .05, .795, .035);
+$transition-function-ease-out-expo : cubic-bezier(.19, 1, .22, 1);
+$transition-function-ease-in-back : cubic-bezier(.6, -.28, .735, .045);
+$transition-function-ease-out-back : cubic-bezier(.175, .885, .32, 1.275);
+$transition-function-ease-in-out-circ : cubic-bezier(.785, .135, .15, .86);
+$transition-function-ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
+$transition-function-elastic : cubic-bezier(.175, .885, .41, 1.46);
+
+// ==========================================================================
+// Others
+// ==========================================================================
+
+$z-indexes: ('above' : 500,
+  'modal' : 400,
+  'overlay' : 300,
+  'dropdown': 200,
+  'default' : 1,
+  'below' : -1,
+);
+
+@function z-index($layer) {
+  @return map-get($z-indexes, $layer);
+}

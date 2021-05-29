@@ -1,0 +1,1247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  outline-offset: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce), (update: slow) {
+  *,
+  ::before,
+  ::after {
+    -webkit-animation-duration: 0.001ms !important;
+            animation-duration: 0.001ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.001ms !important;
+            transition-duration: 0.001ms !important;
+  }
+}
+
+img,
+iframe,
+object,
+embed,
+video {
+  max-width: 100%;
+}
+
+img[width],
+iframe[width],
+object[width],
+embed[width],
+video[width] {
+  width: auto;
+  /* Defer to max-width */
+}
+
+img[width][height],
+iframe[width][height],
+object[width][height],
+embed[width][height],
+video[width][height] {
+  height: auto;
+  /* Preserve aspect ratio */
+}
+
+/* Let SVG scale without boundaries */
+img[src$=".svg"] {
+  height: auto;
+  max-width: none;
+  width: 100%;
+}
+
+label {
+  cursor: pointer;
+}
+
+sup,
+sub {
+  font-size: 50%;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Roboto, -apple-system, sans-serif;
+  font-size: 1.125rem;
+  background-color: #c5c5c5;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.l-header {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 121.5rem;
+  position: fixed;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 500;
+  grid: "headerTop headerTop headerTop" auto "headerLogo headerNav headerNav" auto "headerLineFull headerLineFull headerLines" auto/minmax(auto, 250px) 1fr 250px;
+}
+
+.clHeaderTop {
+  grid-area: headerTop;
+  height: 55px;
+  width: 100%;
+}
+
+.clHeaderLogo {
+  grid-area: headerLogo;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+  width: auto;
+  height: auto;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+.clHeaderLogo img {
+  display: block;
+  max-width: 250px;
+}
+
+.clHeaderNav {
+  grid-area: headerNav;
+  height: auto;
+}
+
+.clHeaderNavList {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid: "link1 link2 link3"auto /120px 120px 120px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clHeaderNavList li {
+  margin: 0 20px;
+}
+
+.clHeaderNavMobile {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.clHeaderLineFull {
+  grid-area: headerLineFull;
+  width: 100%;
+  height: 15px;
+  overflow: visible;
+}
+
+.clHeaderLines {
+  grid-area: headerLines;
+  width: 100%;
+  height: 15px;
+  overflow: visible;
+}
+
+.clHeaderLineGrey {
+  stroke: #6d6e71;
+  stroke-width: 1px;
+  fill: none;
+  overflow: visible;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.clHeaderLineBlack {
+  stroke: #000000;
+  stroke-width: 1px;
+  fill: none;
+  shape-rendering: crispEdges;
+  overflow: visible;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+[data-sticky] {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+[data-sticky].noTrasition {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.clSticky {
+  overflow: hidden !important;
+  height: 0 !important;
+}
+
+.clHeaderSticky {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  padding: 0 20px !important;
+  -webkit-box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+}
+
+.clHeaderLogoLinkSticky {
+  padding: 0 !important;
+  -webkit-transform: scale(0.8, 0.8) !important;
+          transform: scale(0.8, 0.8) !important;
+}
+
+.clHeaderLinesSticky {
+  height: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+}
+
+[data-navFlyout] {
+  height: 0;
+  width: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+@media (max-width: 980px) {
+  .l-header {
+    grid: "headerTop headerTop headerTop" auto "headerLogo headerNav headerNav" auto "headerLineFull headerLineFull headerLineFull" auto/minmax(auto, 250px) 1fr 250px;
+  }
+  .clHeaderLines {
+    display: none;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-header {
+    grid: "headerTop headerTop" 0 "headerLogo headerNav" auto "headerFlyout headerFlyout" auto "headerLineFull headerLineFull" auto/1fr 1fr;
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 100%;
+    justify-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .clHeaderTop {
+    height: 0;
+  }
+  .clHeaderLogo {
+    grid-area: headerLogo;
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+    padding: 0;
+    width: auto;
+    height: auto;
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+  }
+  .clHeaderLogo img {
+    display: block;
+    max-width: 200px;
+  }
+  .clHeaderNav {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .clHeaderNavMobile {
+    grid-area: headerNav;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    padding: 10px 0;
+    width: 30px;
+    height: auto;
+    display: block;
+  }
+  .clHeaderNavMobile:hover {
+    cursor: pointer;
+  }
+  .clHeaderNavSymbolMobile {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #000000;
+  }
+  .clHeaderNavSymbolMobile + div {
+    margin-top: 7px;
+  }
+  .clHeaderNavMobileLegend {
+    background-color: #6d6e71;
+    display: block;
+    font-size: 13pt;
+    height: auto;
+  }
+  .clHeaderNavMobileLegend a {
+    text-transform: uppercase;
+  }
+  .clHeaderNavFlayoutOpen {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    z-index: 2000;
+  }
+  .clHeaderNavMobileIten {
+    grid-area: headerFlyout;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .clHeaderNavMobileFlyout {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  .clHeaderNavMobileFlyout li {
+    display: block;
+    padding: 10px;
+    position: relative;
+    border-top: 1px #6d6e71 solid;
+  }
+  .clHeaderNavMobileFlyout li a {
+    font-size: 13pt;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .clHeaderNavMobileFlyout li a::after {
+    position: absolute;
+    right: 10px;
+    content: "\2228";
+    -webkit-transform: rotate(-90deg) scale(1.5, 0.9);
+            transform: rotate(-90deg) scale(1.5, 0.9);
+    font-weight: 100;
+    color: #6d6e71;
+  }
+  .clHeaderNavMobileFlyout li:last-child {
+    border-bottom: 1px #6d6e71 solid;
+  }
+  .clHeaderNavMobileFlyout li:hover {
+    cursor: pointer;
+  }
+  .clHeaderNavMobileFlyoutIten {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .clHeaderNavMobileFlyoutIten li {
+    display: block;
+    padding: 10px;
+    position: relative;
+    border-top: 1px #6d6e71 solid;
+  }
+  .clHeaderNavMobileFlyoutIten li a {
+    font-size: 13pt;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .clHeaderNavMobileFlyoutIten li:last-child {
+    border-bottom: 1px #6d6e71 solid;
+  }
+  .clHeaderNavMobileFlyoutIten li:hover {
+    cursor: pointer;
+  }
+  .clHeaderBreadcrumb {
+    display: none;
+  }
+  .clHeaderLineFull {
+    height: 10px;
+  }
+  .clHeaderLines {
+    display: none;
+  }
+}
+
+.clNavLink {
+  color: color(map-foreBlack);
+  cursor: pointer;
+  display: block;
+  font-family: "Roboto Condensed" !important;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: padding 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: padding 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+}
+
+.clNavLink::after {
+  background-color: color(map-black);
+  content: '';
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+  position: absolute;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: -webkit-transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms, -webkit-transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  width: 100%;
+}
+
+.clNavLink:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.clNavLink:hover {
+  font-family: "Roboto Condensed" !important;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12pt;
+  -webkit-transition: -webkit-transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: -webkit-transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+  transition: transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms, -webkit-transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+}
+
+.clBreadcrumb {
+  width: 100%;
+  max-width: 1944px;
+  padding: 0 80px;
+  margin: 0 auto;
+  background-color: color(map-backgroundWhite);
+  grid-area: breadcrumb;
+  font-family: "Roboto Condensed" !important;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10pt;
+}
+
+@media (max-width: 768px) {
+  .l-body {
+    grid: "header" 65px "breadcrumb" 0 "main" auto "footer" auto/1fr;
+    width: 100%;
+    padding: 0;
+    row-gap: 10px;
+  }
+  .l-main {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .clBreadcrumb {
+    display: none;
+  }
+}
+
+.l-body {
+  display: -ms-grid;
+  display: grid;
+  grid: "header header header" 110px "breadcrumb breadcrumb breadcrumb" auto "main main main" auto "footer footer footer" auto/1fr 3fr 1fr;
+  row-gap: 20px;
+}
+
+.l-main {
+  background-color: #ffffff;
+  grid-area: main;
+  padding: 0 80px;
+}
+
+.l-service {
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  grid: "serviceHeader serviceHeader serviceHeader" auto "serviceIndustrialAutomation serviceIndustrialAutomation serviceDomotica" 0.5fr "serviceIndustrialAutomation serviceIndustrialAutomation serviceMechanicalDrawning" 0.5fr "serviceElectricalDrawning serviceRobotic ." 0.5fr/1fr 1fr 1fr;
+}
+
+.l-service h4 {
+  font-family: "Roboto Condensed" !important;
+  font-weight: 300;
+  font-size: 14pt;
+}
+
+.l-service span {
+  font-family: "Roboto Condensed" !important;
+  font-weight: 300;
+  font-size: 22pt;
+  word-break: keep-all;
+  color: #000000;
+}
+
+.l-service figure {
+  width: 100%;
+  height: auto;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.l-service img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+.l-service a {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.l-service a:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.l-service a:hover h4 {
+  color: #ffffff;
+}
+
+.l-service a:hover span {
+  color: #ffffff;
+}
+
+.l-service a section {
+  color: #000000;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  padding-left: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.l-service a > span {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  width: auto;
+  height: auto;
+  font-size: 10pt;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding: 5px 30px;
+  background-color: ligthen #6d6e71 10%;
+  color: #ffffff;
+}
+
+.clServiceHeader {
+  grid-area: serviceHeader;
+  padding-left: 160px;
+  padding-bottom: 20px;
+}
+
+.clServiceIndustrialAutomation {
+  grid-area: serviceIndustrialAutomation;
+  overflow: hidden;
+}
+
+.clServiceDomotica {
+  grid-area: serviceDomotica;
+  overflow: hidden;
+}
+
+.clServiceMechanicalDrawing {
+  grid-area: serviceMechanicalDrawning;
+  overflow: hidden;
+}
+
+.clServiceRobotic {
+  grid-area: serviceRobotic;
+  overflow: hidden;
+}
+
+.clServiceElectricalDrawing {
+  grid-area: serviceElectricalDrawning;
+  overflow: hidden;
+}
+
+@media (max-width: 1435px) {
+  .l-service {
+    grid: "serviceHeader serviceHeader " auto "serviceIndustrialAutomation serviceIndustrialAutomation" 0.5fr "serviceIndustrialAutomation serviceIndustrialAutomation" 0.5fr "serviceDomotica serviceMechanicalDrawning" 0.5fr "serviceRobotic serviceElectricalDrawning" 0.5fr/1fr 1fr;
+  }
+}
+
+@media (max-width: 1018px) {
+  .l-service {
+    grid: "serviceHeader" auto "serviceIndustrialAutomation" auto "serviceDomotica" auto "serviceMechanicalDrawning" auto "serviceRobotic" auto "serviceElectricalDrawning" auto/1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-service {
+    grid: "serviceHeader" auto "serviceIndustrialAutomation" auto "serviceDomotica" auto "serviceMechanicalDrawning" auto "serviceRobotic" auto "serviceElectricalDrawning" auto/1fr;
+  }
+  .l-service a {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .l-service h4 {
+    font-size: 12pt;
+  }
+  .l-service span {
+    font-size: 16pt;
+  }
+  .clServiceHeader {
+    padding: 0;
+  }
+}
+
+/*
+=======================================
+Footer style
+=======================================
+*/
+.l-footer {
+  background-color: #000000;
+  color: #ffffff !important;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  grid: "footerDescription footerDescription  footerSocialnetwork footerSocialnetwork" auto "footerNav1 footerNav2 footerNav3 footerNav4" auto "footerDetails footerDetails footerDetails ." auto "footerLineFull footerLineFull footerLineFull footerLines" 30px/1fr 1fr 1fr 1fr;
+}
+
+.l-footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-footer h4 {
+  text-transform: uppercase;
+  font-size: 16pt;
+  font-family: "Roboto Condensed" !important;
+  font-weight: 700;
+}
+
+.l-footer a {
+  color: #ffffff !important;
+}
+
+.l-footer a::after {
+  background-color: #ffffff !important;
+}
+
+.clFooterDescription {
+  padding: 20px 0 0 80px;
+  grid-area: footerDescription;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 16pt;
+  font-family: "Roboto Condensed" !important;
+  font-weight: 400;
+}
+
+.clFooterSocialnetwork {
+  padding: 20px 80px 0 0;
+  grid-area: footerSocialnetwork;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: end;
+}
+
+.clFooterSocialnetwork li {
+  padding: 10px;
+}
+
+.clFooterSocialnetwork li a > img {
+  width: 30px;
+}
+
+.clFooterSocialnetwork li:hover {
+  background-color: #6d6e71;
+}
+
+.clFooterNav1 {
+  grid-area: footerNav2;
+}
+
+.clFooterMobileNav1 {
+  grid-area: footerNav2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 10px;
+  width: 100%;
+  display: none;
+}
+
+.clFooterNav2 {
+  grid-area: footerNav3;
+}
+
+.clFooterMobileNav2 {
+  grid-area: footerNav3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 10px;
+  width: 100%;
+  display: none;
+}
+
+.clFooterDetails {
+  padding: 20px 0 20px 80px;
+  grid-area: footerDetails;
+}
+
+.clFooterLocal {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clFooterCopyright {
+  font-size: 10pt;
+}
+
+.clFooterLineFull {
+  padding: 0;
+  grid-area: footerLineFull;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow: visible !important;
+}
+
+.clFooterLines {
+  padding: 0;
+  grid-area: footerLines;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow: visible !important;
+}
+
+.clFooterLineBlue {
+  stroke: #27aae1;
+  stroke-width: 1px;
+  fill: none;
+  overflow: visible !important;
+}
+
+.clFooterLineGrey {
+  stroke: #6d6e71;
+  stroke-width: 1px;
+  fill: none;
+  overflow: visible !important;
+}
+
+.clFooterLineBlack {
+  stroke: #000000;
+  stroke-width: 1px;
+  fill: none;
+  overflow: visible !important;
+}
+
+.clFooterBackground {
+  stroke: none;
+  fill: #ffffff;
+  overflow: visible !important;
+}
+
+@media (max-width: 768px) {
+  .l-footer {
+    display: -ms-grid;
+    display: grid;
+    grid: "footerDescription" auto "footerSocialnetwork" auto "footerNav2" auto "footerNav3" auto "footerNav4" auto "footerDetails" auto "footerDetails" auto "footerLineFull" 30px/1fr;
+  }
+  .l-footer h4 {
+    display: block;
+    position: relative;
+  }
+  .l-footer h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .l-footer .clNavLink {
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  .clFooterDescription {
+    padding: 10px 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .clFooterSocialnetwork {
+    padding: 10px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .clFooterLines {
+    display: none;
+  }
+  .clFooterNav1,
+  .clFooterNav2 {
+    display: none;
+  }
+  .clFooterMobileNav1,
+  .clFooterMobileNav2 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+  }
+  .clFooterMobileNav1 h4,
+  .clFooterMobileNav2 h4 {
+    font-weight: 700;
+    border-top: 1px #fff solid;
+    cursor: pointer;
+    font-size: 14pt;
+    text-transform: capitalize;
+  }
+  .clFooterMobileNav1 h4::after,
+  .clFooterMobileNav2 h4::after {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    content: "\2228";
+    -webkit-transform: rotate(0deg) scale(1.8, 0.7);
+            transform: rotate(0deg) scale(1.8, 0.7);
+    font-weight: 100;
+  }
+  [data-anime] {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+  }
+  .clFooterDetails {
+    padding: 10px 20px;
+  }
+  .clFooterLocal {
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .clFooterLocal h4 {
+    font-weight: 600;
+  }
+  .clFooterCopyright {
+    padding: 0;
+    font-size: 9pt;
+    margin: 0 auto;
+  }
+  .footerMobileNavClose::after {
+    -webkit-transform: rotate(0deg) scale(2, 0.7) !important;
+            transform: rotate(0deg) scale(2, 0.7) !important;
+  }
+  .footerMobileNavOpen::after {
+    -webkit-transform: rotate(180deg) scale(2, 0.7) !important;
+            transform: rotate(180deg) scale(2, 0.7) !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

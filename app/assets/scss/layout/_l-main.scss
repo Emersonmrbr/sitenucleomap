@@ -1,0 +1,7 @@
+$componente-name:"l-main";
+
+.#{$componente-name} {
+ background-color: map-colors(map-white);
+ grid-area: main;
+ padding: 0 80px;
+}
