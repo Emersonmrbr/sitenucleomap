@@ -1,0 +1,16 @@
+$componente-name: "c-highlights";
+
+.#{$componente-name} {
+	grid-area: highlights;
+	width: auto;
+	@include breakpoint(1280-up) {
+	}
+	&__title {
+		text-transform: uppercase;
+		width: auto;
+	}
+	&__list {
+		display: block;
+		width: auto;
+	}
+}

@@ -1,0 +1,63 @@
+$componente-name: "c-button-menu";
+$slice-height-big: ($global-module-size / 13);
+$slice-height: ($global-module-size / 20);
+$slice-margin: ($global-module-size / 10);
+$slice-translate: $slice-height-big / 2;
+$slice-width: ($global-module-size / 1.5);
+
+.#{$componente-name} {
+  align-self: center;
+  background-color: map-color(map-white);
+  border: none;
+  display: block;
+  cursor: pointer;
+  grid-column: 4/5;
+  height: auto;
+  justify-self: flex-end;
+  padding: 0 ($global-module-size / 2.5);
+  transition: $transition-function-header;
+  width: auto;
+
+  @include breakpoint(640-up) {
+    display: none;
+  }
+  &__slice-up {
+    background-color: map-color(map-black);
+    height: $slice-height-big;
+    padding: 0;
+    transition: $transition-function-header-mobile;
+    width: $slice-width;
+    &.is-open {
+      transform-origin: 50% 50%;
+      transform: translatey($slice-translate) rotate(45deg);
+    }
+  }
+  &__slice-middle {
+    background-color: map-color(map-black);
+    height: $slice-height;
+    margin: $slice-margin 0;
+    padding: 0;
+    transform-origin: 50% 50%;
+    transition-delay: $transition-daley-middle;
+    transition: $transition-function-header-mobile;
+    width: $slice-width;
+    &.is-open {
+      height: 0;
+      margin: 0;
+      transform-origin: 50% 50%;
+      transition-delay: $transition-daley-none;
+      width: 0;
+    }
+  }
+  &__slice-down {
+    background-color: map-color(map-black);
+    height: $slice-height-big;
+    padding: 0;
+    transition: $transition-function-header-mobile;
+    width: $slice-width;
+    &.is-open {
+      transform-origin: 50% 50%;
+      transform: translatey(-#{$slice-translate}) rotate(-45deg);
+    }
+  }
+}

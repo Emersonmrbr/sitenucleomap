@@ -1,0 +1,8 @@
+$componente-name: "c-info";
+
+.#{$componente-name} {
+  grid-area: info;
+  justify-self: end;
+  @include breakpoint(1280-up) {
+  }
+}

@@ -1,0 +1,41 @@
+$componente-name: "c-menu-flyout";
+
+.#{$componente-name} {
+  grid-area: menu-flyout;
+  display: block;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+  z-index: z-index(above);
+  transition: $transition-function-header;
+  &.is-open {
+    height: auto;
+    transition: $transition-function-header;
+    width: 100%;
+    padding-top: ($global-module-size);
+  }
+  @include breakpoint(1280-up) {
+  }
+  &__content {
+    width: ($global-module-size * 8);
+    margin: 0;
+    padding: ($global-module-size / 5) 0 0 0;
+  }
+  &__item {
+    align-items: center;
+    border-bottom: solid ($global-module-size / 50) map-color(map-black);
+    display: flex;
+    height: $global-module-size;
+    width: 100%;
+    &:first-child {
+      border-bottom: solid ($global-module-size / 50) map-color(map-black);
+    }
+  }
+  &__link {
+    color: map-color(map-black);
+    height: auto;
+    padding-left: ($global-module-size / 10);
+  }
+}

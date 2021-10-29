@@ -1,0 +1,13 @@
+$componente-name: "l-main";
+
+.#{$componente-name} {
+	background-color: map-color(map-main);
+	color: map-color(map-main-fore);
+	grid-area: main;
+	margin: 0 auto;
+	padding: 0 ($global-module-size / 2);
+	width: 100%;
+	@include breakpoint(1280-up) {
+		padding: 0 ($global-module-size * 2);
+	}
+}

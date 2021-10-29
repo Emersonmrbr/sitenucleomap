@@ -1,0 +1,63 @@
+$componente-name: "c-link";
+
+.#{$componente-name} {
+  &-frame {
+    display: block;
+    font-weight: $global-font-weight-light;
+    line-height: $global-line-height-small;
+    padding: ($global-module-size/4) 0;
+    position: relative;
+    transition: $transition-function-padding-link;
+
+    &::after {
+      content: "";
+      display: block;
+      height: ($global-module-size/20);
+      margin-top: ($global-module-size/20);
+      position: absolute;
+      transform: scale(0, 1);
+      transition: $transition-function-transform-link;
+      width: 100%;
+    }
+
+    &:hover {
+      &::after {
+        transform: scale(1, 1);
+      }
+    }
+
+    &:hover {
+      transition: $transition-function-transform-link;
+    }
+  }
+  &-skin {
+    color: inherit;
+    cursor: pointer;
+    font-family: "Roboto Condensed";
+    font-size: $global-font-size-medium;
+    font-style: normal;
+    padding: ($global-module-size/4) 0;
+    position: relative;
+    transition: $transition-function-padding-link;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+
+    &::after {
+      background-color: map-color(map-header-fore);
+      transition: $transition-function-transform-link;
+      width: 100%;
+    }
+
+    &:hover {
+      font-style: normal;
+      font-weight: $global-font-weight-bold;
+    }
+    &--footer {
+      width: auto;
+      &::after {
+        background-color: map-color(map-footer-fore);
+      }
+    }
+  }
+}

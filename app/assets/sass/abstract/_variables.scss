@@ -1,0 +1,183 @@
+// ==========================================================================
+//Fonts
+// ==========================================================================
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+// webfatorial
+// ==========================================================================
+
+$webfatorial-colors: (
+  "webfatorial-primary": #157bad,
+  "webfatorial-secondary": #06618c,
+  "webfatorial-success": #3cc368,
+  "webfatorial-warning": #f5a600,
+  "webfatorial-error": #ec5840,
+  "webfatorial-gray-1": #363636,
+  "webfatorial-gray-2": #4f4f4f,
+  "webfatorial-gray-3": #828282,
+  "webfatorial-gray-4": #bdbdbd,
+  "webfatorial-gray-5": #e0e0e0,
+  "webfatorial-white": #fcfcfc,
+);
+
+@function webfatorial-color($webcolor) {
+  @return map-get($webfatorial-colors, $webcolor);
+}
+
+// Núcleo MAP colors
+// ==========================================================================
+$map-colors: (
+  "map-background1": #ffffff,
+  "map-background2": #c5c5c5,
+  "map-background3":
+    lighten(
+      $color: #6d6e71,
+      $amount: 10%,
+    ),
+  "map-background4": #6d6e71,
+  "map-background5": #000000,
+  "map-black": #000000,
+  "map-blue": #36a9e1,
+  "map-body-background": #ffffff,
+  "map-body-fore": #000000,
+  "map-body": #ffffff,
+  "map-footer-background":
+    darken(
+      $color: #706f6f,
+      $amount: 10%,
+    ),
+  "map-footer-fore": #ffffff,
+  "map-footer1": #000000,
+  "map-fore2": #ffffff,
+  "map-grey1": #706f6f,
+  "map-grey2": #9d9d9c,
+  "map-header-background": #ffffff,
+  "map-header-fore":
+    darken(
+      $color: #706f6f,
+      $amount: 10%,
+    ),
+  "map-header": #ffffff,
+  "map-html-background": #c5c5c5,
+  "map-html-fore":
+    darken(
+      $color: #706f6f,
+      $amount: 10%,
+    ),
+  "map-html": #ffffff,
+  "map-main-background": #ffffff,
+  "map-main-fore":
+    darken(
+      $color: #706f6f,
+      $amount: 10%,
+    ),
+  "map-main": #ffffff,
+  "map-white": #ffffff,
+);
+
+@function map-color($color) {
+  @return map-get($map-colors, $color);
+}
+
+// Social Media
+// ==========================================================================
+
+$social-media-colors: (
+  "facebook": #3b5998,
+  "twitter": #00aced,
+  "linkedin": #0077b5,
+  "youtube": #cd201f,
+  "instagram": #e4405f,
+  "github": #333,
+);
+
+@function msocial-media-color($socialcolor) {
+  @return map-get($social-media-colors, $socialcolor);
+}
+
+// ==========================================================================
+// Measures
+// ==========================================================================
+
+$global-max-width-raw: 1944;
+$global-max-width: rem($global-max-width-raw);
+
+$global-font-size-smaller: rem(10);
+$global-font-size-small: rem(12);
+$global-font-size-medium: rem(16);
+$global-font-size-large: rem(20);
+$global-font-size-larger: rem(26);
+
+$global-font-weight-lighter: 100;
+$global-font-weight-light: 300;
+$global-font-weight-normal: 500;
+$global-font-weight-bold: 700;
+$global-font-weight-bolder: 900;
+
+$global-line-height-smaller: 0.5;
+$global-line-height-small: 1;
+$global-line-height-medium: 1.5;
+$global-line-height-large: 2;
+$global-line-height-larger: 2.5;
+
+$global-radius: rem(5);
+$global-module-size: rem(50);
+$global-width-header: ($global-module-size * 5);
+$global-width-header-mobile: ($global-module-size * 3);
+$global-height-header: ($global-module-size * 1.1);
+
+// ==========================================================================
+// Transitions
+// ==========================================================================
+
+$transition-duration: 305ms;
+$transition-duration-complex: 385ms;
+$transition-duration-entrance: 235ms;
+$transition-duration-exit: 205ms;
+$transition-duration-fast: 150ms;
+
+$transition-daley-middle: 500ms;
+$transition-daley-none: 0ms;
+
+$transition-function-ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$transition-function-ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$transition-function-ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$transition-function-ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$transition-function-ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$transition-function-ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$transition-function-elastic: cubic-bezier(0.175, 0.885, 0.41, 1.46);
+
+$transition-function-padding-link: padding 450ms cubic-bezier(0.05, 1, 0.8, 1)
+  0ms;
+$transition-function-transform-link: transform 337.5ms
+  cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+// Sticky
+$transition-function-header: 450ms ease-in;
+// Menu mobile
+$transition-function-header-mobile: 225ms ease-in;
+// Link
+$transition-function-line: all 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+$transition-function-line-main: padding-bottom 450ms
+    cubic-bezier(0.05, 1, 0.8, 1),
+  opacity 450ms cubic-bezier(0.05, 1, 0.8, 1);
+
+// ==========================================================================
+// Others
+// ==========================================================================
+
+$z-indexes: (
+  "above": 500,
+  "modal": 400,
+  "overlay": 300,
+  "dropdown": 200,
+  "default": 1,
+  "below": -1,
+);
+
+@function z-index($layer) {
+  @return map-get($z-indexes, $layer);
+}
