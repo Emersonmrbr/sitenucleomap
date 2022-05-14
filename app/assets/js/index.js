@@ -7,77 +7,78 @@ const $openMenu = document.querySelectorAll(".js-open-menu");
 const $menuItens = document.querySelectorAll(".js-menu-item");
 const $stickerLag = document.querySelector(".js-sticky__lag");
 const $stickers = document.querySelectorAll(".js-sticky");
-var $dataMenu = document.querySelectorAll("[data-menu]");
+let $dataMenu = document.querySelectorAll("[data-menu]");
 console.log($dataMenu);
-var buttonItem;
-var menuMobileOpen;
-var menuOpen;
-var statusSticky;
+let buttonItem;
+let menuMobileOpen;
+let menuOpen;
+let statusSticky;
 
 // stick header
 window.onscroll = function () {
-  headerSticky();
+	headerSticky();
 };
 function headerSticky() {
-  if (window.pageYOffset > $header.offsetTop && statusSticky != "collapsed") {
-    collapse();
-  } else if (
-    window.pageYOffset <= $header.offsetTop &&
-    statusSticky != "expanded"
-  ) {
-    expand();
-  }
-}
-function collapse() {
-  $stickers.forEach(($sticky) => {
-    $sticky.classList.add("has-sticker");
-  });
-  $stickerLag.style.transition = "350ms ease-in 0ms";
-  statusSticky = "collapsed";
-}
-function expand() {
-  $stickers.forEach(($sticky) => {
-    $sticky.classList.remove("has-sticker");
-  });
-  $stickerLag.style.transition = "450ms ease-in 350ms";
-  statusSticky = "expanded";
+	if (window.pageYOffset > $header.offsetTop && statusSticky != "collapsed") {
+		collapse();
+	} else if (window.pageYOffset <= $header.offsetTop && statusSticky != "expanded") {
+		expand();
+	}
 }
 
+// function collapse() {
+// 	$stickers.forEach(($sticky) => {
+// 		$sticky.classList.add("has-sticker");
+// 	});
+// 	$stickerLag.style.transition = "350ms ease-in 0ms";
+// 	statusSticky = "collapsed";
+// }
+
+// function expand() {
+// 	$stickers.forEach(($sticky) => {
+// 		$sticky.classList.remove("has-sticker");
+// 	});
+// 	$stickerLag.style.transition = "450ms ease-in 350ms";
+// 	statusSticky = "expanded";
+// }
+
 // open menu
-function menu(e) {
-  openMenu(e);
-  markAsMenuActive(e);
-}
-function openMenu(el) {
-  $menuItens.forEach(($menuItem) => {
-    if ($menuItem.classList.value.includes(el) && menuOpen != true) {
-      collapse();
-      $flyoutMenu.classList.toggle("is-open");
-      $menuItem.classList.toggle("is-hidden");
-      menuOpen = true;
-      console.log(el);
-    } else if (menuOpen == true) {
-      $menuItem.classList.add("is-hidden");
-      headerSticky();
-    }
-  });
-}
-function markAsMenuActive(el) {}
+// function menu(e) {
+// 	openMenu(e);
+// 	markAsMenuActive(e);
+// }
+
+// function openMenu(el) {
+// 	$menuItens.forEach(($menuItem) => {
+// 		if ($menuItem.classList.value.includes(el) && menuOpen != true) {
+// 			collapse();
+// 			$flyoutMenu.classList.toggle("is-open");
+// 			$menuItem.classList.toggle("is-hidden");
+// 			menuOpen = true;
+// 			console.log(el);
+// 		} else if (menuOpen == true) {
+// 			$menuItem.classList.add("is-hidden");
+// 			headerSticky();
+// 		}
+// 	});
+// }
+
+// function markAsMenuActive(el) {}
 
 // Animação botão menu
 function openMobileMenu() {
-  if (menuMobileOpen == true) {
-    $openMenu.forEach(($item) => {
-      $item.classList.remove("is-open");
-    });
-    menuMobileOpen = false;
-  } else {
-    $openMenu.forEach(($item) => {
-      $item.classList.add("is-open");
-      openMenu();
-    });
-    menuMobileOpen = true;
-  }
+	if (menuMobileOpen == true) {
+		$openMenu.forEach(($item) => {
+			$item.classList.remove("is-open");
+		});
+		menuMobileOpen = false;
+	} else {
+		$openMenu.forEach(($item) => {
+			$item.classList.add("is-open");
+			openMenu();
+		});
+		menuMobileOpen = true;
+	}
 }
 
 // footer
@@ -91,9 +92,9 @@ function openMobileMenu() {
 // const elementUlMenu2 = elementNavMenu2.children[0];
 // const heightNav1 = elementUlMenu1.clientHeight;
 // const heightNav2 = elementUlMenu2.clientHeight;
-// var pos1 = elementDivMenu1.offsetTop;
-// var pos2 = elementDivMenu2.offsetTop;
-// var footerMobile;
+// let pos1 = elementDivMenu1.offsetTop;
+// let pos2 = elementDivMenu2.offsetTop;
+// let footerMobile;
 
 // function footerNav1() {
 //   if (footerMobile === "nav1Open") {
@@ -159,13 +160,13 @@ function openMobileMenu() {
 
 // maps
 function myMap() {
-  var mapCanvas = document.getElementById("Mapa");
-  var myCenter = new google.maps.LatLng(-25.4979, -49.31375);
-  var mapOptions = { center: myCenter, zoom: 17 };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({
-    position: myCenter,
-    icon: "../_imagens/NucleoMAP_Pin_mapa.png",
-  });
-  marker.setMap(map);
+	let mapCanvas = document.getElementById("Mapa");
+	let myCenter = new google.maps.LatLng(-25.4979, -49.31375);
+	let mapOptions = { center: myCenter, zoom: 17 };
+	let map = new google.maps.Map(mapCanvas, mapOptions);
+	let marker = new google.maps.Marker({
+		position: myCenter,
+		icon: "../_imagens/NucleoMAP_Pin_mapa.png",
+	});
+	marker.setMap(map);
 }
