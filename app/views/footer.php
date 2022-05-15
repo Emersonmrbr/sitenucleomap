@@ -62,7 +62,9 @@
    </a>
   </li>
  </ul>
- <p class="c-copyright">Copyright &copy; 2021 Núcleo MAP. Todos os direitos reservados.</p>
+ <p class="c-copyright">
+   Copyright &copy; <?php echo date("Y") ?> NÚCLEO MAP. Todos os direitos reservados.
+  </p>
  <!-- <section class="c-line-footer">
   <svg class="c-footer-line__full">
    <g class="c-footer-line__colored">

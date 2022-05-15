@@ -1,17 +1,11 @@
 const $header = document.querySelector(".js-header");
-const $menu = document.querySelector(".js-menu");
-const $flyoutMenu = document.querySelector(".js-menu-flyout");
-const flyoutMenuItem = "js-flyout";
-const $menuFlyout = document.querySelectorAll(`.${flyoutMenuItem}`);
 const $openMenu = document.querySelectorAll(".js-open-menu");
 const $menuItens = document.querySelectorAll(".js-menu-item");
 const $stickerLag = document.querySelector(".js-sticky__lag");
 const $stickers = document.querySelectorAll(".js-sticky");
 let $dataMenu = document.querySelectorAll("[data-menu]");
-console.log($dataMenu);
-let buttonItem;
 let menuMobileOpen;
-let menuOpen;
+let isOpened;
 let isCollapsed;
 
 // stick header
@@ -32,6 +26,12 @@ window.onscroll = function () {
 };
 
 // open menu
+function menu($itenMenu) {
+	$menuItens.forEach((el) => {
+		el.classList.remove("is-open");
+	});
+	console.log("js-" + $itenMenu);
+}
 // function menu(e) {
 // 	openMenu(e);
 // 	markAsMenuActive(e);

@@ -1,10 +1,3 @@
-<!--
-=======================
-COMEÇO DO CORPO DO SITE
-
-Todo o conteudo do corpo do site se encotra nessa seção.
-=======================
--->
 <h1>Localização</h1>
 <p></p>
 <div id="idMap" class="clMap"></div>
@@ -15,9 +8,3 @@ Todo o conteudo do corpo do site se encotra nessa seção.
     <p></p>
     <p>Fone: +55 992 749 270 </p>
 </article>
-
-<!--
-=======================
-FINAL DO CORPO DO SITE
-=======================
--->
