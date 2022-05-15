@@ -124,7 +124,7 @@ $itenNav;
   </li>
  </ul>
 </nav>
-<nav class="c-menu-flyout js-menu-flyout">
+<nav class="c-menu-flyout js-menu-flyout js-menu-item">
  <ul class="c-menu-flyout__content is-hidden js-menu-item js-products" data-menu="products">
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=seriePRNU">Série PRN</a>

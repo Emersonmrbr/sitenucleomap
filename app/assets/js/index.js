@@ -27,10 +27,14 @@ window.onscroll = function () {
 
 // open menu
 function menu($itenMenu) {
-	$menuItens.forEach((el) => {
-		el.classList.remove("is-open");
+	let workClass = ".js-" + $itenMenu;
+	$menuItens.forEach((menu) => {
+		menu.classList.remove("is-open");
+		document.querySelector(".js-products").classList.add("is-open");
 	});
 	console.log("js-" + $itenMenu);
+	console.log($itenMenu);
+	console.log(workClass);
 }
 // function menu(e) {
 // 	openMenu(e);
