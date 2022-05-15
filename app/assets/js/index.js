@@ -12,35 +12,24 @@ console.log($dataMenu);
 let buttonItem;
 let menuMobileOpen;
 let menuOpen;
-let statusSticky;
+let isCollapsed;
 
 // stick header
 window.onscroll = function () {
-	headerSticky();
-};
-function headerSticky() {
-	if (window.pageYOffset > $header.offsetTop && statusSticky != "collapsed") {
-		collapse();
-	} else if (window.pageYOffset <= $header.offsetTop && statusSticky != "expanded") {
-		expand();
+	if (window.pageYOffset > $header.offsetTop && isCollapsed !== true) {
+		$stickers.forEach(($sticky) => {
+			$sticky.classList.add("has-sticker");
+		});
+		$stickerLag.style.transition = "350ms ease-in 0ms";
+		isCollapsed = true;
+	} else if (window.pageYOffset <= $header.offsetTop && isCollapsed !== false) {
+		$stickers.forEach(($sticky) => {
+			$sticky.classList.remove("has-sticker");
+		});
+		$stickerLag.style.transition = "450ms ease-in 350ms";
+		isCollapsed = false;
 	}
-}
-
-// function collapse() {
-// 	$stickers.forEach(($sticky) => {
-// 		$sticky.classList.add("has-sticker");
-// 	});
-// 	$stickerLag.style.transition = "350ms ease-in 0ms";
-// 	statusSticky = "collapsed";
-// }
-
-// function expand() {
-// 	$stickers.forEach(($sticky) => {
-// 		$sticky.classList.remove("has-sticker");
-// 	});
-// 	$stickerLag.style.transition = "450ms ease-in 350ms";
-// 	statusSticky = "expanded";
-// }
+};
 
 // open menu
 // function menu(e) {
