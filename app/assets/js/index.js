@@ -1,40 +1,40 @@
-const $header = document.querySelector(".js-header");
-const $openMenu = document.querySelectorAll(".js-open-menu");
-const $menuItens = document.querySelectorAll(".js-menu-item");
-const $stickerLag = document.querySelector(".js-sticky__lag");
-const $stickers = document.querySelectorAll(".js-sticky");
-let $dataMenu = document.querySelectorAll("[data-menu]");
+const header = document.querySelector(".js-header");
+const openMenu = document.querySelectorAll(".js-open-menu");
+const menuItens = document.querySelectorAll(".js-menu-item");
+const stickerLag = document.querySelector(".js-sticky__lag");
+const stickers = document.querySelectorAll(".js-sticky");
+let dataMenu = document.querySelectorAll("[data-menu]");
 let menuMobileOpen;
 let isOpened;
 let isCollapsed;
 
 // stick header
 window.onscroll = function () {
-	if (window.pageYOffset > $header.offsetTop && isCollapsed !== true) {
-		$stickers.forEach(($sticky) => {
-			$sticky.classList.add("has-sticker");
+	if (window.pageYOffset > header.offsetTop && isCollapsed !== true) {
+		stickers.forEach(sticky => {
+			sticky.classList.add("has-sticker");
 		});
-		$stickerLag.style.transition = "350ms ease-in 0ms";
+		stickerLag.style.transition = "350ms ease-in 0ms";
 		isCollapsed = true;
-	} else if (window.pageYOffset <= $header.offsetTop && isCollapsed !== false) {
-		$stickers.forEach(($sticky) => {
-			$sticky.classList.remove("has-sticker");
+	} else if (window.pageYOffset <= header.offsetTop && isCollapsed !== false) {
+		stickers.forEach(sticky => {
+			sticky.classList.remove("has-sticker");
 		});
-		$stickerLag.style.transition = "450ms ease-in 350ms";
+		stickerLag.style.transition = "450ms ease-in 350ms";
 		isCollapsed = false;
 	}
 };
 
 // open menu
-function menu($itenMenu) {
-	let workClass = ".js-" + $itenMenu;
-	$menuItens.forEach((menu) => {
+
+function menu(itenMenu) {
+	let actualClass = ".js-" + itenMenu;
+	menuItens.forEach(menu => {
 		menu.classList.remove("is-open");
-		document.querySelector(".js-products").classList.add("is-open");
+		document.querySelector(actualClass).classList.add("is-open");
 	});
-	console.log("js-" + $itenMenu);
-	console.log($itenMenu);
-	console.log(workClass);
+	console.log(itenMenu);
+	console.log(actualClass);
 }
 // function menu(e) {
 // 	openMenu(e);
@@ -42,7 +42,7 @@ function menu($itenMenu) {
 // }
 
 // function openMenu(el) {
-// 	$menuItens.forEach(($menuItem) => {
+// 	menuItens.forEach(($menuItem) => {
 // 		if ($menuItem.classList.value.includes(el) && menuOpen != true) {
 // 			collapse();
 // 			$flyoutMenu.classList.toggle("is-open");
@@ -59,20 +59,20 @@ function menu($itenMenu) {
 // function markAsMenuActive(el) {}
 
 // Animação botão menu
-function openMobileMenu() {
-	if (menuMobileOpen == true) {
-		$openMenu.forEach(($item) => {
-			$item.classList.remove("is-open");
-		});
-		menuMobileOpen = false;
-	} else {
-		$openMenu.forEach(($item) => {
-			$item.classList.add("is-open");
-			openMenu();
-		});
-		menuMobileOpen = true;
-	}
-}
+// function openMobileMenu() {
+// 	if (menuMobileOpen == true) {
+// 		openMenu.forEach($item => {
+// 			$item.classList.remove("is-open");
+// 		});
+// 		menuMobileOpen = false;
+// 	} else {
+// 		openMenu.forEach($item => {
+// 			$item.classList.add("is-open");
+// 			openMenu();
+// 		});
+// 		menuMobileOpen = true;
+// 	}
+// }
 
 // footer
 // const elementDivMenu1 = document.getElementById("idNav1");
@@ -152,14 +152,14 @@ function openMobileMenu() {
 // }
 
 // maps
-function myMap() {
-	let mapCanvas = document.getElementById("Mapa");
-	let myCenter = new google.maps.LatLng(-25.4979, -49.31375);
-	let mapOptions = { center: myCenter, zoom: 17 };
-	let map = new google.maps.Map(mapCanvas, mapOptions);
-	let marker = new google.maps.Marker({
-		position: myCenter,
-		icon: "../_imagens/NucleoMAP_Pin_mapa.png",
-	});
-	marker.setMap(map);
-}
+// function myMap() {
+// 	let mapCanvas = document.getElementById("Mapa");
+// 	let myCenter = new google.maps.LatLng(-25.4979, -49.31375);
+// 	let mapOptions = { center: myCenter, zoom: 17 };
+// 	let map = new google.maps.Map(mapCanvas, mapOptions);
+// 	let marker = new google.maps.Marker({
+// 		position: myCenter,
+// 		icon: "../_imagens/NucleoMAP_Pin_mapa.png",
+// 	});
+// 	marker.setMap(map);
+// }

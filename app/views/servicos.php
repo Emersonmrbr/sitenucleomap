@@ -14,7 +14,7 @@
             <span></span>
         </section>
     </header>
-    <div class="clServiceIndustrialAutomation">
+    <!-- <div class="clServiceIndustrialAutomation">
         <a href="app/views/automacaoIndustrial.php" target="_self">
             <figure>
                 <img src="app/assets/image/imagem4.jpg" alt="Softaware Logix Designer"></img>
@@ -74,5 +74,5 @@
             </section>
             <span>Projeto elétrico</span>
         </a>
-    </div>
+    </div> -->
 </div>
