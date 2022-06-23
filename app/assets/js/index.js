@@ -1,26 +1,34 @@
 const header = document.querySelector(".js-header");
-const openMenu = document.querySelectorAll(".js-open-menu");
-const menuItens = document.querySelectorAll(".js-menu-item");
 const stickerLag = document.querySelector(".js-sticky__lag");
 const stickers = document.querySelectorAll(".js-sticky");
+const menuFlyout = document.querySelector(".js-menu-flyout");
+const menuItens = document.querySelectorAll(".js-menu-item");
 let dataMenu = document.querySelectorAll("[data-menu]");
 let menuMobileOpen;
 let isOpened;
 let isCollapsed;
+let classOpened;
 
+function menuCollap() {
+	stickers.forEach(sticky => {
+		sticky.classList.add("has-sticker");
+	});
+	stickerLag.style.transition = "350ms ease-in 0ms";
+}
+
+function menuExpand() {
+	stickers.forEach(sticky => {
+		sticky.classList.remove("has-sticker");
+	});
+	stickerLag.style.transition = "450ms ease-in 350ms";
+}
 // stick header
 window.onscroll = function () {
 	if (window.pageYOffset > header.offsetTop && isCollapsed !== true) {
-		stickers.forEach(sticky => {
-			sticky.classList.add("has-sticker");
-		});
-		stickerLag.style.transition = "350ms ease-in 0ms";
+		menuCollap();
 		isCollapsed = true;
 	} else if (window.pageYOffset <= header.offsetTop && isCollapsed !== false) {
-		stickers.forEach(sticky => {
-			sticky.classList.remove("has-sticker");
-		});
-		stickerLag.style.transition = "450ms ease-in 350ms";
+		menuExpand();
 		isCollapsed = false;
 	}
 };
@@ -29,12 +37,26 @@ window.onscroll = function () {
 
 function menu(itenMenu) {
 	let actualClass = ".js-" + itenMenu;
-	menuItens.forEach(menu => {
-		menu.classList.remove("is-open");
+	if (classOpened !== actualClass) {
+		menuItens.forEach(element => {
+			element.classList.add("is-hidden");
+		});
+		menuCollap();
+		menuFlyout.classList.add("is-open");
+		document.querySelector(actualClass).classList.remove("is-hidden");
 		document.querySelector(actualClass).classList.add("is-open");
-	});
-	console.log(itenMenu);
-	console.log(actualClass);
+		classOpened = actualClass;
+	} else {
+		menuItens.forEach(element => {
+			element.classList.add("is-hidden");
+		});
+		menuFlyout.classList.remove("is-open");
+		document.querySelector(actualClass).classList.remove("is-open");
+		document.querySelector(actualClass).classList.add("is-hidden");
+		if (isCollapsed !== true) {
+			menuExpand();
+		}
+	}
 }
 // function menu(e) {
 // 	openMenu(e);

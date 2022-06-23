@@ -1,9 +1,4 @@
 <?php
-// ===================
-// COMEÇO DO CABEÇALHO
-// ===================
-
-// Todo o conteudo do cabeçalho se encotra nessa seção.
 $itenNav;
 ?>
 <h1 style="display: none;">Núcleo MAP</h1>
@@ -124,7 +119,7 @@ $itenNav;
   </li>
  </ul>
 </nav>
-<nav class="c-menu-flyout js-menu-flyout js-menu-item">
+<nav class="c-menu-flyout js-menu-flyout">
  <ul class="c-menu-flyout__content is-hidden js-menu-item js-products" data-menu="products">
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=seriePRNU">Série PRN</a>
