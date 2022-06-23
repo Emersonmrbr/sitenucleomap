@@ -9,6 +9,7 @@ let isOpened;
 let isCollapsed;
 let classOpened;
 
+// Collap menu
 function menuCollap() {
 	stickers.forEach(sticky => {
 		sticky.classList.add("has-sticker");
@@ -16,6 +17,7 @@ function menuCollap() {
 	stickerLag.style.transition = "350ms ease-in 0ms";
 }
 
+// Expand menu
 function menuExpand() {
 	stickers.forEach(sticky => {
 		sticky.classList.remove("has-sticker");
@@ -27,14 +29,14 @@ window.onscroll = function () {
 	if (window.pageYOffset > header.offsetTop && isCollapsed !== true) {
 		menuCollap();
 		isCollapsed = true;
-	} else if (window.pageYOffset <= header.offsetTop && isCollapsed !== false) {
+	} else if (window.pageYOffset <= header.offsetTop && isCollapsed !== false && isOpened !== true) {
 		menuExpand();
 		isCollapsed = false;
 	}
+	console.log(isCollapsed);
 };
 
-// open menu
-
+// Open menu
 function menu(itenMenu) {
 	let actualClass = ".js-" + itenMenu;
 	if (classOpened !== actualClass) {
@@ -46,6 +48,7 @@ function menu(itenMenu) {
 		document.querySelector(actualClass).classList.remove("is-hidden");
 		document.querySelector(actualClass).classList.add("is-open");
 		classOpened = actualClass;
+		isOpened = true;
 	} else {
 		menuItens.forEach(element => {
 			element.classList.add("is-hidden");
@@ -53,11 +56,19 @@ function menu(itenMenu) {
 		menuFlyout.classList.remove("is-open");
 		document.querySelector(actualClass).classList.remove("is-open");
 		document.querySelector(actualClass).classList.add("is-hidden");
-		if (isCollapsed !== true) {
+		isOpened = false;
+		classOpened = "empty";
+		if (window.pageYOffset > header.offsetTop) {
+			menuCollap();
+			isCollapsed = true;
+		} else if (window.pageYOffset <= header.offsetTop) {
 			menuExpand();
+			isCollapsed = false;
 		}
 	}
+	console.log(isOpened);
 }
+
 // function menu(e) {
 // 	openMenu(e);
 // 	markAsMenuActive(e);
