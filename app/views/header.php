@@ -161,13 +161,30 @@ $itenNav;
    <a class="c-menu-flyout__link" href="?pagina=localizacao">Localização</a>
   </li>
  </ul>
+
+ <div class="c-menu-flyout__close is-hidden  js-button-close">
+ <button class="c-menu-flyout__button" onclick="closeMenu()">
+  <svg class="c-menu-flyout__icon"
+    viewBox="0 0 16.933333 16.933333">
+   <g>
+     <path class="c-menu-flyout__stroke"
+        d="M 0,0 16.933333,16.933333"/>
+     <path class="c-menu-flyout__stroke"
+        d="M 0,16.933333 16.933333,0"/>
+   </g>
+ </svg>
+ </button>
+ </div>
+
 </nav>
+
 
 <button class="c-button-menu" onclick="openMobileMenu()">
  <div class="c-button-nav__slice-up  js-open-menu"></div>
  <div class="c-button-nav__slice-middle  js-open-menu"></div>
  <div class="c-button-nav__slice-down  js-open-menu"></div>
 </button>
+
 
 <section class="c-line-header js-sticky">
  <svg class="c-line-header__full js-sticky js-sticky__lag">

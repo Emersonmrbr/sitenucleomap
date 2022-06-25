@@ -4,11 +4,6 @@
 
 <head>
  <?php
-    // ======================
-    // CONFIGURAÇÕES INICIAIS
-    // ======================
-
-    // Todas as configurações iniciais para funcionamento do site estão nas linhas a seguir.
 
     //     Site Núcleo MAP
     // Autor: Emerson Martins Brito
@@ -68,8 +63,8 @@
                     break;
                 case 'localizacao':
                     include 'app/views/localizacao.php';
-                    echo "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDwE3tZRrfF_ndldkvPdg3AYXKbZYtD1V0&callback=myMap'>
-</script>";
+//                     echo "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=initMap'>
+// </script>";
                     break;
                 default:
                     include 'app/views/home.php';
@@ -110,6 +105,7 @@
   </section>
  </div>
  <script src="app/assets/js/index.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=containerMaps"async defer></script>
 </body>
 
 </html>

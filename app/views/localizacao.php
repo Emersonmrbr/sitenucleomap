@@ -1,7 +1,7 @@
 <h1>Localização</h1>
 <p></p>
-<div id="idMap" class="clMap"></div>
-<article>
+<div class="c-location__maps js-maps"></div>
+<article class="c-location__address">
     <h3>Núcleo MAP Máquinas Automação e Programação</h3>
     <p>Rua Senador Accioly filho, 661</p>
     <p>81310-000, Curitiba - PR Brasil</p>

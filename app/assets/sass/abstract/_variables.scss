@@ -11,92 +11,92 @@
 // ==========================================================================
 
 $webfatorial-colors: (
-  "webfatorial-primary": #157bad,
-  "webfatorial-secondary": #06618c,
-  "webfatorial-success": #3cc368,
-  "webfatorial-warning": #f5a600,
-  "webfatorial-error": #ec5840,
-  "webfatorial-gray-1": #363636,
-  "webfatorial-gray-2": #4f4f4f,
-  "webfatorial-gray-3": #828282,
-  "webfatorial-gray-4": #bdbdbd,
-  "webfatorial-gray-5": #e0e0e0,
-  "webfatorial-white": #fcfcfc,
+	"webfatorial-primary": #157bad,
+	"webfatorial-secondary": #06618c,
+	"webfatorial-success": #3cc368,
+	"webfatorial-warning": #f5a600,
+	"webfatorial-error": #ec5840,
+	"webfatorial-gray-1": #363636,
+	"webfatorial-gray-2": #4f4f4f,
+	"webfatorial-gray-3": #828282,
+	"webfatorial-gray-4": #bdbdbd,
+	"webfatorial-gray-5": #e0e0e0,
+	"webfatorial-white": #fcfcfc,
 );
 
 @function webfatorial-color($webcolor) {
-  @return map-get($webfatorial-colors, $webcolor);
+	@return map-get($webfatorial-colors, $webcolor);
 }
 
 // Núcleo MAP colors
 // ==========================================================================
 $map-colors: (
-  "map-background1": #ffffff,
-  "map-background2": #c5c5c5,
-  "map-background3":
-    lighten(
-      $color: #6d6e71,
-      $amount: 10%,
-    ),
-  "map-background4": #6d6e71,
-  "map-background5": #000000,
-  "map-black": #000000,
-  "map-blue": #36a9e1,
-  "map-body-background": #ffffff,
-  "map-body-fore": #000000,
-  "map-body": #ffffff,
-  "map-footer-background":
-    darken(
-      $color: #706f6f,
-      $amount: 10%,
-    ),
-  "map-footer-fore": #ffffff,
-  "map-footer1": #000000,
-  "map-fore2": #ffffff,
-  "map-grey1": #706f6f,
-  "map-grey2": #9d9d9c,
-  "map-header-background": #ffffff,
-  "map-header-fore":
-    darken(
-      $color: #706f6f,
-      $amount: 10%,
-    ),
-  "map-header": #ffffff,
-  "map-html-background": #c5c5c5,
-  "map-html-fore":
-    darken(
-      $color: #706f6f,
-      $amount: 10%,
-    ),
-  "map-html": #ffffff,
-  "map-main-background": #ffffff,
-  "map-main-fore":
-    darken(
-      $color: #706f6f,
-      $amount: 10%,
-    ),
-  "map-main": #ffffff,
-  "map-white": #ffffff,
+	"map-background1": #ffffff,
+	"map-background2": #c5c5c5,
+	"map-background3":
+		lighten(
+			$color: #6d6e71,
+			$amount: 10%,
+		),
+	"map-background4": #6d6e71,
+	"map-background5": #000000,
+	"map-black": #000000,
+	"map-blue": #36a9e1,
+	"map-body-background": #ffffff,
+	"map-body-fore": #000000,
+	"map-body": #ffffff,
+	"map-footer-background":
+		darken(
+			$color: #706f6f,
+			$amount: 10%,
+		),
+	"map-footer-fore": #ffffff,
+	"map-footer1": #000000,
+	"map-fore2": #ffffff,
+	"map-grey1": #706f6f,
+	"map-grey2": #9d9d9c,
+	"map-header-background": #ffffff,
+	"map-header-fore":
+		darken(
+			$color: #706f6f,
+			$amount: 10%,
+		),
+	"map-header": #ffffff,
+	"map-html-background": #c5c5c5,
+	"map-html-fore":
+		darken(
+			$color: #706f6f,
+			$amount: 10%,
+		),
+	"map-html": #ffffff,
+	"map-main-background": #ffffff,
+	"map-main-fore":
+		darken(
+			$color: #706f6f,
+			$amount: 10%,
+		),
+	"map-main": #ffffff,
+	"map-white": #ffffff,
 );
 
 @function map-color($color) {
-  @return map-get($map-colors, $color);
+	@return map-get($map-colors, $color);
 }
 
 // Social Media
 // ==========================================================================
 
 $social-media-colors: (
-  "facebook": #3b5998,
-  "twitter": #00aced,
-  "linkedin": #0077b5,
-  "youtube": #cd201f,
-  "instagram": #e4405f,
-  "github": #333,
+	"facebook": #3b5998,
+	"twitter": #00aced,
+	"linkedin": #0077b5,
+	"youtube": #cd201f,
+	"instagram": #e4405f,
+	"github": #333,
 );
 
 @function msocial-media-color($socialcolor) {
-  @return map-get($social-media-colors, $socialcolor);
+	@return map-get($social-media-colors, $socialcolor);
 }
 
 // ==========================================================================
@@ -130,6 +130,13 @@ $global-width-header: ($global-module-size * 5);
 $global-width-header-mobile: ($global-module-size * 3);
 $global-height-header: ($global-module-size * 1.1);
 
+$slice-height-big: ($global-module-size / 13);
+$slice-height: ($global-module-size / 20);
+$slice-height-small: ($global-module-size / 75);
+$slice-margin: ($global-module-size / 10);
+$slice-translate: $slice-height-big / 2;
+$slice-width: ($global-module-size / 1.5);
+
 // ==========================================================================
 // Transitions
 // ==========================================================================
@@ -151,33 +158,29 @@ $transition-function-ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $transition-function-ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
 $transition-function-elastic: cubic-bezier(0.175, 0.885, 0.41, 1.46);
 
-$transition-function-padding-link: padding 450ms cubic-bezier(0.05, 1, 0.8, 1)
-  0ms;
-$transition-function-transform-link: transform 337.5ms
-  cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+$transition-function-padding-link: padding 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
+$transition-function-transform-link: transform 337.5ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
 // Sticky
 $transition-function-header: 450ms ease-in;
 // Menu mobile
 $transition-function-header-mobile: 225ms ease-in;
 // Link
 $transition-function-line: all 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
-$transition-function-line-main: padding-bottom 450ms
-    cubic-bezier(0.05, 1, 0.8, 1),
-  opacity 450ms cubic-bezier(0.05, 1, 0.8, 1);
+$transition-function-line-main: padding-bottom 450ms cubic-bezier(0.05, 1, 0.8, 1), opacity 450ms cubic-bezier(0.05, 1, 0.8, 1);
 
 // ==========================================================================
 // Others
 // ==========================================================================
 
 $z-indexes: (
-  "above": 500,
-  "modal": 400,
-  "overlay": 300,
-  "dropdown": 200,
-  "default": 1,
-  "below": -1,
+	"above": 500,
+	"modal": 400,
+	"overlay": 300,
+	"dropdown": 200,
+	"default": 1,
+	"below": -1,
 );
 
 @function z-index($layer) {
-  @return map-get($z-indexes, $layer);
+	@return map-get($z-indexes, $layer);
 }

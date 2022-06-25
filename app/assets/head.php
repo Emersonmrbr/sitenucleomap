@@ -19,3 +19,4 @@
 
 <link rel="stylesheet" type="text/css" href="app/assets/css/style.css" />
 <link rel="icon" type="image/svg+xml" href="app/assets/image/faviconNucleoMAP.svg" />
+<script src="https://kit.fontawesome.com/ec63449ac4.js" crossorigin="anonymous"></script>

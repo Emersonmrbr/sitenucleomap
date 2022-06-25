@@ -1,10 +1,3 @@
-<!--
-=======================
-COMEÇO DO BREADCRUMB
-
-Todo o conteudo do breadcrumb do site se encotra nessa seção.
-=======================
--->
 
 <p class="clBreadcrumb">Home > Empresa > Parceiros</p>
 

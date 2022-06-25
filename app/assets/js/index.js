@@ -3,6 +3,7 @@ const stickerLag = document.querySelector(".js-sticky__lag");
 const stickers = document.querySelectorAll(".js-sticky");
 const menuFlyout = document.querySelector(".js-menu-flyout");
 const menuItens = document.querySelectorAll(".js-menu-item");
+const buttonClose = document.querySelector(".js-button-close");
 let dataMenu = document.querySelectorAll("[data-menu]");
 let menuMobileOpen;
 let isOpened;
@@ -33,7 +34,6 @@ window.onscroll = function () {
 		menuExpand();
 		isCollapsed = false;
 	}
-	console.log(isCollapsed);
 };
 
 // Open menu
@@ -45,6 +45,8 @@ function menu(itenMenu) {
 		});
 		menuCollap();
 		menuFlyout.classList.add("is-open");
+		buttonClose.classList.remove("is-hidden");
+		buttonClose.classList.add("is-open");
 		document.querySelector(actualClass).classList.remove("is-hidden");
 		document.querySelector(actualClass).classList.add("is-open");
 		classOpened = actualClass;
@@ -52,10 +54,13 @@ function menu(itenMenu) {
 	} else {
 		menuItens.forEach(element => {
 			element.classList.add("is-hidden");
+			element.classList.remove("is-open");
 		});
 		menuFlyout.classList.remove("is-open");
-		document.querySelector(actualClass).classList.remove("is-open");
-		document.querySelector(actualClass).classList.add("is-hidden");
+		buttonClose.classList.add("is-hidden");
+		buttonClose.classList.remove("is-open");
+		// document.querySelector(actualClass).classList.remove("is-open");
+		// document.querySelector(actualClass).classList.add("is-hidden");
 		isOpened = false;
 		classOpened = "empty";
 		if (window.pageYOffset > header.offsetTop) {
@@ -66,7 +71,37 @@ function menu(itenMenu) {
 			isCollapsed = false;
 		}
 	}
-	console.log(isOpened);
+}
+
+function closeMenu() {
+	menuItens.forEach(element => {
+		element.classList.add("is-hidden");
+		element.classList.remove("is-open");
+	});
+	menuFlyout.classList.remove("is-open");
+	buttonClose.classList.add("is-hidden");
+	buttonClose.classList.remove("is-open");
+	isOpened = false;
+	classOpened = "empty";
+	if (window.pageYOffset > header.offsetTop) {
+		menuCollap();
+		isCollapsed = true;
+	} else if (window.pageYOffset <= header.offsetTop) {
+		menuExpand();
+		isCollapsed = false;
+	}
+}
+
+// maps;
+function containerMaps() {
+	let mapCanvas = document.querySelector(".js-maps");
+	let mapCenter = new google.maps.LatLng(-25.4979, -49.31375);
+	let mapIcon = "app/assets/image/NucleoMAP_Pin_mapa.png";
+	let mapOptions = { center: mapCenter, zoom: 17 };
+	let map = new google.maps.Map(mapCanvas, mapOptions);
+	let marker = new google.maps.Marker({ position: mapCenter, icon: mapIcon });
+	marker.setMap(map);
+	console.log(mapCanvas);
 }
 
 // function menu(e) {
@@ -182,17 +217,4 @@ function menu(itenMenu) {
 //     }
 //     window.scroll(newX, newY);
 //   }, 1000 / 60); // 60 fps
-// }
-
-// maps
-// function myMap() {
-// 	let mapCanvas = document.getElementById("Mapa");
-// 	let myCenter = new google.maps.LatLng(-25.4979, -49.31375);
-// 	let mapOptions = { center: myCenter, zoom: 17 };
-// 	let map = new google.maps.Map(mapCanvas, mapOptions);
-// 	let marker = new google.maps.Marker({
-// 		position: myCenter,
-// 		icon: "../_imagens/NucleoMAP_Pin_mapa.png",
-// 	});
-// 	marker.setMap(map);
 // }
