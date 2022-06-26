@@ -4,7 +4,7 @@ $componente-name: "l-header";
 	background-color: map-color(map-header);
 	color: map-color(map-header-fore);
 	display: grid;
-	grid: "top top" auto "logo button" auto "menu-flyout menu-flyout" auto "line line" auto / auto 1fr;
+	grid: "top top" auto "logo button-mobile" auto "menu-flyout-1 menu-flyout-2" auto "line line" auto / 1fr 1fr;
 	height: auto;
 	justify-items: center;
 	margin: 0 auto;
@@ -21,7 +21,7 @@ $componente-name: "l-header";
 		padding: ($global-module-size / 4) ($global-module-size/2);
 	}
 	@include breakpoint(1280-up) {
-		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ auto 1fr;
+		grid: "top top" auto "logo menu" auto "menu-flyout-1 menu-flyout-2" auto "button-close button-close" auto "line line" auto/ auto 1fr;
 		padding: 0 ($global-module-size * 1.5);
 		&.has-sticker {
 			padding: ($global-module-size/2.5) ($global-module-size * 1.5) 0;

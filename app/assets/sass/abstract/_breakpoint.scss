@@ -111,7 +111,7 @@
 			@content;
 		}
 	} @else {
-		@media (min-width: ($point / 16) + "em") {
+		@media (min-width: '#{($point / 16)}em') {
 			@content;
 		}
 	}

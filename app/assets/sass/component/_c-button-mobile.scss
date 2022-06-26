@@ -1,4 +1,4 @@
-$componente-name: "c-button-menu";
+$componente-name: "c-button-mobile";
 
 .#{$componente-name} {
 	align-self: center;
@@ -6,14 +6,14 @@ $componente-name: "c-button-menu";
 	border: none;
 	display: block;
 	cursor: pointer;
-	grid-column: 4/5;
+	grid-area: button-mobile;
 	height: auto;
 	justify-self: flex-end;
-	padding: 0 ($global-module-size / 2.5);
+	padding: ($global-module-size / 2.5);
 	transition: $transition-function-header;
 	width: auto;
 
-	@include breakpoint(640-up) {
+	@include breakpoint(1280-up) {
 		display: none;
 	}
 	&__slice-up {

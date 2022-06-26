@@ -9,8 +9,6 @@
 html {
   line-height: 1.15;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
   background-color: #9d9d9c;
 }
 
@@ -457,7 +455,7 @@ body {
   color: #565656;
   display: -ms-grid;
   display: grid;
-  grid: "top top" auto "logo button" auto "menu-flyout menu-flyout" auto "line line" auto / auto 1fr;
+  grid: "top top" auto "logo button-mobile" auto "menu-flyout-1 menu-flyout-2" auto "line line" auto / 1fr 1fr;
   height: auto;
   justify-items: center;
   margin: 0 auto;
@@ -480,7 +478,7 @@ body {
 
 @media (min-width: 80em) {
   .l-header {
-    grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ auto 1fr;
+    grid: "top top" auto "logo menu" auto "menu-flyout-1 menu-flyout-2" auto "button-close button-close" auto "line line" auto/ auto 1fr;
     padding: 0 4.6875rem;
   }
   .l-header.has-sticker {
@@ -529,7 +527,7 @@ body {
   }
 }
 
-.c-button-menu {
+.c-button-mobile {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -537,24 +535,22 @@ body {
   border: none;
   display: block;
   cursor: pointer;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
+  grid-area: button-mobile;
   height: auto;
   justify-self: flex-end;
-  padding: 0 1.25rem;
+  padding: 1.25rem;
   -webkit-transition: 450ms ease-in;
   transition: 450ms ease-in;
   width: auto;
 }
 
-@media (min-width: 40em) {
-  .c-button-menu {
+@media (min-width: 80em) {
+  .c-button-mobile {
     display: none;
   }
 }
 
-.c-button-menu__slice-up {
+.c-button-mobile__slice-up {
   background-color: #000000;
   height: 0.24038rem;
   padding: 0;
@@ -563,14 +559,14 @@ body {
   width: 2.08333rem;
 }
 
-.c-button-menu__slice-up.is-open {
+.c-button-mobile__slice-up.is-open {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: translatey(0.12019rem) rotate(45deg);
           transform: translatey(0.12019rem) rotate(45deg);
 }
 
-.c-button-menu__slice-middle {
+.c-button-mobile__slice-middle {
   background-color: #000000;
   height: 0.15625rem;
   margin: 0.3125rem 0;
@@ -584,7 +580,7 @@ body {
   width: 2.08333rem;
 }
 
-.c-button-menu__slice-middle.is-open {
+.c-button-mobile__slice-middle.is-open {
   height: 0;
   margin: 0;
   -webkit-transform-origin: 50% 50%;
@@ -594,7 +590,7 @@ body {
   width: 0;
 }
 
-.c-button-menu__slice-down {
+.c-button-mobile__slice-down {
   background-color: #000000;
   height: 0.24038rem;
   padding: 0;
@@ -603,7 +599,7 @@ body {
   width: 2.08333rem;
 }
 
-.c-button-menu__slice-down.is-open {
+.c-button-mobile__slice-down.is-open {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: translatey(-0.12019rem) rotate(-45deg);
@@ -1064,30 +1060,39 @@ body {
 }
 
 .c-menu-flyout {
-  grid-area: menu-flyout;
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  grid-area: menu-flyout-2;
   height: 0;
   margin: 0;
-  padding: 0;
-  width: 0;
   overflow: hidden;
-  z-index: 500;
+  padding: 0;
   -webkit-transition: 450ms ease-in;
   transition: 450ms ease-in;
+  width: 0;
+  z-index: 500;
 }
 
 .c-menu-flyout.is-open {
   height: auto;
+  padding: 3.125rem 0 6.25rem;
   -webkit-transition: 450ms ease-in;
   transition: 450ms ease-in;
   width: 100%;
-  padding: 3.125rem 0 6.25rem;
 }
 
-.c-menu-flyout__content {
-  width: 25rem;
-  margin: 0;
-  padding: 0.625rem 0 0 0;
+@media (min-width: 80em) {
+  .c-menu-flyout.is-open {
+    grid-area: menu-flyout-1;
+  }
+}
+
+@media (min-width: 80em) {
+  .c-menu-flyout__content {
+    width: 25rem;
+    margin: 0;
+    padding: 0.625rem 0 0 0;
+  }
 }
 
 .c-menu-flyout__item {
@@ -1225,13 +1230,16 @@ body {
 }
 
 .c-menu {
-  grid-area: menu;
-  height: 0;
+  grid-area: menu-flyout-1;
+  height: auto;
   overflow: visible;
-  width: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+}
+
+.c-menu.is-open {
+  height: auto;
+  overflow: visible;
+  width: 100%;
 }
 
 .c-menu.has-sticker {
@@ -1244,8 +1252,12 @@ body {
   .c-menu {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    grid-area: menu;
     height: auto;
     width: 100%;
   }

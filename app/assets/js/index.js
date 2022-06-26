@@ -4,6 +4,7 @@ const stickers = document.querySelectorAll(".js-sticky");
 const menuFlyout = document.querySelector(".js-menu-flyout");
 const menuItens = document.querySelectorAll(".js-menu-item");
 const buttonClose = document.querySelector(".js-button-close");
+const buttonMobile = document.querySelectorAll(".js-button-mobile");
 let dataMenu = document.querySelectorAll("[data-menu]");
 let menuMobileOpen;
 let isOpened;
@@ -37,7 +38,7 @@ window.onscroll = function () {
 };
 
 // Open menu
-function menu(itenMenu) {
+function openMenu(itenMenu) {
 	let actualClass = ".js-" + itenMenu;
 	if (classOpened !== actualClass) {
 		menuItens.forEach(element => {
@@ -59,8 +60,6 @@ function menu(itenMenu) {
 		menuFlyout.classList.remove("is-open");
 		buttonClose.classList.add("is-hidden");
 		buttonClose.classList.remove("is-open");
-		// document.querySelector(actualClass).classList.remove("is-open");
-		// document.querySelector(actualClass).classList.add("is-hidden");
 		isOpened = false;
 		classOpened = "empty";
 		if (window.pageYOffset > header.offsetTop) {
@@ -92,6 +91,23 @@ function closeMenu() {
 	}
 }
 
+// Animação botão menu
+function openMobileMenu() {
+	if (menuMobileOpen === true) {
+		buttonMobile.forEach(element => {
+			element.classList.remove("is-open");
+		});
+		// closeMenu();
+		menuMobileOpen = false;
+	} else {
+		buttonMobile.forEach(element => {
+			element.classList.add("is-open");
+		});
+		// openMenu();
+		menuMobileOpen = true;
+	}
+}
+
 // maps;
 function containerMaps() {
 	let mapCanvas = document.querySelector(".js-maps");
@@ -101,7 +117,6 @@ function containerMaps() {
 	let map = new google.maps.Map(mapCanvas, mapOptions);
 	let marker = new google.maps.Marker({ position: mapCenter, icon: mapIcon });
 	marker.setMap(map);
-	console.log(mapCanvas);
 }
 
 // function menu(e) {
@@ -116,7 +131,6 @@ function containerMaps() {
 // 			$flyoutMenu.classList.toggle("is-open");
 // 			$menuItem.classList.toggle("is-hidden");
 // 			menuOpen = true;
-// 			console.log(el);
 // 		} else if (menuOpen == true) {
 // 			$menuItem.classList.add("is-hidden");
 // 			headerSticky();
@@ -125,22 +139,6 @@ function containerMaps() {
 // }
 
 // function markAsMenuActive(el) {}
-
-// Animação botão menu
-// function openMobileMenu() {
-// 	if (menuMobileOpen == true) {
-// 		openMenu.forEach($item => {
-// 			$item.classList.remove("is-open");
-// 		});
-// 		menuMobileOpen = false;
-// 	} else {
-// 		openMenu.forEach($item => {
-// 			$item.classList.add("is-open");
-// 			openMenu();
-// 		});
-// 		menuMobileOpen = true;
-// 	}
-// }
 
 // footer
 // const elementDivMenu1 = document.getElementById("idNav1");

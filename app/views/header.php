@@ -106,16 +106,16 @@ $itenNav;
  </svg>
 </a>
 
-<nav class="c-menu js-sticky">
+<nav class="c-menu js-sticky js-menu-mobile">
  <ul class="c-menu__list js-menu">
-  <li class="c-menu_item">
-   <button class="c-link-frame c-link-skin js-flyout" onclick="menu('products')">produtos</button>
+  <li class="c-menu__item">
+   <button class="c-link-frame c-link-skin js-flyout" onclick="openMenu('products')">produtos</button>
   </li>
   <li class="c-menu_item">
-   <button class="c-link-frame c-link-skin js-flyout" onclick="menu('service')">serviços</button>
+   <button class="c-link-frame c-link-skin js-flyout" onclick="openMenu('service')">serviços</button>
   </li>
   <li class="c-menu_item">
-   <button class="c-link-frame c-link-skin js-flyout" onclick="menu('company')">empresa</button>
+   <button class="c-link-frame c-link-skin js-flyout" onclick="openMenu('company')">empresa</button>
   </li>
  </ul>
 </nav>
@@ -129,7 +129,7 @@ $itenNav;
   </li>
  </ul>
 
- <ul class="c-menu-flyout__content is-hidden  js-menu-item js-service" data-menu="service">
+ <ul class="c-menu-flyout__content is-hidden js-menu-item js-service" data-menu="service">
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=automacaoIndustrial">Automação industrial</a>
   </li>
@@ -147,7 +147,7 @@ $itenNav;
   </li>
  </ul>
 
- <ul class="c-menu-flyout__content is-hidden  js-menu-item js-company" data-menu="company">
+ <ul class="c-menu-flyout__content is-hidden js-menu-item js-company" data-menu="company">
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=sobreNos">Sobre nós</a>
   </li>
@@ -162,7 +162,7 @@ $itenNav;
   </li>
  </ul>
 
- <div class="c-menu-flyout__close is-hidden  js-button-close">
+ <div class="c-menu-flyout__close is-hidden js-button-close">
  <button class="c-menu-flyout__button" onclick="closeMenu()">
   <svg class="c-menu-flyout__icon"
     viewBox="0 0 16.933333 16.933333">
@@ -179,10 +179,10 @@ $itenNav;
 </nav>
 
 
-<button class="c-button-menu" onclick="openMobileMenu()">
- <div class="c-button-nav__slice-up  js-open-menu"></div>
- <div class="c-button-nav__slice-middle  js-open-menu"></div>
- <div class="c-button-nav__slice-down  js-open-menu"></div>
+<button class="c-button-mobile" onclick="openMobileMenu()">
+ <div class="c-button-mobile__slice-up  js-button-mobile"></div>
+ <div class="c-button-mobile__slice-middle  js-button-mobile"></div>
+ <div class="c-button-mobile__slice-down  js-button-mobile"></div>
 </button>
 
 

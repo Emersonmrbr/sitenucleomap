@@ -1,27 +1,31 @@
 $componente-name: "c-menu-flyout";
 
 .#{$componente-name} {
-	grid-area: menu-flyout;
-	display: block;
+	display: grid;
+	grid-area: menu-flyout-2;
 	height: 0;
 	margin: 0;
-	padding: 0;
-	width: 0;
 	overflow: hidden;
-	z-index: z-index(above);
+	padding: 0;
 	transition: $transition-function-header;
+	width: 0;
+	z-index: z-index(above);
 	&.is-open {
 		height: auto;
+		padding: ($global-module-size) 0 ($global-module-size * 2);
 		transition: $transition-function-header;
 		width: 100%;
-		padding: ($global-module-size) 0 ($global-module-size * 2);
+		@include breakpoint(1280-up) {
+			grid-area: menu-flyout-1;
+		}
 	}
-	@include breakpoint(1280-up) {
-	}
+
 	&__content {
-		width: ($global-module-size * 8);
-		margin: 0;
-		padding: ($global-module-size / 5) 0 0 0;
+		@include breakpoint(1280-up) {
+			width: ($global-module-size * 8);
+			margin: 0;
+			padding: ($global-module-size / 5) 0 0 0;
+		}
 	}
 	&__item {
 		align-items: center;
