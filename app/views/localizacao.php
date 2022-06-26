@@ -1,5 +1,5 @@
+<div class="c-location">
 <h1>Localização</h1>
-<p></p>
 <div class="c-location__maps js-maps"></div>
 <article class="c-location__address">
     <h3>Núcleo MAP Máquinas Automação e Programação</h3>
@@ -8,3 +8,4 @@
     <p></p>
     <p>Fone: +55 992 749 270 </p>
 </article>
+</div>

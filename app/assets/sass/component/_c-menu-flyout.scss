@@ -39,6 +39,7 @@ $componente-name: "c-menu-flyout";
 		padding-left: ($global-module-size / 10);
 	}
 	&__close {
+		display: none;
 		@include breakpoint(640-up) {
 			bottom: -32px;
 			display: flex;
