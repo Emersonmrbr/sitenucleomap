@@ -1,48 +1,48 @@
 $componente-name: "c-line-header";
 
 .#{$componente-name} {
-  grid-area: line;
-  display: grid;
-  grid-template-columns: 1fr ($global-module-size * 2.5);
-  height: ($global-module-size / 5);
-  overflow: visible;
-  padding: ($global-module-size / 5) 0 0 0;
-  width: 100%;
-  transition: $transition-function-header;
-  &.has-sticker {
-    height: 0;
-    padding: 0;
-  }
-  &__full {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    transform-origin: 100% 100%;
-    shape-rendering: crispEdges;
-    &.has-sticker {
-      height: 0;
-      transform: scale(0, 1);
-    }
-  }
-  &__right {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    transform-origin: 100% 0%;
-    transition: $transition-function-header;
-    &.has-sticker {
-      height: 0;
-      transform: scale(1, 0);
-    }
-  }
-  &__item {
-    stroke: map-color(map-black);
-    stroke-width: ($global-module-size / 50);
-    fill: none;
-    shape-rendering: crispEdges;
-    &--color {
-      stroke: map-color(map-grey);
-      shape-rendering: auto;
-    }
-  }
+	display: grid;
+	grid-area: line;
+	grid-template-columns: auto ($global-module-size * 2.5);
+	height: ($global-module-size / 5);
+	overflow: visible;
+	padding: ($global-module-size / 5) 0 0 0;
+	transition: $transition-function-header;
+	width: 100%;
+	&.has-sticker {
+		height: 0;
+		padding: 0;
+	}
+	&__full {
+		height: 100%;
+		overflow: visible;
+		shape-rendering: crispEdges;
+		transform-origin: 100% 100%;
+		width: 100%;
+		&.has-sticker {
+			height: 0;
+			transform: scale(0, 1);
+		}
+	}
+	&__right {
+		height: 100%;
+		overflow: visible;
+		transform-origin: 100% 0%;
+		transition: $transition-function-header;
+		width: 100%;
+		&.has-sticker {
+			height: 0;
+			transform: scale(1, 0);
+		}
+	}
+	&__item {
+		fill: none;
+		shape-rendering: crispEdges;
+		stroke-width: ($global-module-size / 50);
+		stroke: map-color(map-black);
+		&--color {
+			shape-rendering: auto;
+			stroke: map-color(map-grey);
+		}
+	}
 }

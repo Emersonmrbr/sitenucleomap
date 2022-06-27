@@ -25,15 +25,16 @@ $componente-name: "c-menu";
 	}
 
 	&__list {
-		@include breakpoint(640-up) {
-			display: grid;
-			flex: 1;
+		display: grid;
+		flex: 1;
+		height: auto;
+		justify-content: center;
+		justify-items: center;
+		margin: 0;
+		padding: 0;
+		grid-template-columns: repeat(5, ($global-module-size * 1.8));
+		@include breakpoint(960-up) {
 			grid-template-columns: repeat(5, ($global-module-size * 2.5));
-			height: auto;
-			justify-content: center;
-			justify-items: center;
-			margin: 0;
-			padding: 0;
 		}
 	}
 }

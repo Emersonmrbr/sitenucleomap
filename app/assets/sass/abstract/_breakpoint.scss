@@ -50,6 +50,16 @@
 			// 960px
 			@content;
 		}
+	} @else if $point == 1040-only {
+		@media (max-width: 64.9375em) {
+			// 1039px
+			@content;
+		}
+	} @else if $point == 1040-up {
+		@media (min-width: 65em) {
+			// 1040px
+			@content;
+		}
 	} @else if $point == 1120-only {
 		@media (max-width: 69.9375em) {
 			// 1119px
