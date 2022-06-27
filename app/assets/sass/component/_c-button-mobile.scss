@@ -13,7 +13,7 @@ $componente-name: "c-button-mobile";
 	transition: $transition-function-header;
 	width: auto;
 
-	@include breakpoint(1280-up) {
+	@include breakpoint(640-up) {
 		display: none;
 	}
 	&__slice-up {

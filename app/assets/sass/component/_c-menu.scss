@@ -5,15 +5,17 @@ $componente-name: "c-menu";
 	height: auto;
 	overflow: visible;
 	width: 100%;
+
 	&.is-open {
 		height: auto;
 		overflow: visible;
 		width: 100%;
 	}
+
 	&.has-sticker {
 		align-self: center;
 	}
-	@include breakpoint(1280-up) {
+	@include breakpoint(640-up) {
 		align-self: flex-end;
 		display: flex;
 		flex-wrap: nowrap;
@@ -21,8 +23,9 @@ $componente-name: "c-menu";
 		height: auto;
 		width: 100%;
 	}
+
 	&__list {
-		@include breakpoint(1280-up) {
+		@include breakpoint(640-up) {
 			display: grid;
 			flex: 1;
 			grid-template-columns: repeat(5, ($global-module-size * 2.5));

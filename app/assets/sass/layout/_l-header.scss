@@ -20,7 +20,7 @@ $componente-name: "l-header";
 		height: auto;
 		padding: ($global-module-size / 4) ($global-module-size/2);
 	}
-	@include breakpoint(1280-up) {
+	@include breakpoint(640-up) {
 		grid: "top top" auto "logo menu" auto "menu-flyout-1 menu-flyout-2" auto "button-close button-close" auto "line line" auto/ auto 1fr;
 		padding: 0 ($global-module-size * 1.5);
 		&.has-sticker {
