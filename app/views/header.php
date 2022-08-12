@@ -7,7 +7,7 @@ $itenNav;
 
 <h1 style="display: none;">Menu Principal</h1>
 
-<div class="c-top js-sticky" data-sticky="top"></div>
+<!-- <div class="c-top js-sticky" data-sticky="top"></div> -->
 
 <a href="?pagina=home" class="c-logo js-logo-open-menu" data-sticky="logoLink">
  <svg class="c-logo__image js-logo-open-menu js-sticky" viewBox="0 0 1921 380" data-sticky="logoImage">
@@ -120,7 +120,7 @@ $itenNav;
  </ul>
 </nav>
 <nav class="c-menu-flyout js-menu-flyout">
- <ul class="c-menu-flyout__content is-hidden js-menu-item js-products" data-menu="products">
+ <ul class="c-menu-flyout__content is-hidden js-menu-item js-products" >
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=seriePRNU">Série PRN</a>
   </li>
@@ -129,7 +129,7 @@ $itenNav;
   </li>
  </ul>
 
- <ul class="c-menu-flyout__content is-hidden js-menu-item js-service" data-menu="service">
+ <ul class="c-menu-flyout__content is-hidden js-menu-item js-service">
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=automacaoIndustrial">Automação industrial</a>
   </li>
@@ -147,7 +147,7 @@ $itenNav;
   </li>
  </ul>
 
- <ul class="c-menu-flyout__content is-hidden js-menu-item js-company" data-menu="company">
+ <ul class="c-menu-flyout__content is-hidden js-menu-item js-company">
   <li class="c-menu-flyout__item">
    <a class="c-menu-flyout__link" href="?pagina=sobreNos">Sobre nós</a>
   </li>

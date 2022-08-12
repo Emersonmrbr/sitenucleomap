@@ -461,7 +461,7 @@ body {
   margin: 0 auto;
   max-width: 121.5rem;
   overflow: visible;
-  padding: 0 1.25rem;
+  padding: 0 2.08333rem;
   position: fixed;
   -webkit-transition: 450ms ease-in;
   transition: 450ms ease-in;
@@ -473,23 +473,23 @@ body {
   -webkit-box-shadow: 0 1.5625rem 0.78125rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1.5625rem 0.78125rem 0 rgba(0, 0, 0, 0.2);
   height: auto;
-  padding: 0.78125rem 1.5625rem;
+  padding: 0.89286rem 1.25rem;
 }
 
 @media (min-width: 40em) {
   .l-header {
     grid: "top top" auto "logo menu" auto "menu-flyout-1 menu-flyout-2" auto "button-close button-close" auto "line line" auto/ auto 1fr;
-    padding: 1.25rem 1.25rem 0 1.25rem;
-  }
-  .l-header.has-sticker {
-    padding: 0 2.08333rem;
+    padding: 1.25rem 2.08333rem 0 2.08333rem;
   }
 }
 
 @media (min-width: 80em) {
   .l-header {
     grid: "top top" auto "logo menu" auto "menu-flyout-1 menu-flyout-2" auto "button-close button-close" auto "line line" auto/ auto 1fr;
-    padding: 1.25rem 1.25rem 0 1.25rem;
+    padding: 1.25rem 4.6875rem;
+  }
+  .l-header.has-sticker {
+    padding: 0 4.6875rem;
   }
 }
 
@@ -498,13 +498,13 @@ body {
   color: #565656;
   grid-area: main;
   margin: 0 auto;
-  padding: 0 1.5625rem;
+  padding: 0 2.08333rem;
   width: 100%;
 }
 
 @media (min-width: 80em) {
   .l-main {
-    padding: 0 6.25rem;
+    padding: 0 4.6875rem;
   }
 }
 
@@ -517,13 +517,12 @@ body {
   grid: "description" 3.125rem "local" 3.125rem "contact " auto "social-network " auto "copyright" auto/1fr;
   height: auto;
   margin: 0 auto;
-  padding: 0 0.625rem 0 0.625rem;
+  padding: 0 2.08333rem;
   width: 100%;
 }
 
 @media (min-width: 40em) {
   .l-footer {
-    padding: 0 1.25rem;
     grid: "description local" 6.25rem "contact social-network" auto "copyright ." auto/auto auto;
   }
 }
@@ -1001,7 +1000,7 @@ body {
 }
 
 .c-location__maps {
-  height: 400px;
+  height: 800px;
   width: 100%;
 }
 

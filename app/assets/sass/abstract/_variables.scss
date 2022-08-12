@@ -137,6 +137,15 @@ $slice-margin: ($global-module-size / 10);
 $slice-translate: $slice-height-big / 2;
 $slice-width: ($global-module-size / 1.5);
 
+$global-padding-side: ($global-module-size * 1.5);
+$global-padding-up-down: ($global-module-size / 2.5);
+$global-padding-side-sticker: ($global-module-size * 1.5);
+$global-padding-up-down-sticker: ($global-module-size / 4);
+$mobile-padding-side: ($global-module-size / 1.5);
+$mobile-padding-up-down: ($global-module-size / 2.5);
+$mobile-padding-side-sticker: ($global-module-size / 2.5);
+$mobile-padding-up-down-sticker: ($global-module-size / 3.5);
+
 // ==========================================================================
 // Transitions
 // ==========================================================================
