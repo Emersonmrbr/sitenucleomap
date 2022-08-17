@@ -185,6 +185,50 @@ $itenNav;
  <div class="c-button-mobile__slice-down  js-button-mobile"></div>
 </button>
 
+<nav class="c-menu-mobile js-menu-mobile">
+ <ul class="c-menu-mobile__content is-hidden js-menu-item js-products" >
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=seriePRNU">Série PRN</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=serieSTNU">Série STN</a>
+  </li>
+ </ul>
+
+ <ul class="c-menu-mobile__content is-hidden js-menu-item js-service">
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=automacaoIndustrial">Automação industrial</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=automacaoResidencial">Automação residencial</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=projetoEletrico">Projeto elétrico</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=projetoMecanico">Projeto mecânico</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=robotica">Robótica</a>
+  </li>
+ </ul>
+
+ <ul class="c-menu-mobile__content is-hidden js-menu-item js-company">
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=sobreNos">Sobre nós</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=contato">Contato</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=parceiros">Parceiros</a>
+  </li>
+  <li class="c-menu-mobile__item">
+   <a class="c-menu-mobile__link" href="?pagina=localizacao">Localização</a>
+  </li>
+ </ul>
+</nav>
+
 
 <section class="c-line-header js-sticky">
  <svg class="c-line-header__full js-sticky js-sticky__lag">
