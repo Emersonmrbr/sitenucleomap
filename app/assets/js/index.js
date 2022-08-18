@@ -5,7 +5,6 @@ const menuFlyout = document.querySelector(".js-menu-flyout");
 const menuItens = document.querySelectorAll(".js-menu-item");
 const buttonClose = document.querySelector(".js-button-close");
 const buttonMobile = document.querySelectorAll(".js-button-mobile");
-let dataMenu = document.querySelectorAll("[data-menu]");
 let menuMobileOpen;
 let isOpened;
 let isCollapsed;
@@ -91,7 +90,7 @@ function closeMenu() {
 	}
 }
 
-// Animação botão menu
+// Animação botão menu mobile
 function openMobileMenu() {
 	if (menuMobileOpen === true) {
 		buttonMobile.forEach(element => {

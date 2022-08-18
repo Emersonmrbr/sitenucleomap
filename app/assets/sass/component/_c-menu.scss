@@ -2,26 +2,24 @@ $componente-name: "c-menu";
 
 .#{$componente-name} {
 	grid-area: menu-flyout-1;
-	height: auto;
-	overflow: visible;
-	width: 100%;
+	display: none;
 
-	&.is-open {
-		height: auto;
-		overflow: visible;
-		width: 100%;
-	}
-
-	&.has-sticker {
-		align-self: center;
-	}
-	@include breakpoint(640-up) {
+	@include breakpoint(720-up) {
 		align-self: flex-end;
 		display: flex;
 		flex-wrap: nowrap;
 		grid-area: menu;
 		height: auto;
 		width: 100%;
+		&.is-open {
+			height: auto;
+			overflow: visible;
+			width: 100%;
+		}
+
+		&.has-sticker {
+			align-self: center;
+		}
 	}
 
 	&__list {
@@ -32,9 +30,82 @@ $componente-name: "c-menu";
 		justify-items: center;
 		margin: 0;
 		padding: 0;
-		grid-template-columns: repeat(5, ($global-module-size * 1.8));
+		grid-template-columns: repeat(3, ($global-module-size * 1.8));
 		@include breakpoint(960-up) {
 			grid-template-columns: repeat(5, ($global-module-size * 2.5));
+		}
+	}
+	&-flyout {
+		display: grid;
+		grid-area: menu-flyout;
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		transition: $transition-function-header;
+		width: 0;
+		z-index: z-index(above);
+		&.is-open {
+			height: auto;
+			padding: ($global-module-size) 0 ($global-module-size * 2);
+			transition: $transition-function-header;
+			width: 100%;
+		}
+
+		&__content {
+			width: ($global-module-size * 8);
+			margin: 0;
+			padding: ($global-module-size / 5) 0 0 0;
+		}
+		&__item {
+			align-items: center;
+			border-bottom: solid ($global-module-size / 50) map-color(map-black);
+			display: flex;
+			height: $global-module-size;
+			width: 100%;
+			&:first-child {
+				border-bottom: solid ($global-module-size / 50) map-color(map-black);
+			}
+		}
+		&__link {
+			color: map-color(map-black);
+			height: auto;
+			padding-left: ($global-module-size / 10);
+		}
+		&__close {
+			bottom: -32px;
+			display: flex;
+			height: auto;
+			justify-content: center;
+			position: absolute;
+			width: 100%;
+			margin: 0 auto;
+			left: 0%;
+		}
+		&__button {
+			align-items: center;
+			justify-content: center;
+			background-color: map-color(map-grey1);
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			fill: map-color(map-black);
+			grid-area: button-close;
+			height: 64px;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			width: 64px;
+		}
+		&__icon {
+			width: 26px;
+			height: 26px;
+		}
+		&__stroke {
+			fill: none;
+			stroke: map-color(map-white);
+			stroke-width: $global-line-height-small;
 		}
 	}
 }
