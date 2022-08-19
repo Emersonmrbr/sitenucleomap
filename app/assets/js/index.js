@@ -1,17 +1,33 @@
+const buttonClose = document.querySelector(".js-button-close");
+const buttonMobile = document.querySelectorAll(".js-button-mobile");
 const header = document.querySelector(".js-header");
-const stickerLag = document.querySelector(".js-sticky__lag");
-const stickers = document.querySelectorAll(".js-sticky");
 const menuFlyout = document.querySelector(".js-menu-flyout");
 const menuItens = document.querySelectorAll(".js-menu-item");
 const menuMobile = document.querySelector(".js-menu-mobile");
 const menuMobileFlyout = document.querySelector(".js-menu-mobile-flyout");
 const menuMobileItens = document.querySelectorAll(".js-menu-mobile-item");
-const buttonClose = document.querySelector(".js-button-close");
-const buttonMobile = document.querySelectorAll(".js-button-mobile");
-let menuMobileIsOpened;
-let menuIsOpened;
-let isCollapsed;
+const stickerLag = document.querySelector(".js-sticky__lag");
+const stickers = document.querySelectorAll(".js-sticky");
+const uP720 = window.matchMedia("(min-width: 720px)");
 let classOpened;
+let clickMenu;
+let isCollapsed;
+let menuIsOpened;
+
+// Responsivo
+function responsive(element) {
+	if (element.matches && menuIsOpened === true) {
+		closeMenuMobile();
+		openMenu(clickMenu);
+	} else if (!element.matches && menuIsOpened === true) {
+		closeMenu();
+		// openMenuMobile(clickMenu);
+		buttonMobileMenu();
+	}
+}
+
+uP720.addEventListener("change", responsive);
+responsive(uP720);
 
 // Collap menu
 function menuCollap() {
@@ -41,6 +57,7 @@ window.onscroll = function () {
 
 // Open menu
 function openMenu(itenMenu) {
+	clickMenu = itenMenu;
 	let actualClass = ".js-" + itenMenu;
 	if (classOpened !== actualClass) {
 		menuItens.forEach(element => {
@@ -94,6 +111,7 @@ function closeMenu() {
 }
 // Menu mobile
 function openMenuMobile(itenMenuMobile) {
+	clickMenu = itenMenuMobile;
 	let actualClass = ".js-mobile-" + itenMenuMobile;
 	if (classOpened !== actualClass) {
 		menuItens.forEach(element => {
@@ -106,7 +124,7 @@ function openMenuMobile(itenMenuMobile) {
 		document.querySelector(actualClass).classList.remove("is-hidden");
 		document.querySelector(actualClass).classList.add("is-open");
 		classOpened = actualClass;
-		menuMobileIsOpened = true;
+		menuIsOpened = true;
 	} else {
 		menuItens.forEach(element => {
 			element.classList.add("is-hidden");
@@ -115,7 +133,7 @@ function openMenuMobile(itenMenuMobile) {
 		menuFlyout.classList.remove("is-open");
 		buttonClose.classList.add("is-hidden");
 		buttonClose.classList.remove("is-open");
-		menuMobileIsOpened = false;
+		menuIsOpened = false;
 		classOpened = "empty";
 		if (window.pageYOffset > header.offsetTop) {
 			menuCollap();
@@ -129,7 +147,7 @@ function openMenuMobile(itenMenuMobile) {
 
 // Animação botão menu mobile
 function buttonMobileMenu() {
-	if (menuMobileIsOpened === true) {
+	if (menuIsOpened === true) {
 		buttonMobile.forEach(element => {
 			element.classList.remove("is-open");
 		});
@@ -142,7 +160,7 @@ function buttonMobileMenu() {
 			menuExpand();
 			isCollapsed = false;
 		}
-		menuMobileIsOpened = false;
+		menuIsOpened = false;
 	} else {
 		buttonMobile.forEach(element => {
 			element.classList.add("is-open");
@@ -150,8 +168,24 @@ function buttonMobileMenu() {
 		menuMobile.classList.add("is-open");
 		menuMobile.classList.remove("is-hidden");
 		menuCollap();
-		menuMobileIsOpened = true;
+		menuIsOpened = true;
 	}
+}
+
+function closeMenuMobile() {
+	buttonMobile.forEach(element => {
+		element.classList.remove("is-open");
+	});
+	menuMobile.classList.remove("is-open");
+	menuMobile.classList.add("is-hidden");
+	if (window.pageYOffset > header.offsetTop) {
+		menuCollap();
+		isCollapsed = true;
+	} else if (window.pageYOffset <= header.offsetTop) {
+		menuExpand();
+		isCollapsed = false;
+	}
+	menuIsOpened = false;
 }
 
 // maps;
