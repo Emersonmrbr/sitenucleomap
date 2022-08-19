@@ -10,6 +10,17 @@
 			@content;
 		}
 	}
+	@if $point == 400-only {
+		@media (max-width: 24.9375em) {
+			// 319px
+			@content;
+		}
+	} @else if $point == 400-up {
+		@media (min-width: 25em) {
+			// 320px
+			@content;
+		}
+	}
 	@if $point == 480-only {
 		@media (max-width: 29.9375em) {
 			// 479px

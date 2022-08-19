@@ -5,48 +5,51 @@ $componente-name: "c-menu-mobile";
 	&.is-open {
 		height: auto;
 		overflow: visible;
+		padding: ($mobile-padding-up-down * 3) 0;
 		transition: $transition-function-header-mobile;
 		width: 100%;
 	}
 	&__list {
 		display: flex;
 		flex-direction: column;
-		padding: 0;
 		margin: 0;
+		padding: 0;
 	}
 	&__item {
+		border-top: 1px map-color(map-black) solid;
 		flex: 1;
 		width: 100%;
-		border-top: 1px map-color(map-black) solid;
 	}
 
 	&__link {
-		color: map-color(map-header-fore);
-		padding: ($global-module-size / 3);
 		align-self: flex-start;
-		display: flex;
-		position: relative;
 		border-top: 1px map-color(map-black) solid;
+		color: map-color(map-grey);
+		display: flex;
+		padding: ($global-module-size / 3);
+		position: relative;
 		&:last-child {
 			border-bottom: 1px map-color(map-black) solid;
 		}
-
+		background-color: map-color(map-white);
+		border: none;
 		text-transform: uppercase;
 		width: 100%;
-		border: none;
-		background-color: map-color(map-white);
 		&:hover {
-			background-color: map-color(map-header-fore);
+			background-color: map-color(map-grey-lighten-10);
 			color: map-color(map-white);
 			&::after {
+				color: map-color(map-white);
 				content: ">";
 				font-weight: 100;
 				position: absolute;
 				right: ($global-module-size/5);
 				top: auto;
 				transform: scale(1.5, 3);
-				color: map-color(map-white);
 			}
 		}
+	}
+	&-flyout {
+		grid-area: menu-flyout-2;
 	}
 }

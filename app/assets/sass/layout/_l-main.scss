@@ -1,8 +1,8 @@
 $componente-name: "l-main";
 
 .#{$componente-name} {
-	background-color: map-color(map-main);
-	color: map-color(map-main-fore);
+	background-color: map-color(map-white);
+	// color: map-color(map-grey);
 	grid-area: main;
 	margin: 0 auto;
 	padding: 0 ($mobile-padding-side);

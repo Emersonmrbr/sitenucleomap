@@ -11,16 +11,16 @@
 // ==========================================================================
 
 $webfatorial-colors: (
-	"webfatorial-primary": #157bad,
-	"webfatorial-secondary": #06618c,
-	"webfatorial-success": #3cc368,
-	"webfatorial-warning": #f5a600,
 	"webfatorial-error": #ec5840,
 	"webfatorial-gray-1": #363636,
 	"webfatorial-gray-2": #4f4f4f,
 	"webfatorial-gray-3": #828282,
 	"webfatorial-gray-4": #bdbdbd,
 	"webfatorial-gray-5": #e0e0e0,
+	"webfatorial-primary": #157bad,
+	"webfatorial-secondary": #06618c,
+	"webfatorial-success": #3cc368,
+	"webfatorial-warning": #f5a600,
 	"webfatorial-white": #fcfcfc,
 );
 
@@ -31,51 +31,69 @@ $webfatorial-colors: (
 // Núcleo MAP colors
 // ==========================================================================
 $map-colors: (
-	"map-background1": #ffffff,
-	"map-background2": #c5c5c5,
-	"map-background3":
-		lighten(
-			$color: #6d6e71,
-			$amount: 10%,
-		),
-	"map-background4": #6d6e71,
-	"map-background5": #000000,
 	"map-black": #000000,
+	"map-blue-darken-10":
+		darken(
+			$color: #36a9e1,
+			$amount: 10%,
+		),
+	"map-blue-darken-50":
+		darken(
+			$color: #36a9e1,
+			$amount: 50%,
+		),
+	"map-blue-darken-90":
+		darken(
+			$color: #36a9e1,
+			$amount: 90%,
+		),
+	"map-blue-lighten-10":
+		lighten(
+			$color: #36a9e1,
+			$amount: 10%,
+		),
+	"map-blue-lighten-50":
+		lighten(
+			$color: #36a9e1,
+			$amount: 50%,
+		),
+	"map-blue-lighten-90":
+		lighten(
+			$color: #36a9e1,
+			$amount: 90%,
+		),
 	"map-blue": #36a9e1,
-	"map-body-background": #ffffff,
-	"map-body-fore": #000000,
-	"map-body": #ffffff,
-	"map-footer-background":
+	"map-grey-darken-10":
 		darken(
 			$color: #706f6f,
 			$amount: 10%,
 		),
-	"map-footer-fore": #ffffff,
-	"map-footer1": #000000,
-	"map-fore2": #ffffff,
-	"map-grey1": #706f6f,
-	"map-grey2": #9d9d9c,
-	"map-header-background": #ffffff,
-	"map-header-fore":
+	"map-grey-darken-30":
 		darken(
+			$color: #706f6f,
+			$amount: 30%,
+		),
+	"map-grey-darken-90":
+		darken(
+			$color: #706f6f,
+			$amount: 90%,
+		),
+	"map-grey-lighten-10":
+		lighten(
 			$color: #706f6f,
 			$amount: 10%,
 		),
-	"map-header": #ffffff,
-	"map-html-background": #c5c5c5,
-	"map-html-fore":
-		darken(
+	"map-grey-lighten-50":
+		lighten(
 			$color: #706f6f,
-			$amount: 10%,
+			$amount: 50%,
 		),
-	"map-html": #ffffff,
-	"map-main-background": #ffffff,
-	"map-main-fore":
-		darken(
+	"map-grey-lighten-90":
+		lighten(
 			$color: #706f6f,
-			$amount: 10%,
+			$amount: 90%,
 		),
-	"map-main": #ffffff,
+	"map-grey": #706f6f,
 	"map-white": #ffffff,
 );
 
@@ -88,11 +106,11 @@ $map-colors: (
 
 $social-media-colors: (
 	"facebook": #3b5998,
-	"twitter": #00aced,
-	"linkedin": #0077b5,
-	"youtube": #cd201f,
-	"instagram": #e4405f,
 	"github": #333,
+	"instagram": #e4405f,
+	"linkedin": #0077b5,
+	"twitter": #00aced,
+	"youtube": #cd201f,
 );
 
 @function msocial-media-color($socialcolor) {
@@ -106,23 +124,23 @@ $social-media-colors: (
 $global-max-width-raw: 1944;
 $global-max-width: rem($global-max-width-raw);
 
-$global-font-size-smaller: rem(10);
-$global-font-size-small: rem(12);
-$global-font-size-medium: rem(16);
 $global-font-size-large: rem(20);
 $global-font-size-larger: rem(26);
+$global-font-size-medium: rem(16);
+$global-font-size-small: rem(12);
+$global-font-size-smaller: rem(10);
 
-$global-font-weight-lighter: 100;
-$global-font-weight-light: 300;
-$global-font-weight-normal: 500;
 $global-font-weight-bold: 700;
 $global-font-weight-bolder: 900;
+$global-font-weight-light: 300;
+$global-font-weight-lighter: 100;
+$global-font-weight-normal: 500;
 
-$global-line-height-smaller: 0.5;
-$global-line-height-small: 1;
-$global-line-height-medium: 1.5;
 $global-line-height-large: 2;
 $global-line-height-larger: 2.5;
+$global-line-height-medium: 1.5;
+$global-line-height-small: 1;
+$global-line-height-smaller: 0.5;
 
 $global-radius: rem(5);
 $global-module-size: rem(50);
@@ -131,20 +149,20 @@ $global-width-header-mobile: ($global-module-size * 3);
 $global-height-header: ($global-module-size * 1.1);
 
 $slice-height-big: ($global-module-size / 13);
-$slice-height: ($global-module-size / 20);
 $slice-height-small: ($global-module-size / 75);
+$slice-height: ($global-module-size / 20);
 $slice-margin: ($global-module-size / 10);
 $slice-translate: $slice-height-big / 2;
 $slice-width: ($global-module-size / 1.5);
 
-$global-padding-side: ($global-module-size * 1.5);
-$global-padding-up-down: ($global-module-size / 2.5);
 $global-padding-side-sticker: ($global-module-size * 1.5);
+$global-padding-side: ($global-module-size * 1.5);
 $global-padding-up-down-sticker: ($global-module-size / 4);
-$mobile-padding-side: ($global-module-size / 1.5);
-$mobile-padding-up-down: ($global-module-size / 2.5);
+$global-padding-up-down: ($global-module-size / 2.5);
 $mobile-padding-side-sticker: ($global-module-size / 2.5);
-$mobile-padding-up-down-sticker: ($global-module-size / 3.5);
+$mobile-padding-side: ($global-module-size / 1.5);
+$mobile-padding-up-down-sticker: ($global-module-size / 10);
+$mobile-padding-up-down: ($global-module-size / 2.5);
 
 // ==========================================================================
 // Transitions
@@ -183,11 +201,11 @@ $transition-function-line-main: padding-bottom 450ms cubic-bezier(0.05, 1, 0.8, 
 
 $z-indexes: (
 	"above": 500,
+	"below": -1,
+	"default": 1,
+	"dropdown": 200,
 	"modal": 400,
 	"overlay": 300,
-	"dropdown": 200,
-	"default": 1,
-	"below": -1,
 );
 
 @function z-index($layer) {

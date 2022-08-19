@@ -45,7 +45,6 @@ $componente-name: "c-link";
 	}
 
 	&-skin {
-		color: inherit;
 		cursor: pointer;
 		font-family: "Roboto Condensed";
 		font-size: $global-font-size-medium;
@@ -59,12 +58,13 @@ $componente-name: "c-link";
 			position: relative;
 
 			&::after {
-				background-color: map-color(map-header-fore);
+				background-color: map-color(map-grey-darken-10);
 				transition: $transition-function-transform-link;
 				width: 100%;
 			}
 
 			&:hover {
+				color: map-color(map-grey-darken-10);
 				font-style: normal;
 				font-weight: $global-font-weight-bold;
 			}
@@ -72,7 +72,7 @@ $componente-name: "c-link";
 			&--footer {
 				width: auto;
 				&::after {
-					background-color: map-color(map-footer-fore);
+					background-color: map-color(map-white);
 				}
 			}
 		}

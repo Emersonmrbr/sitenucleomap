@@ -12,7 +12,7 @@ $componente-name: "c-location";
 		width: 100%;
 	}
 	&__address {
-		background-color: map-color(map-background2);
+		background-color: map-color(map-grey-lighten-50);
 		height: auto;
 		margin: $global-module-size 0;
 		padding: $global-module-size;

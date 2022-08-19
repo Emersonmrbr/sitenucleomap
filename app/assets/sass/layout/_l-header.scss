@@ -1,8 +1,7 @@
 $componente-name: "l-header";
 
 .#{$componente-name} {
-	background-color: map-color(map-header);
-	color: map-color(map-header-fore);
+	background-color: map-color(map-white);
 	display: grid;
 	grid: "top top" auto "logo button-mobile" auto "menu-flyout-1 menu-flyout-2" auto "line line" auto / 1fr 1fr;
 	height: auto;
@@ -10,7 +9,7 @@ $componente-name: "l-header";
 	margin: 0 auto;
 	max-width: $global-max-width;
 	overflow: visible;
-	padding: 0 ($mobile-padding-side);
+	padding: ($mobile-padding-up-down) ($mobile-padding-side);
 	position: fixed;
 	transition: $transition-function-header;
 	width: 100%;

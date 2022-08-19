@@ -3,8 +3,7 @@
 <!-- Definição do idioma do site -->
 
 <head>
- <?php
-
+    <?php
     //     Site Núcleo MAP
     // Autor: Emerson Martins Brito
     // Data: 15/03/2021
@@ -13,18 +12,18 @@
 </head>
 
 <body>
- <div class="l-body">
+    <div class="l-body">
 
-  <header data-reactroot role="banner" class="l-header js-header js-sticky">
-   <?php
+        <header data-reactroot role="banner" class="l-header js-header js-sticky">
+            <?php
             include 'app/views/header.php';
             ?>
-  </header>
-  <?php
+        </header>
+        <?php
         include 'app/assets/breadcrumb.php';
         ?>
-  <main class="l-main">
-   <?php
+        <main class="l-main">
+            <?php
             $pagina = 'home';
             $pagina = $_GET["pagina"];
             switch ($pagina) {
@@ -63,49 +62,51 @@
                     break;
                 case 'localizacao':
                     include 'app/views/localizacao.php';
-//                     echo "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=initMap'>
-// </script>";
+                    //                     echo "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=initMap'>
+                    // </script>";
                     break;
                 default:
                     include 'app/views/home.php';
                     break;
             }
             ?>
-  </main>
+        </main>
 
-  <footer class="l-footer">
-   <?php
+        <footer class="l-footer">
+            <?php
             include 'app/views/footer.php';
             ?>
-  </footer>
-  <section class="c-line-footer">
-   <svg class="c-line-footer__full">
-    <g class="c-line-footer__colored">
-     <line x1="0" y1="7.5" x2="100%" y2="7.5"></line>
-    </g>
-    <g class="c-line-footer__mono">
-     <line x1="0" y1="12.5" x2="100%" y2="12.5"></line>
-    </g>
-   </svg>
-   <svg class="c-line-footer__right">
-    <g class="c-line-footer__background">
-     <path d="M0,0 90,0 140,-75 275,-75 275,0"></path>
-    </g>
-    <g class="c-line-footer__colored">
-     <line x1="0" y1="7.5" x2="100" y2="7.5"></line>
-     <line x1="100" y1="7.5" x2="150" y2="-67.5" class="c-line-footer__colored--smoth"></line>
-     <line x1="150" y1="-67.5" x2="100%" y2="-67.5"></line>
-    </g>
-    <g class="c-line-footer__mono">
-     <line x1="0" y1="12.5" x2="90" y2="12.5"></line>
-     <line x1="90" y1="12.5" x2="140" y2="-62.5"></line>
-     <line x1="140" y1="-62.5" x2="100%" y2="-62.5"></line>
-    </g>
-   </svg>
-  </section>
- </div>
- <script src="app/assets/js/index.js"></script>
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=containerMaps"async defer></script>
+        </footer>
+
+        <section class="c-line-footer">
+            <svg class="c-line-footer__full">
+                <g class="c-line-footer__colored">
+                    <line x1="0" y1="7.5" x2="100%" y2="7.5"></line>
+                </g>
+                <g class="c-line-footer__mono">
+                    <line x1="0" y1="12.5" x2="100%" y2="12.5"></line>
+                </g>
+            </svg>
+            <svg class="c-line-footer__right">
+                <g class="c-line-footer__background">
+                    <path d="M0,0 90,0 140,-75 275,-75 275,0"></path>
+                </g>
+                <g class="c-line-footer__colored">
+                    <line x1="0" y1="7.5" x2="100" y2="7.5"></line>
+                    <line x1="100" y1="7.5" x2="150" y2="-67.5" class="c-line-footer__colored--smoth"></line>
+                    <line x1="150" y1="-67.5" x2="100%" y2="-67.5"></line>
+                </g>
+                <g class="c-line-footer__mono">
+                    <line x1="0" y1="12.5" x2="90" y2="12.5"></line>
+                    <line x1="90" y1="12.5" x2="140" y2="-62.5"></line>
+                    <line x1="140" y1="-62.5" x2="100%" y2="-62.5"></line>
+                </g>
+            </svg>
+        </section>
+
+    </div>
+    <script src="app/assets/js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=containerMaps" async defer></script>
 </body>
 
 </html>

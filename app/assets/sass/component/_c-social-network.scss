@@ -2,39 +2,57 @@ $componente-name: "c-social-network";
 
 .#{$componente-name} {
 	align-items: center;
-	display: flex;
-	flex-direction: row;
+	display: grid;
 	grid-area: social-network;
+	grid-template-columns: 1fr;
 	height: ($global-module-size * 2);
-	justify-content: flex-start;
 	margin: 0;
 	padding: 0;
 	width: auto;
+	@include breakpoint(400-up) {
+		grid-template-columns: ($global-module-size * 6) 1fr;
+	}
+	@include breakpoint(720-up) {
+		grid-template-columns: 1fr ($global-module-size * 6);
+	}
 
-	@include breakpoint(640-up) {
+	&__container {
+		align-items: center;
+		column-gap: ($global-module-size / 10);
+		display: grid;
+		grid-column: 1 / 2;
+		grid-template-columns: repeat(4, 1fr);
+		justify-items: flex-start;
+		@include breakpoint(400-up) {
+			gap: 0;
+		}
+		@include breakpoint(720-up) {
+			grid-column: 2 / -1;
+			justify-items: flex-end;
+		}
+	}
+
+	@include breakpoint(720-up) {
 		height: ($global-module-size * 5);
-		justify-content: flex-end;
 	}
 
 	&__icon {
 		fill: map-color(map-blue);
-		padding: ($global-module-size * 0.2) ($global-module-size * 0.2) ($global-module-size * 0.2) 0;
+		height: ($global-module-size);
+		margin: 0;
+		padding: 0;
 		transition: $transition-duration-exit;
-		width: ($global-module-size * 1.2);
+		width: ($global-module-size);
 		&:hover {
-			background-color: map-color(map-background4);
-			padding-left: ($global-module-size * 0.2);
-		}
-
-		@include breakpoint(640-up) {
-			padding: ($global-module-size * 0.2) 0 ($global-module-size * 0.2) ($global-module-size * 0.2);
-			&:hover {
-				background-color: map-color(map-background4);
-				padding-right: ($global-module-size * 0.2);
-			}
+			background-color: map-color(map-grey-darken-10);
+			padding: ($global-module-size * 0.15);
 		}
 	}
-	&__forced {
+	&__link {
+		display: inline-block;
+		height: ($global-module-size);
+	}
+	&__item {
 		fill: map-color(map-blue);
 	}
 }

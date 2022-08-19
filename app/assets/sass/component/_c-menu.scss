@@ -3,7 +3,6 @@ $componente-name: "c-menu";
 .#{$componente-name} {
 	grid-area: menu-flyout-1;
 	display: none;
-
 	@include breakpoint(720-up) {
 		align-self: flex-end;
 		display: flex;
@@ -16,7 +15,6 @@ $componente-name: "c-menu";
 			overflow: visible;
 			width: 100%;
 		}
-
 		&.has-sticker {
 			align-self: center;
 		}
@@ -85,7 +83,7 @@ $componente-name: "c-menu";
 		&__button {
 			align-items: center;
 			justify-content: center;
-			background-color: map-color(map-grey1);
+			background-color: map-color(map-grey-darken-10);
 			border-radius: 50%;
 			border: none;
 			cursor: pointer;

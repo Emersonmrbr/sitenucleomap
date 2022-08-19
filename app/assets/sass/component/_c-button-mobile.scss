@@ -17,7 +17,7 @@ $componente-name: "c-button-mobile";
 		display: none;
 	}
 	&__slice-up {
-		background-color: map-color(map-black);
+		background-color: map-color(map-grey);
 		height: $slice-height-big;
 		padding: 0;
 		transition: $transition-function-header-mobile;
@@ -28,7 +28,7 @@ $componente-name: "c-button-mobile";
 		}
 	}
 	&__slice-middle {
-		background-color: map-color(map-black);
+		background-color: map-color(map-grey);
 		height: $slice-height;
 		margin: $slice-margin 0;
 		padding: 0;
@@ -45,7 +45,7 @@ $componente-name: "c-button-mobile";
 		}
 	}
 	&__slice-down {
-		background-color: map-color(map-black);
+		background-color: map-color(map-grey);
 		height: $slice-height-big;
 		padding: 0;
 		transition: $transition-function-header-mobile;

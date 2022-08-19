@@ -163,8 +163,8 @@ $itenNav;
   </div>
 
 </nav>
-<nav class="c-menu-mobile js-sticky is-open">
-  <ul class="c-menu-mobile__list js-menu">
+<nav class="c-menu-mobile js-sticky is-hidden js-menu-mobile">
+  <ul class="c-menu-mobile__list">
     <li class="c-menu-mobile__item">
       <button class="c-menu-mobile__link" onclick="openMenuMobile('products')">produtos</button>
     </li>
@@ -176,8 +176,8 @@ $itenNav;
     </li>
   </ul>
 </nav>
-<nav class="c-menu-mobile-flyout is-hidden js-menu-mobile">
-  <ul class="c-menu-mobile-flyout__content is-hidden js-menu-item js-products">
+<nav class="c-menu-mobile-flyout is-hidden js-menu-mobile-flyout">
+  <ul class="c-menu-mobile-flyout__content is-hidden js-menu-item-mobile js-mobile-products">
     <li class="c-menu-mobile-flyout__item">
       <a class="c-menu-mobile-flyout__link" href="?pagina=seriePRNU">Série PRN</a>
     </li>
@@ -186,7 +186,7 @@ $itenNav;
     </li>
   </ul>
 
-  <ul class="c-menu-mobile-flyout__content is-hidden js-menu-item js-service">
+  <ul class="c-menu-mobile-flyout__content is-hidden js-menu-item-mobile js-mobile-service">
     <li class="c-menu-mobile-flyout__item">
       <a class="c-menu-mobile-flyout__link" href="?pagina=automacaoIndustrial">Automação industrial</a>
     </li>
@@ -204,7 +204,7 @@ $itenNav;
     </li>
   </ul>
 
-  <ul class="c-menu-mobile__content is-hidden js-menu-item js-company">
+  <ul class="c-menu-mobile__content is-hidden js-menu-item-mobile js-mobile-company">
     <li class="c-menu-mobile__item">
       <a class="c-menu-mobile__link" href="?pagina=sobreNos">Sobre nós</a>
     </li>
@@ -220,7 +220,7 @@ $itenNav;
   </ul>
 </nav>
 
-<button class="c-button-mobile" onclick="openMobileMenu()">
+<button class="c-button-mobile" onclick="buttonMobileMenu()">
   <div class="c-button-mobile__slice-up  js-button-mobile"></div>
   <div class="c-button-mobile__slice-middle  js-button-mobile"></div>
   <div class="c-button-mobile__slice-down  js-button-mobile"></div>

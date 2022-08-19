@@ -1,8 +1,8 @@
 $componente-name: "l-footer";
 
 .#{$componente-name} {
-	background-color: map-color(map-footer-background);
-	color: map-color(map-footer-fore);
+	background-color: map-color(map-grey);
+	color: map-color(map-white);
 	display: grid;
 	grid-area: footer;
 	grid: "description" $global-module-size "local" $global-module-size "contact " auto "social-network " auto "copyright" auto / 1fr;
@@ -11,7 +11,7 @@ $componente-name: "l-footer";
 	padding: 0 ($mobile-padding-side);
 	width: 100%;
 
-	@include breakpoint(640-up) {
+	@include breakpoint(720-up) {
 		grid: "description local" ($global-module-size * 2) "contact social-network" auto "copyright ." auto / auto auto;
 	}
 

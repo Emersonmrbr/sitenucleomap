@@ -3,10 +3,13 @@ const stickerLag = document.querySelector(".js-sticky__lag");
 const stickers = document.querySelectorAll(".js-sticky");
 const menuFlyout = document.querySelector(".js-menu-flyout");
 const menuItens = document.querySelectorAll(".js-menu-item");
+const menuMobile = document.querySelector(".js-menu-mobile");
+const menuMobileFlyout = document.querySelector(".js-menu-mobile-flyout");
+const menuMobileItens = document.querySelectorAll(".js-menu-mobile-item");
 const buttonClose = document.querySelector(".js-button-close");
 const buttonMobile = document.querySelectorAll(".js-button-mobile");
-let menuMobileOpen;
-let isOpened;
+let menuMobileIsOpened;
+let menuIsOpened;
 let isCollapsed;
 let classOpened;
 
@@ -30,7 +33,7 @@ window.onscroll = function () {
 	if (window.pageYOffset > header.offsetTop && isCollapsed !== true) {
 		menuCollap();
 		isCollapsed = true;
-	} else if (window.pageYOffset <= header.offsetTop && isCollapsed !== false && isOpened !== true) {
+	} else if (window.pageYOffset <= header.offsetTop && isCollapsed !== false && menuIsOpened !== true) {
 		menuExpand();
 		isCollapsed = false;
 	}
@@ -50,7 +53,7 @@ function openMenu(itenMenu) {
 		document.querySelector(actualClass).classList.remove("is-hidden");
 		document.querySelector(actualClass).classList.add("is-open");
 		classOpened = actualClass;
-		isOpened = true;
+		menuIsOpened = true;
 	} else {
 		menuItens.forEach(element => {
 			element.classList.add("is-hidden");
@@ -59,7 +62,7 @@ function openMenu(itenMenu) {
 		menuFlyout.classList.remove("is-open");
 		buttonClose.classList.add("is-hidden");
 		buttonClose.classList.remove("is-open");
-		isOpened = false;
+		menuIsOpened = false;
 		classOpened = "empty";
 		if (window.pageYOffset > header.offsetTop) {
 			menuCollap();
@@ -79,7 +82,7 @@ function closeMenu() {
 	menuFlyout.classList.remove("is-open");
 	buttonClose.classList.add("is-hidden");
 	buttonClose.classList.remove("is-open");
-	isOpened = false;
+	menuIsOpened = false;
 	classOpened = "empty";
 	if (window.pageYOffset > header.offsetTop) {
 		menuCollap();
@@ -89,21 +92,65 @@ function closeMenu() {
 		isCollapsed = false;
 	}
 }
+// Menu mobile
+function openMenuMobile(itenMenuMobile) {
+	let actualClass = ".js-mobile-" + itenMenuMobile;
+	if (classOpened !== actualClass) {
+		menuItens.forEach(element => {
+			element.classList.add("is-hidden");
+		});
+		menuCollap();
+		menuFlyout.classList.add("is-open");
+		buttonClose.classList.remove("is-hidden");
+		buttonClose.classList.add("is-open");
+		document.querySelector(actualClass).classList.remove("is-hidden");
+		document.querySelector(actualClass).classList.add("is-open");
+		classOpened = actualClass;
+		menuMobileIsOpened = true;
+	} else {
+		menuItens.forEach(element => {
+			element.classList.add("is-hidden");
+			element.classList.remove("is-open");
+		});
+		menuFlyout.classList.remove("is-open");
+		buttonClose.classList.add("is-hidden");
+		buttonClose.classList.remove("is-open");
+		menuMobileIsOpened = false;
+		classOpened = "empty";
+		if (window.pageYOffset > header.offsetTop) {
+			menuCollap();
+			isCollapsed = true;
+		} else if (window.pageYOffset <= header.offsetTop) {
+			menuExpand();
+			isCollapsed = false;
+		}
+	}
+}
 
 // Animação botão menu mobile
-function openMobileMenu() {
-	if (menuMobileOpen === true) {
+function buttonMobileMenu() {
+	if (menuMobileIsOpened === true) {
 		buttonMobile.forEach(element => {
 			element.classList.remove("is-open");
 		});
-		// closeMenu();
-		menuMobileOpen = false;
+		menuMobile.classList.remove("is-open");
+		menuMobile.classList.add("is-hidden");
+		if (window.pageYOffset > header.offsetTop) {
+			menuCollap();
+			isCollapsed = true;
+		} else if (window.pageYOffset <= header.offsetTop) {
+			menuExpand();
+			isCollapsed = false;
+		}
+		menuMobileIsOpened = false;
 	} else {
 		buttonMobile.forEach(element => {
 			element.classList.add("is-open");
 		});
-		// openMenu();
-		menuMobileOpen = true;
+		menuMobile.classList.add("is-open");
+		menuMobile.classList.remove("is-hidden");
+		menuCollap();
+		menuMobileIsOpened = true;
 	}
 }
 

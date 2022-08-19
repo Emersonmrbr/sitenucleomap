@@ -3,7 +3,7 @@ $componente-name: "c-button-close";
 .#{$componente-name} {
 	@include breakpoint(640-up) {
 		align-items: center;
-		background-color: map-color(map-grey1);
+		background-color: map-color(map-grey-darken-10);
 		border-radius: 50%;
 		border: none;
 		cursor: pointer;
