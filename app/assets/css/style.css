@@ -1421,7 +1421,7 @@ body {
 }
 
 .c-social-network__link {
-  display: inline-block;
+  display: block;
   height: 3.125rem;
 }
 
