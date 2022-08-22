@@ -2,6 +2,9 @@ $componente-name: "c-menu-mobile";
 
 .#{$componente-name} {
 	grid-area: menu-flyout-1;
+	&__content {
+		grid-column: 1 / 2;
+	}
 	&.is-open {
 		height: auto;
 		overflow: visible;
@@ -16,7 +19,7 @@ $componente-name: "c-menu-mobile";
 		padding: 0;
 	}
 	&__item {
-		border-top: 1px map-color(map-black) solid;
+		// border-top: 1px map-color(map-black) solid;
 		flex: 1;
 		width: 100%;
 	}
@@ -28,12 +31,13 @@ $componente-name: "c-menu-mobile";
 		display: flex;
 		padding: ($global-module-size / 3);
 		position: relative;
+		height: 100%;
 		&:last-child {
 			border-bottom: 1px map-color(map-black) solid;
 		}
 		background-color: map-color(map-white);
 		border: none;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		width: 100%;
 		&:hover {
 			background-color: map-color(map-grey-lighten-10);
@@ -51,5 +55,44 @@ $componente-name: "c-menu-mobile";
 	}
 	&-flyout {
 		grid-area: menu-flyout-2;
+		&.is-open {
+			height: auto;
+			overflow: visible;
+			padding: ($mobile-padding-up-down * 3) 0;
+			transition: $transition-function-header-mobile;
+			width: 100%;
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding: 54px 0 0 0;
+		}
+		&__item {
+			// border-top: 1px map-color(map-black) solid;
+			flex: 1;
+			width: 100%;
+		}
+
+		&__link {
+			align-self: flex-start;
+			background-color: map-color(map-white);
+			border-top: 1px map-color(map-black) solid;
+			border: none;
+			color: map-color(map-grey);
+			display: flex;
+			padding: ($global-module-size / 3);
+			position: relative;
+			text-transform: capitalize;
+			width: 100%;
+			&:last-child {
+				border-bottom: 1px map-color(map-black) solid;
+			}
+			&:hover {
+				color: map-color(map-grey-darken-10);
+				font-style: normal;
+				font-weight: $global-font-weight-bold;
+			}
+		}
 	}
 }

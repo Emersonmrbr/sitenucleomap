@@ -14,6 +14,7 @@ $componente-name: "l-header";
 	transition: $transition-function-header;
 	width: 100%;
 	z-index: z-index(above);
+	column-gap: ($global-module-size / 5);
 	&.has-sticker {
 		box-shadow: 0 ($global-module-size / 2) ($global-module-size / 4) 0 rgba(0, 0, 0, 0.2);
 		height: auto;
@@ -22,6 +23,7 @@ $componente-name: "l-header";
 	@include breakpoint(720-up) {
 		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ auto 1fr;
 		padding: ($mobile-padding-up-down) ($mobile-padding-side) 0 ($mobile-padding-side);
+		gap: 0;
 	}
 	@include breakpoint(1280-up) {
 		padding: ($global-padding-up-down) ($global-padding-side);

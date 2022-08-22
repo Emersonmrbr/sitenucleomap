@@ -34,20 +34,23 @@ $componente-name: "c-menu";
 		}
 	}
 	&-flyout {
-		display: grid;
-		grid-area: menu-flyout;
-		height: 0;
-		margin: 0;
-		overflow: hidden;
-		padding: 0;
-		transition: $transition-function-header;
-		width: 0;
-		z-index: z-index(above);
-		&.is-open {
-			height: auto;
-			padding: ($global-module-size) 0 ($global-module-size * 2);
+		display: none;
+		@include breakpoint(720-up) {
+			display: grid;
+			grid-area: menu-flyout;
+			height: 0;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
 			transition: $transition-function-header;
-			width: 100%;
+			width: 0;
+			z-index: z-index(above);
+			&.is-open {
+				height: auto;
+				padding: ($global-module-size) 0 ($global-module-size * 2);
+				transition: $transition-function-header;
+				width: 100%;
+			}
 		}
 
 		&__content {

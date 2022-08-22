@@ -1,12 +1,14 @@
 // Responsivo
 function responsive(element) {
 	if (element.matches && menuIsOpened === true) {
+		classOpened = "empty";
 		closeMenuMobile();
 		openMenu(clickMenu);
 	} else if (!element.matches && menuIsOpened === true) {
+		classOpened = "empty";
 		closeMenu();
-		// openMenuMobile(clickMenu);
 		buttonMobileMenu();
+		openMenuMobile(clickMenu);
 	}
 }
 

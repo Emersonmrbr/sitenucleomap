@@ -94,7 +94,6 @@ $itenNav;
   </svg>
 </a>
 
-
 <nav class="c-menu js-sticky">
   <ul class="c-menu__list js-menu">
     <li class="c-menu__item">
@@ -108,6 +107,7 @@ $itenNav;
     </li>
   </ul>
 </nav>
+
 <nav class="c-menu-flyout js-menu-flyout">
   <ul class="c-menu-flyout__content is-hidden js-menu-item js-products">
     <li class="c-menu-flyout__item">
@@ -168,16 +168,17 @@ $itenNav;
     <li class="c-menu-mobile__item">
       <button class="c-menu-mobile__link" onclick="openMenuMobile('products')">produtos</button>
     </li>
-    <li class="c-menu-mobile_item">
+    <li class="c-menu-mobile__item">
       <button class="c-menu-mobile__link" onclick="openMenuMobile('service')">serviços</button>
     </li>
-    <li class="c-menu-mobile_item">
+    <li class="c-menu-mobile__item">
       <button class="c-menu-mobile__link" onclick="openMenuMobile('company')">empresa</button>
     </li>
   </ul>
 </nav>
+
 <nav class="c-menu-mobile-flyout is-hidden js-menu-mobile-flyout">
-  <ul class="c-menu-mobile-flyout__content is-hidden js-menu-mobile-item js-mobile-products">
+  <ul class="c-menu-mobile-flyout__list is-hidden js-menu-mobile-item js-mobile-products">
     <li class="c-menu-mobile-flyout__item">
       <a class="c-menu-mobile-flyout__link" href="?pagina=seriePRNU">Série PRN</a>
     </li>
@@ -186,7 +187,7 @@ $itenNav;
     </li>
   </ul>
 
-  <ul class="c-menu-mobile-flyout__content is-hidden js-menu-mobile-item js-mobile-service">
+  <ul class="c-menu-mobile-flyout__list is-hidden js-menu-mobile-item js-mobile-service">
     <li class="c-menu-mobile-flyout__item">
       <a class="c-menu-mobile-flyout__link" href="?pagina=automacaoIndustrial">Automação industrial</a>
     </li>
@@ -204,22 +205,21 @@ $itenNav;
     </li>
   </ul>
 
-  <ul class="c-menu-mobile__content is-hidden js-menu-mobile-item js-mobile-company">
-    <li class="c-menu-mobile__item">
-      <a class="c-menu-mobile__link" href="?pagina=sobreNos">Sobre nós</a>
+  <ul class="c-menu-mobile-flyout__list is-hidden js-menu-mobile-item js-mobile-company">
+    <li class="c-menu-mobile-flyout__item">
+      <a class="c-menu-mobile-flyout__link" href="?pagina=sobreNos">Sobre nós</a>
     </li>
-    <li class="c-menu-mobile__item">
-      <a class="c-menu-mobile__link" href="?pagina=contato">Contato</a>
+    <li class="c-menu-mobile-flyout__item">
+      <a class="c-menu-mobile-flyout__link" href="?pagina=contato">Contato</a>
     </li>
-    <li class="c-menu-mobile__item">
-      <a class="c-menu-mobile__link" href="?pagina=parceiros">Parceiros</a>
+    <li class="c-menu-mobile-flyout__item">
+      <a class="c-menu-mobile-flyout__link" href="?pagina=parceiros">Parceiros</a>
     </li>
-    <li class="c-menu-mobile__item">
-      <a class="c-menu-mobile__link" href="?pagina=localizacao">Localização</a>
+    <li class="c-menu-mobile-flyout__item">
+      <a class="c-menu-mobile-flyout__link" href="?pagina=localizacao">Localização</a>
     </li>
   </ul>
 </nav>
-
 <button class="c-button-mobile" onclick="buttonMobileMenu()">
   <div class="c-button-mobile__slice-up  js-button-mobile"></div>
   <div class="c-button-mobile__slice-middle  js-button-mobile"></div>
