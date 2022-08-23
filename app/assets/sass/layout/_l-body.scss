@@ -3,11 +3,11 @@ $componente-name: "l-body";
 .#{$componente-name} {
 	background-color: map-color(map-white);
 	display: grid;
-	grid: "header " ($global-module-size * 1.7) "main" auto "footer" auto "line-footer" auto/ 1fr;
+	grid: "header " ($global-module-size * 1.5) "main" auto "footer" auto "line-footer" auto/ 1fr;
 	margin: 0 auto;
 	max-width: $global-max-width;
 
 	@include breakpoint(1280-up) {
-		grid: "header" ($global-module-size * 2.75) "main" auto "footer" auto "line-footer" auto/ 1fr;
+		grid: "header" ($global-module-size * 2) "main" auto "footer" auto "line-footer" auto/ 1fr;
 	}
 }

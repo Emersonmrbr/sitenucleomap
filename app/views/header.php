@@ -1,13 +1,8 @@
-<?php
-$itenNav;
-?>
 <h1 style="display: none;">Núcleo MAP</h1>
 
 <h2 style="display: none;">Uma nova era em utomação.</h2>
 
 <h1 style="display: none;">Menu Principal</h1>
-
-<!-- <div class="c-top js-sticky" data-sticky="top"></div> -->
 
 <a href="?pagina=home" class="c-logo js-logo-open-menu" data-sticky="logoLink">
   <svg class="c-logo__image js-logo-open-menu js-sticky" viewBox="0 0 1921 380" data-sticky="logoImage">

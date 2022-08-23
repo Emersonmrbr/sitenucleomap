@@ -87,6 +87,8 @@ body {
 	font-size: $global-font-size-medium;
 	color: map-color(map-grey-darken-10);
 	background-color: map-color(map-grey-lighten-50);
+	width: 100vw;
+	height: 100vh;
 }
 
 // Show focus styles on keyboard focus

@@ -2,7 +2,7 @@ $componente-name: "c-location";
 
 .#{$componente-name} {
 	padding: 0;
-	@include breakpoint(640-up) {
+	@include breakpoint(720-up) {
 		height: auto;
 		width: 100%;
 		padding: 0 $global-module-size;
