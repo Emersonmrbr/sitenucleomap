@@ -475,7 +475,6 @@ body {
 .l-header.has-sticker {
   -webkit-box-shadow: 0 1.5625rem 0.78125rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1.5625rem 0.78125rem 0 rgba(0, 0, 0, 0.2);
-  height: auto;
   padding: 0.3125rem 1.25rem;
 }
 
@@ -868,7 +867,6 @@ body {
 }
 
 .c-line-header__right.has-sticker {
-  height: 0;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
 }
@@ -888,12 +886,12 @@ body {
   fill: none;
   shape-rendering: crispEdges;
   stroke-width: 0.0625rem;
-  stroke: #000000;
+  stroke: #706f6f;
 }
 
 .c-line-header__item--color {
   shape-rendering: auto;
-  stroke: #706f6f;
+  stroke: #36a9e1;
 }
 
 .c-link-frame {
@@ -952,15 +950,16 @@ body {
 }
 
 .c-link-skin {
+  background: none;
+  border: none;
+  color: #706f6f;
   cursor: pointer;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto";
   font-size: 1rem;
   font-style: normal;
+  text-transform: uppercase;
   -webkit-transition: padding 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
   transition: padding 450ms cubic-bezier(0.05, 1, 0.8, 1) 0ms;
-  text-transform: uppercase;
-  border: none;
-  background: none;
 }
 
 @media (min-width: 40em) {
@@ -978,7 +977,6 @@ body {
   }
   .c-link-skin:hover {
     color: #565656;
-    font-style: normal;
     font-weight: 700;
   }
   .c-link-skin--footer {
@@ -1254,7 +1252,6 @@ body {
     width: 100%;
   }
   .c-menu.is-open {
-    height: auto;
     overflow: visible;
     width: 100%;
   }
@@ -1394,13 +1391,20 @@ body {
 }
 
 .c-slider {
+  position: relative;
   overflow: hidden;
-  margin: 6.25rem 0;
+  margin-bottom: 1.25rem;
   padding: 0;
-  height: 520px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
 }
 
-.c-slider__container {
+.c-slider__gallery-wrapper {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1408,23 +1412,108 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 400%;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
   height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
-.c-slider__content {
-  width: 25%;
+.c-slider__gallery {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
   margin: 0;
   padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
-.c-slider__content.actual {
+.c-slider__gallery.actual {
   margin-left: 0%;
 }
 
 .c-slider__item {
   width: 100%;
   height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.c-slider__description {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 /3;
+  background-color: #706f6faf;
+  width: 50%;
+  height: 25%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-items: center;
+  color: #ffffff;
+  padding-left: 2.08333rem;
+}
+
+.c-slider__title {
+  height: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.c-slider__text {
+  height: 50%;
+}
+
+.c-slider__prev, .c-slider__next {
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  width: 3.125rem;
+  background-color: transparent;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.c-slider__prev {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.c-slider__next {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 /4;
+}
+
+.c-slider__arrow-wrapper {
+  height: 100%;
+  width: 3.125rem;
+}
+
+.c-slider__arrow-prev, .c-slider__arrow-next {
+  stroke-width: 0.0625rem;
+  stroke: #ffffff;
+  fill: #ffffff;
 }
 
 .c-social-network {

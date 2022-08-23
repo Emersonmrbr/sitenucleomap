@@ -1,22 +1,32 @@
 $componente-name: "c-slider";
 
 .#{$componente-name} {
+	position: relative;
 	overflow: hidden;
-	margin: ($global-padding-up-down * 5) 0;
+	margin-bottom: ($global-padding-up-down);
 	padding: 0;
-	height: 520px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-rows: 1fr 1fr 1fr;
 	@include breakpoint(720-up) {
 	}
-	&__container {
+	&__gallery-wrapper {
+		overflow: hidden;
 		display: flex;
 		flex-direction: row;
-		width: 400%;
+		flex-flow: nowrap;
 		height: 100%;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
 	}
-	&__content {
-		width: 25%;
+	&__gallery {
+		flex-shrink: 0;
+		width: 100%;
 		margin: 0;
 		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		&.actual {
 			margin-left: 0%;
 		}
@@ -24,5 +34,55 @@ $componente-name: "c-slider";
 	&__item {
 		width: 100%;
 		height: 100%;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
+	&__description {
+		grid-column: 1 / 2;
+		grid-row: 2 /3;
+		background-color: map-color(map-grey) + af;
+		width: 50%;
+		height: 25%;
+		align-self: flex-end;
+		justify-self: flex-start;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-items: center;
+		color: map-color(map-white);
+		padding-left: ($global-module-size / 1.5);
+	}
+	&__title {
+		height: 50%;
+		justify-self: center;
+	}
+	&__text {
+		height: 50%;
+	}
+	&__prev,
+	&__next {
+		border: none;
+		cursor: pointer;
+		opacity: 1;
+		width: $global-module-size;
+		background-color: transparent;
+		grid-row: 2 / 3;
+	}
+	&__prev {
+		grid-column: 1 / 2;
+	}
+	&__next {
+		grid-column: 3 /4;
+	}
+	&__arrow-wrapper {
+		height: 100%;
+		width: $global-module-size;
+	}
+	&__arrow-prev,
+	&__arrow-next {
+		// shape-rendering: crispEdges;
+		stroke-width: ($global-module-size / 50);
+		stroke: map-color(map-white);
+		fill: map-color(map-white);
 	}
 }

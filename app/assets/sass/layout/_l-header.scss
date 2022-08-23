@@ -17,7 +17,6 @@ $componente-name: "l-header";
 	column-gap: ($global-module-size / 5);
 	&.has-sticker {
 		box-shadow: 0 ($global-module-size / 2) ($global-module-size / 4) 0 rgba(0, 0, 0, 0.2);
-		height: auto;
 		padding: ($mobile-padding-up-down-sticker) ($mobile-padding-side-sticker);
 	}
 	@include breakpoint(720-up) {
