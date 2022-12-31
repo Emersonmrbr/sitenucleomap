@@ -6,9 +6,9 @@ $componente-name: "c-line-footer";
 	grid-area: line-footer;
 	grid-template-columns: 1fr;
 	height: auto;
-	margin: 0;
-	width: 100%;
-
+	margin: 0 auto;
+	max-width: $global-max-width;
+	width: 100vw;
 	@include breakpoint(640-up) {
 		grid-template-columns: 1fr ($global-module-size * 5.5);
 	}

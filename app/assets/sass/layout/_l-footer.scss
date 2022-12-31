@@ -8,6 +8,7 @@ $componente-name: "l-footer";
 	grid: "description" $global-module-size "local" $global-module-size "contact " auto "social-network " auto "copyright" auto / 1fr;
 	height: auto;
 	margin: 0 auto;
+	max-width: $global-max-width;
 	padding: 0 ($mobile-padding-side);
 	width: 100%;
 

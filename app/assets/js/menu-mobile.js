@@ -16,14 +16,14 @@ function buttonMobileMenu() {
 // Menu mobile flyout
 function openMenuMobile(itenMenuMobile) {
 	clickMenu = itenMenuMobile;
-	let actualClass = ".js-mobile-" + itenMenuMobile;
-	if (classOpened !== actualClass) {
+	let carouselClass = ".js-mobile-" + itenMenuMobile;
+	if (classOpened !== carouselClass) {
 		cleanenuMobile();
 		menuMobileFlyout.classList.add("is-open");
 		menuMobileFlyout.classList.remove("is-hidden");
-		document.querySelector(actualClass).classList.remove("is-hidden");
-		document.querySelector(actualClass).classList.add("is-open");
-		classOpened = actualClass;
+		document.querySelector(carouselClass).classList.remove("is-hidden");
+		document.querySelector(carouselClass).classList.add("is-open");
+		classOpened = carouselClass;
 		menuIsOpened = true;
 	} else {
 		closeMenuMobile();

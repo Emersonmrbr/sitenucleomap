@@ -1,8 +1,8 @@
 // Open  and close menu
 function openMenu(itenMenu) {
 	clickMenu = itenMenu;
-	let actualClass = ".js-" + itenMenu;
-	if (classOpened !== actualClass) {
+	let carouselClass = ".js-" + itenMenu;
+	if (classOpened !== carouselClass) {
 		menuItens.forEach(element => {
 			element.classList.add("is-hidden");
 		});
@@ -10,9 +10,9 @@ function openMenu(itenMenu) {
 		menuFlyout.classList.add("is-open");
 		buttonClose.classList.remove("is-hidden");
 		buttonClose.classList.add("is-open");
-		document.querySelector(actualClass).classList.remove("is-hidden");
-		document.querySelector(actualClass).classList.add("is-open");
-		classOpened = actualClass;
+		document.querySelector(carouselClass).classList.remove("is-hidden");
+		document.querySelector(carouselClass).classList.add("is-open");
+		classOpened = carouselClass;
 		menuIsOpened = true;
 	} else {
 		menuItens.forEach(element => {

@@ -110,6 +110,7 @@
     <script src="app/assets/js/menu-mobile.js"></script>
     <script src="app/assets/js/menu.js"></script>
     <script src="app/assets/js/responsive.js"></script>
+    <script src="app/assets/js/slider.js"></script>
     <script src="app/assets/js/sticky.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=containerMaps" async defer></script>
 </body>
