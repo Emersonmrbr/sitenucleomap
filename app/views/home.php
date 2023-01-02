@@ -1,6 +1,13 @@
 <div class="c-slider">
     <div class="c-slider__gallery-wrapper">
         <figure class="c-slider__gallery js-carousel">
+            <img src="app/assets/image/automacaoindustrial/image4.jpg" alt="Foto 4 máquina Núcleo MAP" class="c-slider__item">
+            <figcaption class="c-slider__description">
+                <h3 class="c-slider__title">Consultoria</h3>
+                <p class="c-slider__text">Damos palpites que geram economias e produtividade.</p>
+            </figcaption>
+        </figure>
+        <figure class="c-slider__gallery">
             <img src="app/assets/image/automacaoindustrial/image1.jpg" alt="Foto 1 máquina Núcleo MAP" class="c-slider__item">
             <figcaption class="c-slider__description">
                 <h3 class="c-slider__title">Qualidade, tecnologia e inovação</h3>

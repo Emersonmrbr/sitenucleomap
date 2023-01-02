@@ -17,6 +17,6 @@ const uP720 = window.matchMedia("(min-width: 720px)");
 let amountImages = images.length - 1;
 let classOpened;
 let clickMenu;
-let currentIndex = 0;
+let currentIndex = 1;
 let isCollapsed;
 let menuIsOpened;
