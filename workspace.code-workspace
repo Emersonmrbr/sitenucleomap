@@ -1,9 +1,4 @@
 {
-	"folders": [
-		{
-			"name": "sitenucleomap",
-			"path": "."
-		}
-	],
+	"folders": [{ "name": "sitenucleomap", "path": "." }],
 	"settings": {}
 }

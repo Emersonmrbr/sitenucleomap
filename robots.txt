@@ -1,6 +1,5 @@
 user-agent:*
-Disallow: /_css/
-Disallow: /_fonts/
-Disallow: /_interface/
-Disallow: /_textos/
-Disallow: /_script/
+Disallow: /assest/js/
+Disallow: /assest/sass/
+Disallow: /assets/css/
+Disallow: /assets/image/
