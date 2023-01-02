@@ -29,7 +29,7 @@ $componente-name: "c-slider";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		&.carousel {
-			// transition: all 2s ease-in;
+			transition: all 2s ease-in;
 		}
 	}
 	&__item {
