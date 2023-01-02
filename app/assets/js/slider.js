@@ -1,3 +1,4 @@
+//Move to second image
 carousel.style.transition = "none";
 carousel.style.marginLeft = `-${currentIndex * 100}%`;
 
