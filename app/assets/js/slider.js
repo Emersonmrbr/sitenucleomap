@@ -5,7 +5,6 @@ function changeImage(direction) {
 	} else if (direction === "prev") {
 		carousel.style.marginLeft = `-${currentIndex * 100}%`;
 	}
-	console.log(currentIndex);
 }
 
 buttonNext.addEventListener("click", () => {
