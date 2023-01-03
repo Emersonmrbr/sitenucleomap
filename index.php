@@ -22,6 +22,7 @@
         <?php
         include 'app/assets/breadcrumb.php';
         ?>
+        <div class="l-fake js-fake"></div>
         <main class="l-main">
             <?php
             $pagina = 'home';
