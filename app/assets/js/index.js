@@ -21,6 +21,3 @@ let currentIndex = 1;
 let isCollapsed;
 let menuIsOpened;
 document.querySelector(".js-fake").style.height = header.offsetHeight + "px";
-// fake.style.height = header.offsetHeight;
-// console.log(fake.style.height);
-// console.log(header.offsetHeight);

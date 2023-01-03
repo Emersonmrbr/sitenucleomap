@@ -475,6 +475,7 @@ body {
 
 .l-fake {
   grid-area: header;
+  background-color: #ffffff;
 }
 
 .l-footer {
