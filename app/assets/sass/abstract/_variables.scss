@@ -94,6 +94,7 @@ $map-colors: (
 			$amount: 90%,
 		),
 	"map-grey": #706f6f,
+	"map-grey-transparent": #706f6f99,
 	"map-white": #ffffff,
 );
 
@@ -144,52 +145,52 @@ $global-line-height-smaller: 0.5;
 
 $global-radius: rem(5);
 $global-module-size: rem(50);
-$global-width-header: ($global-module-size * 5);
-$global-width-header-mobile: ($global-module-size * 3);
-$global-height-header: ($global-module-size * 1.1);
+$global-width-header: calc($global-module-size * 5);
+$global-width-header-mobile: calc($global-module-size * 3);
+$global-height-header: calc($global-module-size * 1.1);
 
-$global-margin: ($global-module-size / 5);
-$global-margin-up: ($global-module-size / 5);
-$global-margin-right: ($global-module-size / 5);
-$global-margin-down: ($global-module-size / 5);
-$global-margin-left: ($global-module-size / 5);
+$global-margin: calc($global-module-size / 5);
+$global-margin-up: calc($global-module-size / 5);
+$global-margin-right: calc($global-module-size / 5);
+$global-margin-down: calc($global-module-size / 5);
+$global-margin-left: calc($global-module-size / 5);
 
-$global-padding-down-sticker: ($global-module-size / 4);
-$global-padding-down: ($global-module-size / 2.5);
-$global-padding-left-sticker: ($global-module-size * 1.5);
-$global-padding-left: ($global-module-size * 1.5);
-$global-padding-right-sticker: ($global-module-size * 1.5);
-$global-padding-right: ($global-module-size * 1.5);
-$global-padding-side-sticker: ($global-module-size * 1.5);
-$global-padding-side: ($global-module-size * 1.5);
-$global-padding-sticker: ($global-module-size / 4);
-$global-padding-up-down: ($global-module-size / 2.5);
-$global-padding-up-sticker: ($global-module-size / 4);
-$global-padding-up: ($global-module-size / 2.5);
-$global-padding: ($global-module-size / 2.5);
-$mobile-padding-down-sticker: ($global-module-size / 10);
-$mobile-padding-down: ($global-module-size / 2.5);
-$mobile-padding-left-sticker: ($global-module-size / 2.5);
-$mobile-padding-left: ($global-module-size / 1.5);
-$mobile-padding-right-sticker: ($global-module-size / 2.5);
-$mobile-padding-right: ($global-module-size / 1.5);
-$mobile-padding-side-sticker: ($global-module-size * 1.5);
-$mobile-padding-side-sticker: ($global-module-size / 2.5);
-$mobile-padding-side: ($global-module-size / 1.5);
-$mobile-padding-sticker: ($global-module-size / 2.5);
-$mobile-padding-up-down-sticker: ($global-module-size / 10);
-$mobile-padding-up-down-sticker: ($global-module-size / 4);
-$mobile-padding-up-down: ($global-module-size / 2.5);
-$mobile-padding-up-sticker: ($global-module-size / 10);
-$mobile-padding-up: ($global-module-size / 2.5);
-$mobile-padding: ($global-module-size / 1.5);
+$global-padding-down-sticker: calc($global-module-size / 4);
+$global-padding-down: calc($global-module-size / 2.5);
+$global-padding-left-sticker: calc($global-module-size * 1.5);
+$global-padding-left: calc($global-module-size * 1.5);
+$global-padding-right-sticker: calc($global-module-size * 1.5);
+$global-padding-right: calc($global-module-size * 1.5);
+$global-padding-side-sticker: calc($global-module-size * 1.5);
+$global-padding-side: calc($global-module-size * 1.5);
+$global-padding-sticker: calc($global-module-size / 4);
+$global-padding-up-down: calc($global-module-size / 2.5);
+$global-padding-up-sticker: calc($global-module-size / 4);
+$global-padding-up: calc($global-module-size / 2.5);
+$global-padding: calc($global-module-size / 2.5);
+$mobile-padding-down-sticker: calc($global-module-size / 10);
+$mobile-padding-down: calc($global-module-size / 2.5);
+$mobile-padding-left-sticker: calc($global-module-size / 2.5);
+$mobile-padding-left: calc($global-module-size / 1.5);
+$mobile-padding-right-sticker: calc($global-module-size / 2.5);
+$mobile-padding-right: calc($global-module-size / 1.5);
+$mobile-padding-side-sticker: calc($global-module-size * 1.5);
+$mobile-padding-side-sticker: calc($global-module-size / 2.5);
+$mobile-padding-side: calc($global-module-size / 1.5);
+$mobile-padding-sticker: calc($global-module-size / 2.5);
+$mobile-padding-up-down-sticker: calc($global-module-size / 10);
+$mobile-padding-up-down-sticker: calc($global-module-size / 4);
+$mobile-padding-up-down: calc($global-module-size / 2.5);
+$mobile-padding-up-sticker: calc($global-module-size / 10);
+$mobile-padding-up: calc($global-module-size / 2.5);
+$mobile-padding: calc($global-module-size / 1.5);
 
-$slice-height-big: ($global-module-size / 13);
-$slice-height-small: ($global-module-size / 75);
-$slice-height: ($global-module-size / 20);
-$slice-margin: ($global-module-size / 10);
+$slice-height-big: calc($global-module-size / 13);
+$slice-height-small: calc($global-module-size / 75);
+$slice-height: calc($global-module-size / 20);
+$slice-margin: calc($global-module-size / 10);
 $slice-translate: $slice-height-big / 2;
-$slice-width: ($global-module-size / 1.5);
+$slice-width: calc($global-module-size / 1.5);
 // ==========================================================================
 // Transitions
 // ==========================================================================
