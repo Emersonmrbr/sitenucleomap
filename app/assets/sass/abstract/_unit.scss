@@ -17,7 +17,8 @@ $rem-base: 16px !default;
 /// @param {Number} $num - Number to strip unit from.
 /// @returns {Number} The same number, sans unit.
 @function strip-unit($num) {
-	$result: calc($num / ($num * 0 + 1));
+	$times: ($num * 0+1);
+	$result: calc($num / $times);
 	@return $result;
 }
 
@@ -62,7 +63,7 @@ $rem-base: 16px !default;
 @function -zf-to-rem($value, $base: $rem-base) {
 	// Calculate rem if units for $value is not rem
 	@if (unit($value) != "rem") {
-		$value: strip-unit($value) / strip-unit($base) * 1rem;
+		$value: calc(strip-unit($value) / strip-unit($base) * 1rem);
 	}
 
 	// Turn 0rem into 0

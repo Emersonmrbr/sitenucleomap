@@ -9,7 +9,7 @@ $componente-name: "c-button-mobile";
 	grid-area: button-mobile;
 	height: auto;
 	justify-self: flex-end;
-	padding: ($global-module-size / 2.5);
+	padding: $global-padding-size-xs;
 	transition: $transition-function-header;
 	width: auto;
 

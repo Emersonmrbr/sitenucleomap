@@ -5,7 +5,7 @@ $componente-name: "c-location";
 	@include breakpoint(720-up) {
 		height: auto;
 		width: 100%;
-		padding: 0 $global-module-size;
+		padding: 0 $global-padding-size;
 	}
 	&__maps {
 		height: 800px;
@@ -14,8 +14,8 @@ $componente-name: "c-location";
 	&__address {
 		background-color: map-color(map-grey-lighten-50);
 		height: auto;
-		margin: $global-module-size 0;
-		padding: $global-module-size;
+		margin: $global-padding-size 0;
+		padding: $global-padding-size;
 		width: 100%;
 		@include breakpoint(1120-up) {
 			width: 50%;

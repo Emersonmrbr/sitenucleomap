@@ -46,7 +46,7 @@ $componente-name: "c-menu";
 			z-index: z-index(above);
 			&.is-open {
 				height: auto;
-				padding: ($global-module-size) 0 ($global-module-size * 2);
+				padding: $global-padding-size 0 $global-padding-size-sl;
 				transition: $transition-function-header;
 				width: 100%;
 			}
@@ -55,7 +55,7 @@ $componente-name: "c-menu";
 		&__content {
 			width: ($global-module-size * 8);
 			margin: 0;
-			padding: ($global-module-size / 5) 0 0 0;
+			padding: $global-padding-size-xxs 0 0 0;
 		}
 		&__item {
 			align-items: center;
@@ -70,7 +70,7 @@ $componente-name: "c-menu";
 		&__link {
 			color: map-color(map-black);
 			height: auto;
-			padding-left: ($global-module-size / 10);
+			padding-left: ($global-padding-size-xxxs);
 		}
 		&__close {
 			bottom: -32px;

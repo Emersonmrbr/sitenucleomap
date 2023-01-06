@@ -14,7 +14,7 @@ $componente-name: "c-link";
 			display: block;
 			font-weight: $global-font-weight-light;
 			line-height: $global-line-height-small;
-			padding: ($global-module-size/4) 0;
+			padding: $global-padding-size-xxs 0;
 			position: relative;
 			transition: $transition-function-padding-link;
 			&:first-child {
@@ -55,7 +55,7 @@ $componente-name: "c-link";
 		text-transform: uppercase;
 		transition: $transition-function-padding-link;
 		@include breakpoint(640-up) {
-			padding: ($global-module-size/4) 0;
+			padding: $global-padding-size-xxs 0;
 			position: relative;
 
 			&::after {

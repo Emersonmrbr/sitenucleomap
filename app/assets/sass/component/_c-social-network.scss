@@ -45,7 +45,7 @@ $componente-name: "c-social-network";
 		width: ($global-module-size);
 		&:hover {
 			background-color: map-color(map-grey-darken-10);
-			padding: ($global-module-size * 0.15);
+			padding: ($global-padding-size-xxxs);
 		}
 	}
 	&__link {

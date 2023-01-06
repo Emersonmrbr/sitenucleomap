@@ -5,7 +5,7 @@ $componente-name: "c-copyright";
 	grid-area: copyright;
 	justify-self: flex-start;
 	margin: 0;
-	padding: ($global-module-size * 0.2) ($global-module-size * 0.2) ($global-module-size * 0.2) 0;
+	padding: $global-padding-size-xxxs $global-padding-size-xxxs $global-padding-size-xxxs 0;
 	font-size: $global-font-size-small;
 
 	@include breakpoint(720-up) {

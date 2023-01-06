@@ -13,7 +13,7 @@ $componente-name: "c-line-footer";
 		grid-template-columns: 1fr ($global-module-size * 5.5);
 	}
 	&__full {
-		height: ($global-module-size * 0.4);
+		height: ($global-module-size-ssss);
 		shape-rendering: crispEdges;
 		width: 100%;
 	}
@@ -39,7 +39,7 @@ $componente-name: "c-line-footer";
 
 		@include breakpoint(640-up) {
 			display: block;
-			height: ($global-module-size * 0.4);
+			height: ($global-module-size-ssss);
 			overflow: visible;
 			width: 100%;
 		}

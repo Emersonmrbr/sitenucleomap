@@ -9,7 +9,7 @@ $componente-name: "l-header";
 	margin: 0 auto;
 	max-width: $global-max-width;
 	overflow: visible;
-	padding: ($mobile-padding-up) ($mobile-padding-side) 0;
+	padding: ($global-padding-size-xxs) ($global-padding-size-xxxs) 0;
 	position: fixed;
 	transition: $transition-function-header;
 	width: 100%;
@@ -17,17 +17,17 @@ $componente-name: "l-header";
 	column-gap: ($global-module-size / 5);
 	&.has-sticker {
 		box-shadow: 0 ($global-module-size / 2) ($global-module-size / 4) 0 rgba(0, 0, 0, 0.2);
-		padding: ($mobile-padding-up-down-sticker) ($mobile-padding-side-sticker);
+		padding: ($global-padding-size-xxs) ($global-padding-size-xxxs);
 	}
 	@include breakpoint(720-up) {
-		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ auto 1fr;
-		padding: ($mobile-padding-up) ($mobile-padding-side) 0 ($mobile-padding-side);
+		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ 250px 1fr;
+		padding: ($global-padding-size-xs) ($global-padding-size-xxs) 0 ($global-padding-size-xxs);
 		gap: 0;
 	}
 	@include breakpoint(1280-up) {
-		padding: ($global-padding-up) ($global-padding-side) 0;
+		padding: ($global-padding-size-s) ($global-padding-size-xs) 0;
 		&.has-sticker {
-			padding: 0 ($global-padding-side-sticker);
+			padding: 0 ($global-padding-size-xs);
 		}
 	}
 }

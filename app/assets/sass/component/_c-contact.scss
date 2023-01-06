@@ -14,7 +14,7 @@ $componente-name: "c-contact";
 	}
 	&__icon {
 		height: 100%;
-		padding: ($global-module-size * 0.2) ($global-module-size * 0.2) ($global-module-size * 0.2) 0;
+		padding: $global-padding-size-ssss $global-padding-size-ssss $global-padding-size-ssss 0;
 		width: ($global-module-size);
 	}
 	&__content {
@@ -29,7 +29,7 @@ $componente-name: "c-contact";
 	}
 	&__info {
 		height: 100%;
-		padding: ($global-module-size * 0.2) 0;
+		padding: $global-module-size-ssss 0;
 		width: 100%;
 	}
 }

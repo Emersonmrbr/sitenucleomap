@@ -8,7 +8,7 @@ $componente-name: "c-menu-mobile";
 	&.is-open {
 		height: auto;
 		overflow: visible;
-		padding: ($mobile-padding-up-down * 3) 0;
+		padding: ($global-padding-size * 3) 0;
 		transition: $transition-function-header-mobile;
 		width: 100%;
 	}
@@ -29,7 +29,7 @@ $componente-name: "c-menu-mobile";
 		border-top: 1px map-color(map-black) solid;
 		color: map-color(map-grey);
 		display: flex;
-		padding: ($global-module-size / 3);
+		padding: ($global-padding-size-xxs);
 		position: relative;
 		height: 100%;
 		&:last-child {
@@ -47,7 +47,7 @@ $componente-name: "c-menu-mobile";
 				content: ">";
 				font-weight: 100;
 				position: absolute;
-				right: ($global-module-size/5);
+				right: ($global-module-size-xxs);
 				top: auto;
 				transform: scale(1.5, 3);
 			}
@@ -58,7 +58,7 @@ $componente-name: "c-menu-mobile";
 		&.is-open {
 			height: auto;
 			overflow: visible;
-			padding: ($mobile-padding-up-down * 3) 0;
+			padding: ($global-padding-size * 3) 0;
 			transition: $transition-function-header-mobile;
 			width: 100%;
 		}
@@ -66,7 +66,7 @@ $componente-name: "c-menu-mobile";
 			display: flex;
 			flex-direction: column;
 			margin: 0;
-			padding: 54px 0 0 0;
+			padding: $global-padding-size-l 0 0 0;
 		}
 		&__item {
 			// border-top: 1px map-color(map-black) solid;
@@ -81,7 +81,7 @@ $componente-name: "c-menu-mobile";
 			border: none;
 			color: map-color(map-grey);
 			display: flex;
-			padding: ($global-module-size / 3);
+			padding: ($global-padding-size-xxs);
 			position: relative;
 			text-transform: capitalize;
 			width: 100%;

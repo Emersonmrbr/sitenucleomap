@@ -5,10 +5,10 @@ $componente-name: "l-main";
 	color: map-color(map-grey);
 	grid-area: main;
 	margin: 0 auto;
-	// padding: ($mobile-padding-side);
+	padding: ($global-padding-size-xxxs) 0;
 	width: 100vw;
 	max-width: $global-max-width;
 	@include breakpoint(1280-up) {
-		padding: ($global-padding-up-down) ($global-padding-side);
+		padding: ($global-padding-size-xs) 0;
 	}
 }

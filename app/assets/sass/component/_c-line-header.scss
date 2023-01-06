@@ -4,9 +4,8 @@ $componente-name: "c-line-header";
 	display: grid;
 	grid-area: line;
 	grid-template-columns: auto ($global-module-size * 2.5);
-	height: ($global-module-size / 5);
+	height: auto;
 	overflow: visible;
-	padding: ($global-module-size / 5) 0 0 0;
 	transition: $transition-function-header;
 	width: 100%;
 	&.has-sticker {
@@ -16,7 +15,7 @@ $componente-name: "c-line-header";
 	&__full {
 		grid-column: 1 / -1;
 		overflow: visible;
-		height: ($global-module-size / 5);
+		height: 10px;
 		width: 100%;
 		shape-rendering: crispEdges;
 		transform-origin: 100% 100%;
@@ -39,7 +38,7 @@ $componente-name: "c-line-header";
 		}
 		@include breakpoint(720-up) {
 			grid-column: 2 / 3;
-			height: ($global-module-size / 5);
+			height: 10px;
 			overflow: visible;
 			width: 100%;
 		}
@@ -47,8 +46,11 @@ $componente-name: "c-line-header";
 	&__item {
 		fill: none;
 		shape-rendering: crispEdges;
-		stroke-width: ($global-module-size / 50);
+		stroke-width: 0.05rem;
 		stroke: map-color(map-grey);
+		@-moz-document url-prefix() {
+			stroke-width: 1px;
+		}
 		&--color {
 			shape-rendering: auto;
 			stroke: map-color(map-blue);
