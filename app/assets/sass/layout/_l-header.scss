@@ -20,11 +20,12 @@ $componente-name: "l-header";
 		padding: ($global-padding-size-xxs) ($global-padding-size-xxxs);
 	}
 	@include breakpoint(720-up) {
-		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ 250px 1fr;
+		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ auto 1fr;
 		padding: ($global-padding-size-xs) ($global-padding-size-xxs) 0 ($global-padding-size-xxs);
 		gap: 0;
 	}
 	@include breakpoint(1280-up) {
+		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ 250px 1fr;
 		padding: ($global-padding-size-s) ($global-padding-size-xs) 0;
 		&.has-sticker {
 			padding: 0 ($global-padding-size-xs);

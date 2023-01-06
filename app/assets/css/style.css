@@ -445,13 +445,14 @@ body {
 }
 @media (min-width: 45em) {
   .l-header {
-    grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/250px 1fr;
+    grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/auto 1fr;
     padding: 1.171875rem 0.78125rem 0 0.78125rem;
     gap: 0;
   }
 }
 @media (min-width: 80em) {
   .l-header {
+    grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/250px 1fr;
     padding: 2.734375rem 1.171875rem 0;
   }
   .l-header.has-sticker {
@@ -1071,7 +1072,7 @@ body {
   justify-items: center;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(3, 5.625rem);
+  grid-template-columns: repeat(3, 6.25rem);
 }
 @media (min-width: 60em) {
   .c-menu__list {
