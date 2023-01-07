@@ -2,6 +2,10 @@
 carousel.style.transition = "none";
 carousel.style.marginLeft = `-${currentIndex * 100}%`;
 
+const autoSlider = setInterval(function () {
+	advanceImage();
+}, 2000);
+
 function changeImage(direction) {
 	carousel.style.transition = "all 450ms ease-in";
 	if (direction === "next") {
@@ -9,25 +13,34 @@ function changeImage(direction) {
 	} else if (direction === "prev") {
 		carousel.style.marginLeft = `-${currentIndex * 100}%`;
 	}
-	console.log(currentIndex);
-	console.log(carousel.style.marginLeft);
 }
 
 buttonNext.addEventListener("click", () => {
+	advanceImage();
+	clearInterval(autoSlider);
+});
+
+function advanceImage() {
 	currentIndex++;
 	if (currentIndex > amountImages) {
 		currentIndex = 0;
 	}
 	changeImage("next");
-});
+}
 
 buttonPrev.addEventListener("click", () => {
+	rewindImage();
+	clearInterval(autoSlider);
+});
+
+function rewindImage() {
 	currentIndex--;
 	if (currentIndex < 0) {
 		currentIndex = amountImages;
 	}
 	changeImage("prev");
-});
+}
+
 carousel.addEventListener("transitionend", () => {
 	if (carousel.style.marginLeft === `-${amountImages * 100}%`) {
 		currentIndex = 1;

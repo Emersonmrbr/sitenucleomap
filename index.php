@@ -28,11 +28,11 @@
             $pagina = 'home';
             $pagina = $_GET["pagina"];
             switch ($pagina) {
-                case 'seriePRNU':
-                    include 'app/views/seriePRNU.php';
+                case 'NestingCNC':
+                    include 'app/views/NestingCNC.php';
                     break;
-                case 'serieSTNU':
-                    include 'app/views/serieSTNU.php';
+                case 'PlasmaCNC':
+                    include 'app/views/PlasmaCNC.php';
                     break;
                 case 'servicos':
                     include 'app/views/servicos.php';

@@ -77,10 +77,10 @@
 <nav class="c-menu-flyout js-menu-flyout">
   <ul class="c-menu-flyout__content is-hidden js-menu-item js-products">
     <li class="c-menu-flyout__item">
-      <a class="c-menu-flyout__link" href="?pagina=seriePRNU">Série PRN</a>
+      <a class="c-menu-flyout__link" href="?pagina=NestingCNC">Nexting CNC</a>
     </li>
     <li class="c-menu-flyout__item">
-      <a class="c-menu-flyout__link" href="?pagina=serieSTNU">Série STN</a>
+      <a class="c-menu-flyout__link" href="?pagina=PlasmaCNC">Plasma CNC</a>
     </li>
   </ul>
 
