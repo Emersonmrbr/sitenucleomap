@@ -1,7 +1,6 @@
 $componente-name: "c-slider";
 
 .#{$componente-name} {
-	// margin-bottom: ($global-padding-up-down * 50);
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	grid-template-rows: 1fr 1fr 1fr;

@@ -29,7 +29,7 @@ $componente-name: "c-menu";
 		padding: 0;
 		grid-template-columns: repeat(3, $global-module-size-sxl);
 		@include breakpoint(960-up) {
-			grid-template-columns: repeat(5, $global-module-size-sxl);
+			grid-template-columns: repeat(5, $global-module-size-sxxl);
 		}
 	}
 	&-flyout {

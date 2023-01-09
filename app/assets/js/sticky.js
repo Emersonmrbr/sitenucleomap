@@ -11,8 +11,6 @@ function menuCollap() {
 	stickerStraightSmall.style.transition = "none";
 	stickerStraightBig.classList.add("has-sticker");
 	stickerStraightSmall.classList.add("has-sticker");
-
-	// stickerLag.style.transition = "350ms ease-in 0ms";
 }
 
 // Expand menu
@@ -33,14 +31,6 @@ function menuExpand() {
 			});
 		}
 	});
-	// stickerStraightSmall.addEventListener("transitionend", () => {
-	// if (isCollapsed !== true) {
-	// stickerCrookeds.forEach(crooked => {
-	// 	crooked.style.transition = "ease-in 450ms";
-	// 	crooked.classList.remove("has-sticker");
-	// });
-	// }
-	// });
 }
 // stick header
 window.onscroll = function () {
