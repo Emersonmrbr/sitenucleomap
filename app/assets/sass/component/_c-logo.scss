@@ -9,15 +9,15 @@ $componente-name: "c-logo";
 	width: 100%;
 	&__image {
 		transition: $transition-function-header;
-		width: ($global-module-size * 3.5);
+		width: calc($global-module-size * 3.5);
 		&.has-sticker {
-			width: ($global-module-size * 3);
+			width: calc($global-module-size * 3);
 		}
 
 		@include breakpoint(800-up) {
 			width: $global-module-size * 5;
 			&.has-sticker {
-				width: ($global-module-size * 4);
+				width: calc($global-module-size * 4);
 			}
 		}
 	}

@@ -3,12 +3,12 @@ $componente-name: "c-link";
 .#{$componente-name} {
 	&-frame {
 		align-items: center;
-		border-bottom: solid ($global-module-size / 50) map-color(map-black);
+		border-bottom: solid calc($global-module-size / 50) map-color(map-black);
 		display: flex;
 		height: $global-module-size;
 		width: 100%;
 		&:first-child {
-			border-bottom: solid ($global-module-size / 50) map-color(map-black);
+			border-bottom: solid calc($global-module-size / 50) map-color(map-black);
 		}
 		@include breakpoint(640-up) {
 			display: block;
@@ -24,8 +24,8 @@ $componente-name: "c-link";
 			&::after {
 				content: "";
 				display: block;
-				height: ($global-module-size/20);
-				margin-top: ($global-module-size/20);
+				height: calc($global-module-size/20);
+				margin-top: calc($global-module-size/20);
 				position: absolute;
 				transform: scale(0, 1);
 				transition: $transition-function-transform-link;

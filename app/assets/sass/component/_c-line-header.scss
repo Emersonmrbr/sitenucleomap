@@ -19,10 +19,8 @@ $componente-name: "c-line-header";
 		width: 100%;
 		shape-rendering: crispEdges;
 		transform-origin: 100% 100%;
-		&.has-sticker {
-			height: 0;
-			transform: scale(0, 1);
-		}
+		// &.has-sticker {
+		// }
 		@include breakpoint(720-up) {
 			grid-column: 1 / 2;
 		}
@@ -33,9 +31,9 @@ $componente-name: "c-line-header";
 		overflow: hidden;
 		transform-origin: 100% 0%;
 		transition: $transition-function-header;
-		&.has-sticker {
-			transform: scale(1, 0);
-		}
+		// &.has-sticker {
+		// 	transform: scale(1, 0);
+		// }
 		@include breakpoint(720-up) {
 			grid-column: 2 / 3;
 			height: 10px;
@@ -54,6 +52,11 @@ $componente-name: "c-line-header";
 		&--color {
 			shape-rendering: auto;
 			stroke: map-color(map-blue);
+		}
+		&.has-sticker {
+			height: 0;
+			transform: scale(0, 1);
+			// display: none;
 		}
 	}
 }

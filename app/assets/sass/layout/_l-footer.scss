@@ -13,7 +13,7 @@ $componente-name: "l-footer";
 	width: 100%;
 
 	@include breakpoint(720-up) {
-		grid: "description local" ($global-module-size * 2) "contact social-network" auto "copyright ." auto / auto auto;
+		grid: "description local" calc($global-module-size * 2) "contact social-network" auto "copyright ." auto / auto auto;
 	}
 
 	@include breakpoint(1280-up) {

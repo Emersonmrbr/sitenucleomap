@@ -14,10 +14,10 @@ $componente-name: "l-header";
 	transition: $transition-function-header;
 	width: 100%;
 	z-index: z-index(above);
-	column-gap: ($global-module-size / 5);
+	column-gap: calc($global-module-size / 5);
 	&.has-sticker {
-		box-shadow: 0 ($global-module-size / 2) ($global-module-size / 4) 0 rgba(0, 0, 0, 0.2);
-		padding: ($global-padding-size-xxs) ($global-padding-size-xxxs);
+		box-shadow: 0 $global-module-size-ssss $global-module-size-xxxs 0 rgba(0, 0, 0, 0.2);
+		padding: ($global-padding-size-xxxs) ($global-padding-size-xxxs);
 	}
 	@include breakpoint(720-up) {
 		grid: "top top" auto "logo menu" auto "menu-flyout menu-flyout" auto "button-close button-close" auto "line line" auto/ auto 1fr;

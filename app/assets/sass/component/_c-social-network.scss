@@ -5,12 +5,12 @@ $componente-name: "c-social-network";
 	display: grid;
 	grid-area: social-network;
 	grid-template-columns: 1fr;
-	height: ($global-module-size * 2);
+	height: calc($global-module-size * 2);
 	margin: 0;
 	padding: 0;
 	width: auto;
 	@include breakpoint(400-up) {
-		grid-template-columns: ($global-module-size * 6) 1fr;
+		grid-template-columns: calc($global-module-size * 6) 1fr;
 	}
 	@include breakpoint(720-up) {
 		grid-template-columns: 1fr ($global-module-size * 6);
@@ -18,7 +18,7 @@ $componente-name: "c-social-network";
 
 	&__container {
 		align-items: center;
-		column-gap: ($global-module-size / 10);
+		column-gap: calc($global-module-size / 10);
 		display: grid;
 		grid-column: 1 / 2;
 		grid-template-columns: repeat(4, 1fr);
@@ -33,7 +33,7 @@ $componente-name: "c-social-network";
 	}
 
 	@include breakpoint(720-up) {
-		height: ($global-module-size * 5);
+		height: calc($global-module-size * 5);
 	}
 
 	&__icon {
@@ -42,10 +42,10 @@ $componente-name: "c-social-network";
 		margin: 0;
 		padding: 0;
 		transition: $transition-duration-exit;
-		width: ($global-module-size);
+		width: calc($global-module-size);
 		&:hover {
 			background-color: map-color(map-grey-darken-10);
-			padding: ($global-padding-size-xxxs);
+			padding: calc($global-padding-size-xxxs);
 		}
 	}
 	&__link {

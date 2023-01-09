@@ -98,7 +98,7 @@ $componente-name: "c-slider";
 	&__arrow-prev,
 	&__arrow-next {
 		fill: map-color(map-white);
-		stroke-width: ($global-module-size / 50);
+		stroke-width: calc($global-module-size / 50);
 		stroke: map-color(map-white);
 	}
 }

@@ -10,7 +10,9 @@ const menuItens = document.querySelectorAll(".js-menu-item");
 const menuMobile = document.querySelector(".js-menu-mobile");
 const menuMobileFlyout = document.querySelector(".js-menu-mobile-flyout");
 const menuMobileItens = document.querySelectorAll(".js-menu-mobile-item");
-const stickerLag = document.querySelector(".js-sticky__lag");
+const stickerStraightBig = document.querySelector(".js-sticky__straight-big");
+const stickerStraightSmall = document.querySelector(".js-sticky__straight-small");
+const stickerCrookeds = document.querySelectorAll(".js-sticky__crooked");
 const stickers = document.querySelectorAll(".js-sticky");
 const uP720 = window.matchMedia("(min-width: 720px)");
 
@@ -20,4 +22,5 @@ let clickMenu;
 let currentIndex = 1;
 let isCollapsed;
 let menuIsOpened;
+
 document.querySelector(".js-fake").style.height = header.offsetHeight + "px";

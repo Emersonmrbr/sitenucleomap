@@ -8,6 +8,6 @@ $componente-name: "c-top";
 		height: 0;
 	}
 	@include breakpoint(1280-up) {
-		height: ($global-module-size * 1.375);
+		height: calc($global-module-size * 1.375);
 	}
 }

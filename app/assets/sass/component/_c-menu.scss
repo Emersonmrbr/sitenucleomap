@@ -27,9 +27,9 @@ $componente-name: "c-menu";
 		justify-items: center;
 		margin: 0;
 		padding: 0;
-		grid-template-columns: repeat(3, ($global-module-size * 2));
+		grid-template-columns: repeat(3, $global-module-size-sxl);
 		@include breakpoint(960-up) {
-			grid-template-columns: repeat(5, ($global-module-size * 2.5));
+			grid-template-columns: repeat(5, $global-module-size-sxl);
 		}
 	}
 	&-flyout {
@@ -53,18 +53,18 @@ $componente-name: "c-menu";
 		}
 
 		&__content {
-			width: ($global-module-size * 8);
+			width: calc($global-module-size * 8);
 			margin: 0;
 			padding: $global-padding-size-xxs 0 0 0;
 		}
 		&__item {
 			align-items: center;
-			border-bottom: solid ($global-module-size / 50) map-color(map-black);
+			border-bottom: solid calc($global-module-size / 50) map-color(map-black);
 			display: flex;
 			height: $global-module-size;
 			width: 100%;
 			&:first-child {
-				border-bottom: solid ($global-module-size / 50) map-color(map-black);
+				border-bottom: solid calc($global-module-size / 50) map-color(map-black);
 			}
 		}
 		&__link {
