@@ -1,10 +1,3 @@
-<!--
-=======================
-COMEÇO DO CORPO DO SITE
-
-Todo o conteudo do corpo do site se encotra nessa seção.
-=======================
--->
 <h1><strong>Núcleo MAP</strong> <em>Automação industrial</em></h1>
 <p>Do chão de fabrica até a nuvem.</p>
 <article>
@@ -48,9 +41,3 @@ Todo o conteudo do corpo do site se encotra nessa seção.
         </li>
     </ul>
 </article>
-
-<!--
-=======================
-FINAL DO CORPO DO SITE
-=======================
--->

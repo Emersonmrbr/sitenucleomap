@@ -1,4 +1,7 @@
 {
 	"folders": [{ "name": "sitenucleomap", "path": "." }],
-	"settings": {}
+	"settings": {
+		"gitlens.currentLine.enabled": true,
+		"gitlens.hovers.currentLine.over": "line"
+	}
 }
