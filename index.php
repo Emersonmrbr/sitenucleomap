@@ -63,8 +63,6 @@
                     break;
                 case 'localizacao':
                     include 'app/views/localizacao.php';
-                    //                     echo "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA42QEJ5viU_M-B8sBuHE2JMTaiDJbLyXg&callback=initMap'>
-                    // </script>";
                     break;
                 default:
                     include 'app/views/home.php';

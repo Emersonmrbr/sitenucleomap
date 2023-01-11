@@ -1,11 +1,3 @@
-<!--
-=======================
-COMEÇO DO CORPO DO SITE
-
-Todo o conteudo do corpo do site se encotra nessa seção.
-=======================
--->
-
 <h2>Núcleo MAP nossos parceiros</h2>
 <h2></h2>
 <article>
@@ -57,9 +49,3 @@ Todo o conteudo do corpo do site se encotra nessa seção.
     <p></p>
     <p></p>
 </section>
-
-<!--
-=======================
-FINAL DO CORPO DO SITE
-=======================
--->

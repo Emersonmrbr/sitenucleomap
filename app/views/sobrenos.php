@@ -1,11 +1,3 @@
-<!--
-=======================
-COMEÇO DO CORPO DO SITE
-
-Todo o conteudo do corpo do site se encotra nessa seção.
-=======================
--->
-
 <h1>Bem-vindo a NÚCLEO MAP</h1>
 <h2></h2>
 <article>
@@ -24,9 +16,3 @@ Todo o conteudo do corpo do site se encotra nessa seção.
         viabilidade, prazo e demanda do projeto.
     </p>
 </article>
-
-<!--
-=======================
-FINAL DO CORPO DO SITE
-=======================
--->

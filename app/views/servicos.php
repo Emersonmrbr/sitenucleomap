@@ -1,12 +1,5 @@
-﻿<?php
-// =======================
-// COMEÇO DO CORPO DO SITE
-
-// Todo o conteudo do corpo do site se encotra nessa seção.
-// =======================
-?>
-<div class="l-service">
-    <header class="clServiceHeader">
+﻿<div class="">
+    <header class="">
         <h1><strong></strong> <em>Serviços</em></h1>
         <span></span>
         <section>

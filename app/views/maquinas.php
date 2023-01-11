@@ -1,11 +1,4 @@
-﻿<!--
-=======================
-COMEÇO DO CORPO DO SITE
-
-Todo o conteudo do corpo do site se encotra nessa seção.
-=======================
--->
-<h2>Bem-vindo a NÚCLEO MAP </h2>
+﻿<h2>Bem-vindo a NÚCLEO MAP </h2>
 <h3>Automação industrial</h3>
 <p>
     Construído em uma estrutura que facilita a leitura do software e até mesmo fa-cilitando o
@@ -18,9 +11,3 @@ Todo o conteudo do corpo do site se encotra nessa seção.
 <h3>Missão</h3>
 <p>Propor soluções que se encaixem perfeitamente no perfil de cada cliente, bus-cando viabilidade, prazo
     e demanda do projeto.</p>
-
-<!--
-=======================
-FINAL DO CORPO DO SITE
-=======================
--->
