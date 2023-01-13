@@ -4,7 +4,7 @@ carousel.style.marginLeft = `-${currentIndex * 100}%`;
 
 const autoSlider = setInterval(function () {
 	advanceImage();
-}, 2000);
+}, 5000);
 
 function changeImage(direction) {
 	carousel.style.transition = "all 450ms ease-in";

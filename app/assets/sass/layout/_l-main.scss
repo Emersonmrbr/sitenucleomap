@@ -6,7 +6,7 @@ $componente-name: "l-main";
 	grid-area: main;
 	margin: 0 auto;
 	padding: ($global-padding-size-xxxs) 0;
-	width: 100vw;
+	width: 100%;
 	max-width: $global-max-width;
 	@include breakpoint(1280-up) {
 		padding: ($global-padding-size-xs) 0;
