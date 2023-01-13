@@ -23,6 +23,28 @@
         include 'app/assets/breadcrumb.php';
         ?>
         <div class="l-fake js-fake"></div>
+
+        <!-- <?php
+                // Cria a função para gerar o breadcrumb
+                function generateBreadcrumb()
+                {
+                    $currentPage = $_SERVER['REQUEST_URI'];
+                    $pages = explode('/', $currentPage);
+                    // Cria o HTML do breadcrumb
+                    $breadcrumb = '<ol class="breadcrumb">';
+                    $breadcrumb .= '<li class="breadcrumb-item"><a href="/">Home</a></li>';
+                    foreach ($pages as $page) {
+                        if (!empty($page)) {
+                            $breadcrumb .= '<li class="breadcrumb-item">' . ucfirst($page) . '</li>';
+                        }
+                    }
+                    $breadcrumb .= '</ol>';
+                    return $breadcrumb;
+                }
+                // Exibe o breadcrumb na página
+                echo generateBreadcrumb();
+                ?> -->
+
         <main class="l-main">
             <?php
             $pagina = 'home';
