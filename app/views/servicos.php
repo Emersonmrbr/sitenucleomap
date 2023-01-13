@@ -1,13 +1,13 @@
 ﻿<div class="">
-    <header class="">
-        <h1><strong></strong> <em>Serviços</em></h1>
-        <span></span>
-        <section>
-            <h2></h2>
-            <span></span>
-        </section>
-    </header>
-    <!-- <div class="clServiceIndustrialAutomation">
+  <header class="">
+    <h1><strong></strong> <em>Serviços</em></h1>
+    <span></span>
+    <section>
+      <h2></h2>
+      <span></span>
+    </section>
+  </header>
+  <!-- <div class="clServiceIndustrialAutomation">
         <a href="app/views/automacaoIndustrial.php" target="_self">
             <figure>
                 <img src="app/assets/image/imagem4.jpg" alt="Softaware Logix Designer"></img>

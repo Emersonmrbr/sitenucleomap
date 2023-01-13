@@ -1,30 +1,30 @@
 $componente-name: "c-button-close";
 
 .#{$componente-name} {
-	@include breakpoint(640-up) {
-		align-items: center;
-		background-color: map-color(map-grey-darken-10);
-		border-radius: 50%;
-		border: none;
-		cursor: pointer;
-		display: flexbox;
-		fill: map-color(map-black);
-		grid-area: button-close;
-		height: 64px;
-		margin: 0;
-		padding: 0;
-		width: 64px;
-		position: absolute;
-		top: -32px;
-	}
-	&__icon {
-		width: 26px;
-		height: 26px;
-	}
+  @include breakpoint(640-up) {
+    align-items: center;
+    background-color: map-color(map-grey-darken-10);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flexbox;
+    fill: map-color(map-black);
+    grid-area: button-close;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    position: absolute;
+    top: -32px;
+  }
+  &__icon {
+    width: 26px;
+    height: 26px;
+  }
 
-	&__stroke {
-		fill: none;
-		stroke: map-color(map-white);
-		stroke-width: $global-line-height-small;
-	}
+  &__stroke {
+    fill: none;
+    stroke: map-color(map-white);
+    stroke-width: $global-line-height-small;
+  }
 }

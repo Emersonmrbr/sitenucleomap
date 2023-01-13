@@ -1,11 +1,10 @@
 {
-	"folders": [{ "name": "sitenucleomap", "path": "." }],
-	"settings": {
-		"gitlens.currentLine.enabled": true,
-		"gitlens.hovers.currentLine.over": "line",
-		"jshint.options": {
-		"esversion": 6
-		}
-	},
-
+  "folders": [{ "name": "sitenucleomap", "path": "." }],
+  "settings": {
+    "gitlens.currentLine.enabled": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "jshint.options": {
+      "esversion": 6
+    }
+  }
 }

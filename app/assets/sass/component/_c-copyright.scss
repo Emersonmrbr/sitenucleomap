@@ -1,14 +1,15 @@
 $componente-name: "c-copyright";
 
 .#{$componente-name} {
-	align-self: center;
-	grid-area: copyright;
-	justify-self: flex-start;
-	margin: 0;
-	padding: $global-padding-size-xxxs $global-padding-size-xxxs $global-padding-size-xxxs 0;
-	font-size: $global-font-size-small;
+  align-self: center;
+  grid-area: copyright;
+  justify-self: flex-start;
+  margin: 0;
+  padding: $global-padding-size-xxxs $global-padding-size-xxxs
+    $global-padding-size-xxxs 0;
+  font-size: $global-font-size-small;
 
-	@include breakpoint(720-up) {
-		justify-self: flex-start;
-	}
+  @include breakpoint(720-up) {
+    justify-self: flex-start;
+  }
 }
