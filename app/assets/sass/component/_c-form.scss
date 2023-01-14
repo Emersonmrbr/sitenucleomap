@@ -1,0 +1,15 @@
+$componente-name: "c-form";
+
+.#{$componente-name} {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr) 2fr 1fr;
+  &__label {
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+  }
+  &__input {
+    padding: 0 0 $global-padding-size-xxs;
+    margin: 0;
+  }
+}
