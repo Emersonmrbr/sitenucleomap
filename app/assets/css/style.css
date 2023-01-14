@@ -653,23 +653,59 @@ body {
   }
 }
 
-.c-highlights {
-  grid-area: highlights;
-  width: auto;
+.c-form {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr) 2fr 1fr;
 }
-.c-highlights__title {
-  text-transform: uppercase;
-  width: auto;
+.c-form__label {
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
+}
+.c-form__input {
+  padding: 0 0 0.78125rem;
+  margin: 0;
+}
+
+.c-highlights {
+  grid-column: 2/3;
+  grid-row: 2;
+  margin: 0;
 }
 .c-highlights__list {
-  display: block;
-  width: auto;
+  display: grid;
+  gap: 1.5625rem;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.c-highlights__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: flex-start;
+}
+
+.c-image {
+  grid-column: 1/2;
+  grid-row: 2;
+  margin: 0;
+}
+
+.c-impact {
+  padding: 0.78125rem 0;
+  margin: 0;
 }
 
 .c-info {
   grid-area: info;
   justify-self: end;
 }
+.c-introduction {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
 .c-line-footer {
   background-color: #ffffff;
   display: grid;
@@ -947,6 +983,30 @@ body {
   stroke: none;
 }
 
+.c-main {
+  display: grid;
+  grid: auto-flow/1fr 1fr;
+  padding: 0;
+  gap: 2.34375rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-content: stretch;
+}
+.c-main--single-column {
+  grid: auto-flow/1fr;
+}
+
+.c-mark {
+  width: 2.34375rem;
+  height: 1.953125rem;
+}
+.c-mark__item {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke-width: 0.1rem;
+  stroke: #706f6f;
+}
+
 .c-menu-mobile {
   grid-area: menu-flyout-1;
 }
@@ -1167,7 +1227,7 @@ body {
   grid-column: 1/-1;
   grid-row: 1;
 }
-.c-service__ {
+.c-service__call {
   font-size: xx-large;
 }
 .c-service__impact {
@@ -1394,6 +1454,21 @@ body {
   fill: #36a9e1;
 }
 
+.c-text {
+  line-height: 2.734375rem;
+}
+.c-text__compact {
+  line-height: 1rem;
+  padding: 0 0 0 0.78125rem;
+  margin: 0;
+}
+
+.c-title {
+  font-size: xx-large;
+  padding: 0;
+  margin: 0;
+}
+
 .c-top {
   grid-area: top;
   height: 0;
@@ -1406,20 +1481,6 @@ body {
   .c-top {
     height: 4.296875rem;
   }
-}
-
-.c-form {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr) 2fr 1fr;
-}
-.c-form__label {
-  padding: 0;
-  margin: 0;
-  align-self: flex-end;
-}
-.c-form__input {
-  padding: 0 0 0.78125rem;
-  margin: 0;
 }
 
 .is-hidden {

@@ -1,0 +1,15 @@
+$componente-name: "c-mark";
+
+.#{$componente-name} {
+  width: $global-module-size-ss;
+  height: $global-module-size-sss;
+  &__item {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke-width: 0.1rem;
+    stroke: map-color(map-grey);
+    // @-moz-document url-prefix() {
+    // 	stroke-width: 1px;
+    // }
+  }
+}

@@ -7,7 +7,7 @@
   //     Site Núcleo MAP
   // Autor: Emerson Martins Brito
   // Data: 15/03/2021
-  include 'app/assets/head.php';
+  include 'app/assets/head.html';
   ?>
 </head>
 
@@ -16,12 +16,12 @@
 
     <header data-reactroot role="banner" class="l-header js-header js-sticky">
       <?php
-      include 'app/views/header.php';
+      include 'app/views/header.html';
       ?>
     </header>
-    <?php
-    include 'app/assets/breadcrumb.php';
-    ?>
+    <!-- <?php
+          // include 'app/assets/breadcrumb.php';
+          ?> -->
     <div class="l-fake js-fake"></div>
 
     <!-- <?php
@@ -44,6 +44,7 @@
           // // Exibe o breadcrumb na página
           // echo generateBreadcrumb();
           //
+          //
           ?> -->
 
     <main class="l-main">
@@ -52,43 +53,43 @@
       $pagina = $_GET["pagina"];
       switch ($pagina) {
         case 'NestingCNC':
-          include 'app/views/NestingCNC.php';
+          include 'app/views/NestingCNC.html';
           break;
         case 'PlasmaCNC':
-          include 'app/views/PlasmaCNC.php';
+          include 'app/views/PlasmaCNC.html';
           break;
         case 'servicos':
-          include 'app/views/servicos.php';
+          include 'app/views/servicos.html';
           break;
         case 'automacaoIndustrial':
-          include 'app/views/automacaoIndustrial.php';
+          include 'app/views/automacaoIndustrial.html';
           break;
         case 'automacaoResidencial':
-          include 'app/views/automacaoResidencial.php';
+          include 'app/views/automacaoResidencial.html';
           break;
         case 'projetoEletrico':
-          include 'app/views/projetoeletrico.php';
+          include 'app/views/projetoeletrico.html';
           break;
         case 'projetoMecanico':
-          include 'app/views/projetomecanico.php';
+          include 'app/views/projetomecanico.html';
           break;
         case 'robotica':
-          include 'app/views/robotica.php';
+          include 'app/views/robotica.html';
           break;
         case 'sobreNos':
-          include 'app/views/sobrenos.php';
+          include 'app/views/sobrenos.html';
           break;
         case 'contato':
-          include 'app/views/contato.php';
+          include 'app/views/contato.html';
           break;
         case 'parceiros':
-          include 'app/views/parceiros.php';
+          include 'app/views/parceiros.html';
           break;
         case 'localizacao':
-          include 'app/views/localizacao.php';
+          include 'app/views/localizacao.html';
           break;
         default:
-          include 'app/views/home.php';
+          include 'app/views/home.html';
           break;
       }
       ?>
@@ -96,7 +97,7 @@
 
     <footer class="l-footer">
       <?php
-      include 'app/views/footer.php';
+      include 'app/views/footer.html';
       ?>
     </footer>
 

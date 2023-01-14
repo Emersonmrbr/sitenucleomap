@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "web-recommended"
+  ],
+  "connector": {
+    "name": "local",
+    "options": {
+      "pattern": [
+        "**",
+        "!.git/**",
+        "!dist/**"
+      ],
+      "watch": false
+    }
+  },
+  "formatters": [
+    "codeframe"
+  ],
+  "hints": {
+    "no-inline-styles": "off",
+    "html-checker": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE <= 11",
+    "maintained node versions"
+  ]
+}
