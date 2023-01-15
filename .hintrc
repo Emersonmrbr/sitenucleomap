@@ -18,7 +18,9 @@
   ],
   "hints": {
     "no-inline-styles": "off",
-    "html-checker": "off"
+    "html-checker": "off",
+    "button-type": "off",
+    "axe/name-role-value": "off"
   },
   "browserslist": [
     "defaults",

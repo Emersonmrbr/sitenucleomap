@@ -2,7 +2,7 @@ $componente-name: "c-text";
 
 .#{$componente-name} {
   line-height: $global-module-size-s;
-  &__compact {
+  &--compact {
     line-height: 1rem;
     padding: 0 0 0 $global-padding-size-xxs;
     margin: 0;

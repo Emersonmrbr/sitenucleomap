@@ -657,14 +657,22 @@ body {
   display: grid;
   grid-template-rows: repeat(5, 1fr) 2fr 1fr;
 }
+.c-form__control {
+  display: grid;
+  padding: 0;
+  grid: 1fr 1fr/1fr;
+}
 .c-form__label {
   padding: 0;
   margin: 0;
-  align-self: flex-end;
+  z-index: 11;
+  grid-row: 1/2;
 }
 .c-form__input {
   padding: 0 0 0.78125rem;
   margin: 0;
+  z-index: 10;
+  grid-row: 1/-1;
 }
 
 .c-highlights {
@@ -1454,10 +1462,16 @@ body {
   fill: #36a9e1;
 }
 
+.c-subtitle {
+  font-size: 1.25rem;
+  margin: 0;
+  padding-bottom: 1.5625rem;
+}
+
 .c-text {
   line-height: 2.734375rem;
 }
-.c-text__compact {
+.c-text--compact {
   line-height: 1rem;
   padding: 0 0 0 0.78125rem;
   margin: 0;
@@ -1481,6 +1495,12 @@ body {
   .c-top {
     height: 4.296875rem;
   }
+}
+
+.c-company {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .is-hidden {
