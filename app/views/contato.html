@@ -14,29 +14,55 @@
     <p class="c-company__mail">E-mail: nucleomap@nucleomap.com.br</p>
   </article>
   <form action="/app/assets/enviaremail.php" method="post" class="c-form">
-    <div class="c-form__control">
-      <label for="nome" class="c-form__label">Nome:</label>
-      <input type="text" id="nome" name="nome" required class="c-form__input" />
+    <div class="c-form__name c-form__control">
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        class="c-form__name__item"
+      />
+      <label for="nome" class="c-form__label">Nome *</label>
     </div>
-    <div class="c-form__control">
-      <label for="email" class="c-form__label">E-mail:</label>
+    <div class="c-form__lastname c-form__control">
+      <input
+        type="text"
+        id="sobrenome"
+        name="sobrenome"
+        required
+        class="c-form__lastname__item"
+      />
+      <label for="sobrenome" class="c-form__label">Sobrenome *</label>
+    </div>
+    <div class="c-form__phone c-form__control">
+      <input
+        type="phone"
+        id="fone"
+        name="fone"
+        required
+        class="c-form__phone__item"
+      />
+      <label for="fone" class="c-form__label">Telefone *</label>
+    </div>
+    <div class="c-form__email c-form__control">
       <input
         type="email"
         id="email"
         name="email"
         required
-        class="c-form__input"
+        class="c-form__email__item"
       />
+      <label for="email" class="c-form__label">E-mail *</label>
     </div>
-    <div class="c-form__control">
-      <label for="mensagem" class="c-form__label">Mensagem:</label>
+    <div class="c-form__textarea c-form__control">
       <textarea
         id="mensagem"
         name="mensagem"
         required
-        class="c-form__textarea"
+        class="c-form__textarea__item"
       ></textarea>
+      <label for="mensagem" class="c-form__label">Mensagem *</label>
     </div>
-    <input type="submit" value="Enviar" class="c-button" />
+    <input type="submit" value="Enviar" class="c-form__button" />
   </form>
 </div>
