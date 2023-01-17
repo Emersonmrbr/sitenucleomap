@@ -1,111 +1,111 @@
 $componente-name: "c-menu";
 
 .#{$componente-name} {
-	grid-area: menu-flyout-1;
-	display: none;
-	@include breakpoint(720-up) {
-		align-self: flex-end;
-		display: flex;
-		flex-wrap: nowrap;
-		grid-area: menu;
-		height: auto;
-		width: 100%;
-		&.is-open {
-			overflow: visible;
-			width: 100%;
-		}
-		&.has-sticker {
-			align-self: center;
-		}
-	}
+  grid-area: menu-flyout-1;
+  display: none;
+  @include breakpoint(720-up) {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: menu;
+    height: auto;
+    width: 100%;
+    &.is-open {
+      overflow: visible;
+      width: 100%;
+    }
+    &.has-sticker {
+      align-self: center;
+    }
+  }
 
-	&__list {
-		display: grid;
-		flex: 1;
-		height: auto;
-		justify-content: center;
-		justify-items: center;
-		margin: 0;
-		padding: 0;
-		grid-template-columns: repeat(3, $global-module-size-sxl);
-		@include breakpoint(960-up) {
-			grid-template-columns: repeat(5, $global-module-size-sxxl);
-		}
-	}
-	&-flyout {
-		display: none;
-		@include breakpoint(720-up) {
-			display: grid;
-			grid-area: menu-flyout;
-			height: 0;
-			margin: 0;
-			overflow: hidden;
-			padding: 0;
-			transition: $transition-function-header;
-			width: 0;
-			z-index: z-index(above);
-			&.is-open {
-				height: auto;
-				padding: $global-padding-size 0 $global-padding-size-sl;
-				transition: $transition-function-header;
-				width: 100%;
-			}
-		}
+  &__list {
+    display: grid;
+    flex: 1;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, $global-module-size-sxl);
+    @include breakpoint(960-up) {
+      grid-template-columns: repeat(5, $global-module-size-sxxl);
+    }
+  }
+  &-flyout {
+    display: none;
+    @include breakpoint(720-up) {
+      display: grid;
+      grid-area: menu-flyout;
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: $transition-function-header;
+      width: 0;
+      z-index: z-index(above);
+      &.is-open {
+        height: auto;
+        padding: $global-padding-size 0 $global-padding-size-sl;
+        transition: $transition-function-header;
+        width: 100%;
+      }
+    }
 
-		&__content {
-			width: calc($global-module-size * 8);
-			margin: 0;
-			padding: $global-padding-size-xxs 0 0 0;
-		}
-		&__item {
-			align-items: center;
-			border-bottom: solid calc($global-module-size / 50) map-color(map-black);
-			display: flex;
-			height: $global-module-size;
-			width: 100%;
-			&:first-child {
-				border-bottom: solid calc($global-module-size / 50) map-color(map-black);
-			}
-		}
-		&__link {
-			color: map-color(map-black);
-			height: auto;
-			padding-left: ($global-padding-size-xxxs);
-		}
-		&__close {
-			bottom: -32px;
-			display: flex;
-			height: auto;
-			justify-content: center;
-			position: absolute;
-			width: 100%;
-			margin: 0 auto;
-			left: 0%;
-		}
-		&__button {
-			align-items: center;
-			justify-content: center;
-			background-color: map-color(map-grey-darken-10);
-			border-radius: 50%;
-			border: none;
-			cursor: pointer;
-			display: flex;
-			fill: map-color(map-black);
-			grid-area: button-close;
-			height: 64px;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			width: 64px;
-		}
-		&__icon {
-			width: 26px;
-			height: 26px;
-		}
-		&__stroke {
-			fill: none;
-			stroke: map-color(map-white);
-			stroke-width: $global-line-height-small;
-		}
-	}
+    &__content {
+      width: calc($global-module-size * 8);
+      margin: 0;
+      padding: $global-padding-size-xxs 0 0 0;
+    }
+    &__item {
+      align-items: center;
+      border-bottom: solid calc($global-module-size / 50) map-color(map-black);
+      display: flex;
+      height: $global-module-size;
+      width: 100%;
+      &:first-child {
+        border-bottom: solid calc($global-module-size / 50) map-color(map-black);
+      }
+    }
+    &__link {
+      color: map-color(map-black);
+      height: auto;
+      padding-left: ($global-padding-size-xxxs);
+    }
+    &__close {
+      bottom: -32px;
+      display: flex;
+      height: auto;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      left: 0%;
+    }
+    &__button {
+      align-items: center;
+      justify-content: center;
+      background-color: map-color(map-grey-darken-10);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      fill: map-color(map-black);
+      grid-area: button-close;
+      height: 64px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 64px;
+    }
+    &__icon {
+      width: 26px;
+      height: 26px;
+    }
+    &__stroke {
+      fill: none;
+      stroke: map-color(map-white);
+      stroke-width: $global-line-height-small;
+    }
+  }
 }

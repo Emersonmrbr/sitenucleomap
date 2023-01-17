@@ -660,7 +660,6 @@ body {
 .c-description {
   align-self: center;
   font-size: 1rem;
-  grid-area: description;
   height: auto;
   justify-self: flex-start;
   margin: 0;
@@ -965,33 +964,6 @@ body {
   }
 }
 
-.c-location {
-  padding: 0;
-}
-@media (min-width: 45em) {
-  .c-location {
-    height: auto;
-    width: 100%;
-    padding: 0 3.125rem;
-  }
-}
-.c-location__maps {
-  height: 800px;
-  width: 100%;
-}
-.c-location__address {
-  background-color: #efefef;
-  height: auto;
-  margin: 3.125rem 0;
-  padding: 3.125rem;
-  width: 100%;
-}
-@media (min-width: 70em) {
-  .c-location__address {
-    width: 50%;
-  }
-}
-
 .c-logo {
   align-items: center;
   display: flex;
@@ -1052,6 +1024,11 @@ body {
 }
 .c-main--single-column {
   grid: auto-flow/1fr;
+}
+
+.c-maps {
+  height: 800px;
+  width: 100%;
 }
 
 .c-mark {
