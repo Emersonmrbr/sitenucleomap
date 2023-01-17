@@ -1272,69 +1272,6 @@ body {
   stroke-width: 1;
 }
 
-.c-service {
-  display: grid;
-  grid: auto 1fr/1fr 1fr;
-  padding: 0;
-  gap: 2.34375rem;
-  max-width: 1120px;
-  margin: 0 auto;
-  align-content: stretch;
-}
-.c-service__text {
-  grid-column: 1/-1;
-  grid-row: 1;
-}
-.c-service__call {
-  font-size: xx-large;
-}
-.c-service__impact {
-  padding: 0.78125rem 0;
-}
-.c-service__explanation {
-  line-height: 2.734375rem;
-}
-.c-service__image {
-  grid-column: 1/2;
-  grid-row: 2;
-  margin: 0;
-}
-.c-service__highlights {
-  grid-column: 2/3;
-  grid-row: 2;
-  margin: 0;
-}
-.c-service__title {
-  margin: 0;
-  padding-bottom: 1.5625rem;
-}
-.c-service__list {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  overflow: hidden;
-  gap: 1.5625rem;
-}
-.c-service__item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-.c-service__line {
-  width: 2.34375rem;
-  height: 1.953125rem;
-}
-.c-service__line-item {
-  fill: none;
-  shape-rendering: crispEdges;
-  stroke-width: 0.1rem;
-  stroke: #706f6f;
-}
-.c-service__item-text {
-  margin: 0;
-  padding-left: 1.953125rem;
-}
-
 .c-slider {
   display: grid;
   grid-template-columns: auto 1fr auto;
