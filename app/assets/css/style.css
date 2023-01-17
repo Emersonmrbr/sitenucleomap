@@ -659,31 +659,46 @@ body {
   grid: 1fr 1fr 2.5fr 1fr/1fr 1fr;
 }
 .c-form__control {
-  padding: 0;
+  background-color: #efefef;
+  padding: 1.5625rem 0.78125rem;
   position: relative;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #706f6f;
 }
 .c-form__label {
+  cursor: text;
   left: 0;
   margin: 0;
   padding: 1.5625rem 0.78125rem;
   position: absolute;
   top: 0;
-}
-.c-form__name, .c-form__lastname, .c-form__phone, .c-form__email, .c-form__textarea {
-  height: 3.90625rem;
+  transition: all 500ms;
 }
 .c-form__name__item, .c-form__lastname__item, .c-form__phone__item, .c-form__email__item, .c-form__textarea__item {
-  height: 100%;
   background-color: #efefef;
   border-style: none;
+  height: 100%;
   margin: 0;
   resize: none;
   width: 100%;
+}
+.c-form__name__item:focus, .c-form__lastname__item:focus, .c-form__phone__item:focus, .c-form__email__item:focus, .c-form__textarea__item:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  padding: 0;
+}
+.c-form__name__item:focus + label, .c-form__lastname__item:focus + label, .c-form__phone__item:focus + label, .c-form__email__item:focus + label, .c-form__textarea__item:focus + label {
+  padding: 0;
+  font-size: 0.75rem;
 }
 .c-form__textarea {
   grid-column: 1/3;
   height: 7.8125rem;
   width: 100%;
+}
+.c-form__textarea__item {
+  padding: 10px;
 }
 .c-form__button {
   grid-column: 2/3;
