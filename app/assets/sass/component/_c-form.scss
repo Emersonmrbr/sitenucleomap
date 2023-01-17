@@ -53,10 +53,9 @@ $componente-name: "c-form";
       padding: 10px;
     }
   }
-  &__button {
+  &__submit {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     justify-self: end;
-    width: 50%;
   }
 }

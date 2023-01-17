@@ -589,6 +589,25 @@ body {
   transform: translatey(-0.1201923077rem) rotate(-45deg);
 }
 
+.c-button {
+  border: none;
+  color: #ffffff;
+  height: 44px;
+  width: 180px;
+  padding: 0 2.734375rem;
+  cursor: pointer;
+  background: linear-gradient(45deg, transparent 10px, #706f6f 0) 0 0;
+}
+.c-button:hover {
+  background: linear-gradient(45deg, transparent 10px, #8a8888 0) 0;
+}
+
+.c-company {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
 .c-contact {
   grid-area: contact;
   align-self: center;
@@ -700,11 +719,10 @@ body {
 .c-form__textarea__item {
   padding: 10px;
 }
-.c-form__button {
+.c-form__submit {
   grid-column: 2/3;
   grid-row: 4/5;
   justify-self: end;
-  width: 50%;
 }
 
 .c-highlights {
@@ -1527,12 +1545,6 @@ body {
   .c-top {
     height: 4.296875rem;
   }
-}
-
-.c-company {
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
 }
 
 .is-hidden {
