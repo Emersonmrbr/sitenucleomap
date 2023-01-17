@@ -38,7 +38,7 @@ $componente-name: "c-form";
         outline: 0;
         padding: 0;
         & + label {
-          padding: 0;
+          padding: $global-module-size-xxxs $global-module-size-xxs;
           font-size: $global-font-size-small;
         }
       }

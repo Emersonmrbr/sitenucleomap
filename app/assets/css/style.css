@@ -689,7 +689,7 @@ body {
   padding: 0;
 }
 .c-form__name__item:focus + label, .c-form__lastname__item:focus + label, .c-form__phone__item:focus + label, .c-form__email__item:focus + label, .c-form__textarea__item:focus + label {
-  padding: 0;
+  padding: 0.390625rem 0.78125rem;
   font-size: 0.75rem;
 }
 .c-form__textarea {
