@@ -27,5 +27,8 @@ $headers .= "From: $nome <$email>";
 
 //Enviar
 mail($destino, $assunto, $arquivo, $headers);
-
-echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+?>
+<?php
+echo "
+<meta http-equiv='refresh' content='10;URL=../contato.html'>";
+?>
