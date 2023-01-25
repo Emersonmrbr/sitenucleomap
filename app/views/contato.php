@@ -1,0 +1,45 @@
+﻿<?php
+require_once('app/assets/php/mail.php');
+if (isset($_POST['name'])) {
+  $send = sendMail($_POST);
+}
+?>
+<div class="c-main c-main--single-column">
+  <article class="c-introduction">
+    <h1 class="c-title">Núcleo MAP nosso contato</h1>
+    <p class="c-text">
+      Se deseja saber mais sobre nosos serviços e produtos, entre em contato
+      conosoco.
+    </p>
+  </article>
+  <article class="c-company">
+    <h3 class="c-company__title">
+      Núcleo MAP Máquinas Automação e Programação
+    </h3>
+    <p class="c-company__fone">Fone: +55 (41) 992 749 270</p>
+    <p class="c-company__mail">E-mail: nucleomap@nucleomap.com.br</p>
+  </article>
+  <form action="?pagina=contato" method="post" class="c-form">
+    <div class="c-form__name c-form__control">
+      <input type="text" id="name" name="name" required class="c-form__name__item" />
+      <label for="name" class="c-form__label">Nome *</label>
+    </div>
+    <div class="c-form__lastname c-form__control">
+      <input type="text" id="lastname" name="lastname" required class="c-form__lastname__item" />
+      <label for="lastname" class="c-form__label">Sobrenome *</label>
+    </div>
+    <div class="c-form__phone c-form__control">
+      <input type="phone" id="phone" name="phone" required class="c-form__phone__item" />
+      <label for="phone" class="c-form__label">Telefone *</label>
+    </div>
+    <div class="c-form__email c-form__control">
+      <input type="email" id="email" name="email" required class="c-form__email__item" />
+      <label for="email" class="c-form__label">E-mail *</label>
+    </div>
+    <div class="c-form__textarea c-form__control">
+      <textarea id="message" name="message" required class="c-form__textarea__item"></textarea>
+      <label for="message" class="c-form__label">Mensagem *</label>
+    </div>
+    <input type="submit" value="Enviar" class="c-form__submit c-button" />
+  </form>
+</div>

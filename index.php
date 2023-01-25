@@ -1,14 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
-<!-- Definição do idioma do site -->
 
 <head>
-  <?php
-  //     Site Núcleo MAP
-  // Autor: Emerson Martins Brito
-  // Data: 15/03/2021
-  include 'app/assets/head.html';
-  ?>
+  <!-- Site Núcleo MAP
+  Autor: Emerson Martins Brito
+  Data: 15/03/2021 -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fabricação de máquinas CNC, Nesting CNC, Controle númerico computadorizado, Máquinas robustas e precisas, qualidade, tecnologia e inovação, série STNU, série PRNU" />
+  <meta name="description" content="Programação de robôs, especialista em KUKA Robotcs, Denso Robotics, Universal Robots, ABB, Omron, Yaskawa, Mitsubishi" />
+  <meta name="description" content="Start-up de máquinas, especialista em Rockwell Automation, Allen Bradley, B&R Automation, Omron, Yaskawa, Beckhoff, Mitsubishi." />
+  <meta name="description" content="Projetos elétricos com Eplan, AutoCAD Electrical e E3 Séries" />
+  <meta name="description" content="Projetos mecânicos com Solidworks, FreeCAD e AutoCAD" />
+  <meta name="description" content="Automação Industrial, Industria 4.0, Internet das Coisas, IOT" />
+  <meta name="description" content="Automação Residencial, Domótica" />
+  <meta name="geo.region" content="BR-PR" />
+  <meta name="geo.placename" content="Curitiba" />
+  <meta name="geo.position" content="-25.43711;-49.329101" />
+  <meta name="ICBM" content="-25.43711, -49.329101" />
+  <title>Núcleo MAP</title>
+  <link rel="stylesheet" type="text/css" href="app/assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="app/assets/image/svg/faviconNucleoMAP.svg" />
+  <script src="https://kit.fontawesome.com/ec63449ac4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,7 +30,7 @@
 
     <header data-reactroot role="banner" class="l-header js-header js-sticky">
       <?php
-      include 'app/views/header.html';
+      include_once 'app/views/header.html';
       ?>
     </header>
     <!-- <?php
@@ -25,79 +39,17 @@
     <div class="l-fake js-fake"></div>
 
     <?php
-    // Cria a função para gerar o breadcrumb
-    // function generateBreadcrumb()
-    // {
-    //   $currentPage = $_SERVER['REQUEST_URI'];
-    //   $pages = explode('/', $currentPage);
-    //   // Cria o HTML do breadcrumb
-    //   $breadcrumb = '<ol class="breadcrumb">';
-    //   $breadcrumb .= '<li class="breadcrumb-item"><a href="/">Home</a></li>';
-    //   foreach ($pages as $page) {
-    //     if (!empty($page)) {
-    //       $breadcrumb .= '<li class="breadcrumb-item">' . ucfirst($page) . '</li>';
-    //     }
-    //   }
-    //   $breadcrumb .= '</ol>';
-    //   return $breadcrumb;
-    // }
-    // // Exibe o breadcrumb na página
-    // echo generateBreadcrumb();
-
-
     ?>
 
     <main class="l-main">
       <?php
-      $pagina = 'home';
-      $pagina = $_GET["pagina"];
-      switch ($pagina) {
-        case 'NestingCNC':
-          include 'app/views/NestingCNC.html';
-          break;
-        case 'PlasmaCNC':
-          include 'app/views/PlasmaCNC.html';
-          break;
-        case 'servicos':
-          include 'app/views/servicos.html';
-          break;
-        case 'automacaoIndustrial':
-          include 'app/views/automacaoIndustrial.html';
-          break;
-        case 'automacaoResidencial':
-          include 'app/views/automacaoResidencial.html';
-          break;
-        case 'projetoEletrico':
-          include 'app/views/projetoeletrico.html';
-          break;
-        case 'projetoMecanico':
-          include 'app/views/projetomecanico.html';
-          break;
-        case 'robotica':
-          include 'app/views/robotica.html';
-          break;
-        case 'sobreNos':
-          include 'app/views/sobrenos.html';
-          break;
-        case 'contato':
-          include 'app/views/contato.html';
-          break;
-        case 'parceiros':
-          include 'app/views/parceiros.html';
-          break;
-        case 'localizacao':
-          include 'app/views/localizacao.html';
-          break;
-        default:
-          include 'app/views/home.html';
-          break;
-      }
+      include_once 'app/assets/php/include.php'
       ?>
     </main>
 
     <footer class="l-footer">
       <?php
-      include 'app/views/footer.html';
+      include_once 'app/views/footer.html';
       ?>
     </footer>
 
