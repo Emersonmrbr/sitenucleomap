@@ -81,6 +81,8 @@
 
   </div>
   <script src="app/assets/js/index.js"></script>
+
+  <script src="app/assets/js/form.js"></script>
   <script src="app/assets/js/map.js"></script>
   <script src="app/assets/js/menu-mobile.js"></script>
   <script src="app/assets/js/menu.js"></script>

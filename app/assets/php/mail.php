@@ -2,10 +2,10 @@
 function sendMail($dataPost)
 {
   // Variáveis
-  $name = $dataPost['name'];
-  $email = $dataPost['email'];
-  $message = $dataPost['message'];
-  $phone = $dataPost['phone'];
+  $name = $dataPost['contatctName'];
+  $email = $dataPost['contatctEmail'];
+  $message = $dataPost['contatctMessage'];
+  $phone = $dataPost['contatctPhone'];
   $sendDate = date('d/m/Y');
   $sendTime = date('H:i:s');
 

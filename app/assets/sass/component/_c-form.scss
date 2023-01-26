@@ -20,6 +20,12 @@ $componente-name: "c-form";
     position: absolute;
     top: 0;
     transition: all 500ms;
+    &.is-filled {
+      box-shadow: 0 0 0 0;
+      font-size: $global-font-size-small;
+      outline: 0;
+      padding: $global-module-size-xxxs $global-module-size-xxs;
+    }
   }
   &__name,
   &__lastname,
@@ -42,6 +48,10 @@ $componente-name: "c-form";
           font-size: $global-font-size-small;
         }
       }
+      // & :not(:placeholder-shown) + label {
+      //   padding: $global-module-size-xxxs $global-module-size-xxs;
+      //   font-size: $global-font-size-small;
+      // }
     }
   }
 

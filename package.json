@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Emersonmrbr/sitenucleomap#readme",
   "devDependencies": {
     "eslint": "^8.31.0"
+  },
+  "dependencies": {
+    "jshint": "^2.13.6"
   }
 }

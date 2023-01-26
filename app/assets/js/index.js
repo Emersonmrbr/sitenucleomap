@@ -11,9 +11,13 @@ const menuMobile = document.querySelector(".js-menu-mobile");
 const menuMobileFlyout = document.querySelector(".js-menu-mobile-flyout");
 const menuMobileItens = document.querySelectorAll(".js-menu-mobile-item");
 const stickerStraightBig = document.querySelector(".js-sticky__straight-big");
-const stickerStraightSmall = document.querySelector(".js-sticky__straight-small");
+const stickerStraightSmall = document.querySelector(
+  ".js-sticky__straight-small"
+);
 const stickerCrookeds = document.querySelectorAll(".js-sticky__crooked");
 const stickers = document.querySelectorAll(".js-sticky");
+const contactInput = document.querySelectorAll("[js-contact-input]");
+const contactLabel = document.querySelectorAll("[js-contact-label]");
 const uP720 = window.matchMedia("(min-width: 720px)");
 
 let amountImages = images.length - 1;

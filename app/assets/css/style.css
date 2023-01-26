@@ -693,6 +693,12 @@ body {
   top: 0;
   transition: all 500ms;
 }
+.c-form__label.is-filled {
+  box-shadow: 0 0 0 0;
+  font-size: 0.75rem;
+  outline: 0;
+  padding: 0.390625rem 0.78125rem;
+}
 .c-form__name__item, .c-form__lastname__item, .c-form__phone__item, .c-form__email__item, .c-form__textarea__item {
   background-color: #efefef;
   border-style: none;
