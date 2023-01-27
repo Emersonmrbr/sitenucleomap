@@ -1,4 +1,4 @@
-contactInput.forEach((input, index) => {
+contactInput.forEach((input) => {
   input.addEventListener("blur", function () {
     contactLabel.forEach((label) => {
       // label.classList.remove("is-filled");
