@@ -22,23 +22,23 @@ if (isset($_POST['contatctName'])) {
   <form name="contact" action="?pagina=contato" method="post" class="c-form">
     <div class="c-form__name c-form__control">
       <input js-contact-input type="text" name="contatcName" required class="c-form__name__item" />
-      <label js-contact-label for="name" class="c-form__label">Nome *</label>
+      <label js-contact-label for="contatcName" class="c-form__label">Nome *</label>
     </div>
     <div class="c-form__lastname c-form__control">
       <input js-contact-input type="text" name="contatctLastname" required class="c-form__lastname__item" />
-      <label js-contact-label for="lastname" class="c-form__label">Sobrenome *</label>
+      <label js-contact-label for="contatctLastname" class="c-form__label">Sobrenome *</label>
     </div>
     <div class="c-form__phone c-form__control">
       <input js-contact-input type="phone" name="contatctPhone" required class="c-form__phone__item" />
-      <label js-contact-label for="phone" class="c-form__label">Telefone *</label>
+      <label js-contact-label for="contatctPhone" class="c-form__label">Telefone *</label>
     </div>
     <div class="c-form__email c-form__control">
       <input js-contact-input type="email" name="contactEmail" required class="c-form__email__item" />
-      <label js-contact-label for="email" class="c-form__label">E-mail *</label>
+      <label js-contact-label for="contactEmail" class="c-form__label">E-mail *</label>
     </div>
     <div class="c-form__textarea c-form__control">
       <textarea js-contact-input name="contatctMessage" required class="c-form__textarea__item"></textarea>
-      <label js-contact-label for="message" class="c-form__label">Mensagem *</label>
+      <label js-contact-label for="contatctMessage" class="c-form__label">Mensagem *</label>
     </div>
     <input type="submit" value="Enviar" class="c-form__submit c-button" />
   </form>
