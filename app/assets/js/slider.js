@@ -1,10 +1,8 @@
-//Move to second image
 carousel.style.transition = "none";
 function imageMove() {
   carousel.style.marginLeft = `-${currentIndex * 100}%`;
 }
 imageMove();
-
 const autoSlider = setInterval(function () {
   advanceImage();
 }, 5000);

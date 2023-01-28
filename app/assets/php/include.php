@@ -41,6 +41,9 @@ switch ($pagina) {
   case 'localizacao':
     include_once 'app/views/localizacao.html';
     break;
+  case 'home':
+    include_once 'app/views/home.html';
+    break;
   default:
     include_once 'app/views/home.html';
     break;

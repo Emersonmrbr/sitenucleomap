@@ -26,9 +26,10 @@
 </head>
 
 <body>
+
   <div class="l-body">
 
-    <header data-reactroot role="banner" class="l-header js-header js-sticky">
+    <header data-reactroot role="banner" class="l-header" js-sticky js-header>
       <?php
       include_once 'app/views/header.html';
       ?>

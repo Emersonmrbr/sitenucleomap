@@ -1,7 +1,6 @@
 contactInput.forEach((input) => {
   input.addEventListener("blur", function () {
     contactLabel.forEach((label) => {
-      // label.classList.remove("is-filled");
     });
     const labelOnce = document.querySelector(`label[for="${input.name}"]`);
     if (input.value) {
