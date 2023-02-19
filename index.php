@@ -37,7 +37,7 @@
     <!-- <?php
           // include 'app/assets/breadcrumb.php';
           ?> -->
-    <div class="l-fake js-fake"></div>
+    <div js-fake class="l-fake"></div>
 
     <?php
     ?>

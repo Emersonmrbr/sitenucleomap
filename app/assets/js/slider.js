@@ -1,4 +1,13 @@
 carousel.style.transition = "none";
+
+function createSlideClone() {
+  const firstSlide = images[0].cloneNode(true);
+  firstSlide.classList.add("slide-cloned");
+  const lastSlide = images[images.length - 1].cloneNode(true);
+  lastSlide.classList.add("slide-cloned");
+  galleryWrapper.append(firstSlide);
+  galleryWrapper.prepend(lastSlide);
+}
 function imageMove() {
   carousel.style.marginLeft = `-${currentIndex * 100}%`;
 }
@@ -53,3 +62,4 @@ carousel.addEventListener("transitionend", () => {
     imageMove();
   }
 });
+createSlideClone();
