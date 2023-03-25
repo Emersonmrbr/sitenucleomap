@@ -1,13 +1,13 @@
 $componente-name: "c-main";
 
 .#{$componente-name} {
-  display: grid;
-  grid: auto-flow / 1fr 1fr;
-  padding: 0;
-  gap: $global-module-size-ss;
-  max-width: 1120px;
-  margin: 0 auto;
   align-content: stretch;
+  display: grid;
+  gap: $global-module-size-ss;
+  grid: auto-flow / 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 0;
   &--single-column {
     grid: auto-flow / 1fr;
   }

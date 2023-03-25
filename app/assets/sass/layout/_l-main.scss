@@ -1,14 +1,14 @@
 $componente-name: "l-main";
 
 .#{$componente-name} {
-	background-color: map-color(map-white);
-	color: map-color(map-grey);
-	grid-area: main;
-	margin: 0 auto;
-	padding: ($global-padding-size-xxxs) 0;
-	width: 100%;
-	max-width: $global-max-width;
-	@include breakpoint(1280-up) {
-		padding: ($global-padding-size-xs) 0;
-	}
+  background-color: map-color(map-white);
+  color: map-color(map-grey);
+  grid-area: main;
+  margin: 0 auto;
+  padding: ($global-padding-size-xxxs) 0;
+  width: 100%;
+  max-width: $global-max-width;
+  @include breakpoint(1280-up) {
+    padding: ($global-padding-size-xs) 0;
+  }
 }
