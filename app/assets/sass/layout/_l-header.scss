@@ -7,6 +7,8 @@ $componente-name: "l-header";
   grid: "top top" auto "logo button-mobile" auto "menu-flyout-1 menu-flyout-2" auto "line line" auto / 1fr 1fr;
   height: auto;
   justify-items: center;
+  margin: 0 auto;
+  max-width: $global-max-width;
   overflow: visible;
   padding: ($global-padding-size-xxs) ($global-padding-size-xxxs) 0;
   position: fixed;

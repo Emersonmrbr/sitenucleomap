@@ -427,6 +427,8 @@ body {
   grid: "top top" auto "logo button-mobile" auto "menu-flyout-1 menu-flyout-2" auto "line line" auto/1fr 1fr;
   height: auto;
   justify-items: center;
+  margin: 0 auto;
+  max-width: 121.5rem;
   overflow: visible;
   padding: 0.78125rem 0.390625rem 0;
   position: fixed;
@@ -772,7 +774,7 @@ body {
   height: auto;
   margin: 0 auto;
   max-width: 121.5rem;
-  width: 100vw;
+  width: 100%;
 }
 @media (min-width: 40em) {
   .c-line-footer {
