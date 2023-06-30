@@ -2,7 +2,7 @@ $componente-name: "l-header";
 
 .#{$componente-name} {
   background-color: map-color(map-white);
-  column-gap: calc($global-module-size / 5);
+  column-gap: calc($global-module-size * 0.2);
   display: grid;
   grid: "top top" auto "logo button-mobile" auto "menu-flyout-1 menu-flyout-2" auto "line line" auto / 1fr 1fr;
   height: auto;
